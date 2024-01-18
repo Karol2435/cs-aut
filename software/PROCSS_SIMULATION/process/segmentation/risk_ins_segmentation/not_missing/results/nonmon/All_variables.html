@@ -1,0 +1,4639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.2, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1250">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.AfterCaption
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.Batch
+{
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 7px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #C1C1C1;
+}
+.BeforeCaption
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.Body
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.BodyDate
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+  width: 100%;
+  text-align: right;
+  vertical-align: top;
+}
+.ByContentFolder
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.Byline
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.BylineContainer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 1px;
+  border-spacing: 1px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+.Caption
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.Cell
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Container
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ContentFolder
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.ContentItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.ContentProcLabel
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ContentProcName
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Contents
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.ContentsDate
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+}
+.ContentTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Continued
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+  width: 100%;
+  text-align: left;
+}
+.Data
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.Date
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+}
+.Document
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+a:link {
+color:#800080
+}
+a:visited {
+color:#0000FF
+}
+a:active {
+color:#0000FF
+}
+.ErrorBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ErrorContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ErrorContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ExtendedPage
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 2pt;
+  border: 1pt solid #000000;
+  text-align: center;
+}
+.FatalBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FatalContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FatalContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FolderAction
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.Footer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Frame
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Graph
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #C1C1C1;
+}
+.Header
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeadersAndFooters
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.HeaderStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.Index
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.IndexAction
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.IndexItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.IndexProcName
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.IndexTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.LayoutContainer
+{
+  padding: 0px;
+  border-spacing: 30px;
+  border: 0px solid #000000;
+}
+.LayoutRegion
+{
+  padding: 0px;
+  border-spacing: 30px;
+  border: 0px solid #000000;
+}
+.List
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: disc;
+  width: 100%;
+  text-align: left;
+}
+.List10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: circle;
+  width: 100%;
+  text-align: left;
+}
+.List3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.ListItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Note
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.NoteBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.NoteContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.NoteContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Output
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 7px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #C1C1C1;
+}
+.PageNo
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+  text-align: right;
+  vertical-align: top;
+}
+.Pages
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.PagesDate
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+}
+.PagesItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.PagesProcLabel
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.PagesProcName
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.PagesTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Paragraph
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+  text-align: left;
+}
+.Parskip
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  padding: 0px;
+  border-spacing: 0px;
+  border: 0px solid #000000;
+}
+.PrePage
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  text-align: left;
+}
+.ProcTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ProcTitleFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooter
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowHeader
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.SystemFooter
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SysTitleAndFooterContainer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 1px;
+  border-spacing: 1px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+.Table
+{
+  border-collapse: separate;
+  border-spacing: 0px;
+  border-top-width: 1px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 1px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+}
+.TitleAndNoteContainer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 1px;
+  border-spacing: 1px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+.TitlesAndFooters
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.UserText
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  text-align: left;
+}
+.WarnBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.WarnContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.WarnContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="Body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Report of all variables, after simple pre-selection</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="Table" cellspacing="0" cellpadding="3" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.TEST">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r Header" scope="col">Number</th>
+<th class="l Header" scope="col">Variable name</th>
+<th class="r Header" scope="col">Gini before binning</th>
+<th class="r Header" scope="col">Gini after binning</th>
+<th class="r Header" scope="col">Difference of gini<br>before and after<br>binning</th>
+<th class="l Header" scope="col">Variable description</th>
+<th class="l Header" scope="col">Measure</th>
+<th class="r Header" scope="col">Percent of missing<br>valuses</th>
+<th class="r Header" scope="col">Number of<br>distinct<br>values</th>
+<th class="r Header" scope="col">Percent of the most<br>frequent nonmissing<br>value</th>
+<th class="l Header" scope="col">The most frequent<br>nonmissing value</th>
+<th class="r Header" scope="col">Relative difference<br>between Ginis between<br>training and validating<br>datasets</th>
+<th class="r Header" scope="col">Kullback-Leibrer between attribute distributions on training and validating datasets</th>
+<th class="r Header" scope="col">Kullback-Leibrer between attribute distributions only for bad cases on training and validating datasets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">  1</th>
+<th class="l RowHeader" scope="row">ACT_CINS_MIN_SENIORITY</th>
+<td class="r Data">      65,97%</td>
+<td class="r Data">      63,86%</td>
+<td class="r Data">       3,20%</td>
+<td class="l Data">Customer minimal seniority on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data"> 200</td>
+<td class="r Data">       1,22%</td>
+<td class="l Data">       7</td>
+<td class="r Data">      1.45%</td>
+<td class="r Data">.001001644</td>
+<td class="r Data">0.013145</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">  2</th>
+<th class="l RowHeader" scope="row">AGS9_MAX_CMAXI_DUE</th>
+<td class="r Data">      28,76%</td>
+<td class="r Data">      60,78%</td>
+<td class="r Data" nowrap>    -111,30%</td>
+<td class="l Data">Max calculated on last 9 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      77,45%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      16,64%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     5.09%)</td>
+<td class="r Data">.000109369</td>
+<td class="r Data">0.004340</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">  3</th>
+<th class="l RowHeader" scope="row">AGS9_MEAN_CMAXI_DUE</th>
+<td class="r Data">      28,61%</td>
+<td class="r Data">      60,78%</td>
+<td class="r Data" nowrap>    -112,46%</td>
+<td class="l Data">Mean calculated on last 9 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      77,45%</td>
+<td class="r Data">  70</td>
+<td class="r Data">      16,64%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     5.09%)</td>
+<td class="r Data">.000109369</td>
+<td class="r Data">0.004340</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">  4</th>
+<th class="l RowHeader" scope="row">AGS12_MEAN_CMAXI_DUE</th>
+<td class="r Data">      26,68%</td>
+<td class="r Data">      60,09%</td>
+<td class="r Data" nowrap>    -125,22%</td>
+<td class="l Data">Mean calculated on last 12 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,16%</td>
+<td class="r Data">  92</td>
+<td class="r Data">      17,79%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     4.60%)</td>
+<td class="r Data">.000702156</td>
+<td class="r Data">0.006209</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">  5</th>
+<th class="l RowHeader" scope="row">AGS12_MAX_CMAXI_DUE</th>
+<td class="r Data">      27,03%</td>
+<td class="r Data">      60,00%</td>
+<td class="r Data" nowrap>    -121,96%</td>
+<td class="l Data">Max calculated on last 12 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,16%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      17,79%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     4.60%)</td>
+<td class="r Data">.000266286</td>
+<td class="r Data">0.004345</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">  6</th>
+<th class="l RowHeader" scope="row">AGS6_MAX_CMAXI_DUE</th>
+<td class="r Data">      25,46%</td>
+<td class="r Data">      59,79%</td>
+<td class="r Data" nowrap>    -134,88%</td>
+<td class="l Data">Max calculated on last 6 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      79,65%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      15,72%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     6.91%)</td>
+<td class="r Data">.000606335</td>
+<td class="r Data">0.009991</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">  7</th>
+<th class="l RowHeader" scope="row">AGS6_MEAN_CMAXI_DUE</th>
+<td class="r Data">      25,34%</td>
+<td class="r Data">      59,79%</td>
+<td class="r Data" nowrap>    -135,94%</td>
+<td class="l Data">Mean calculated on last 6 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      79,65%</td>
+<td class="r Data">  40</td>
+<td class="r Data">      15,72%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     6.91%)</td>
+<td class="r Data">.000606335</td>
+<td class="r Data">0.009991</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">  8</th>
+<th class="l RowHeader" scope="row">ACT_CINS_UTL</th>
+<td class="r Data">      43,33%</td>
+<td class="r Data">      59,39%</td>
+<td class="r Data" nowrap>     -37,06%</td>
+<td class="l Data">Customer actual utilization rate on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,99%</td>
+<td class="r Data">  81</td>
+<td class="r Data">       0,98%</td>
+<td class="l Data">     0.5</td>
+<td class="r Data">(     7.86%)</td>
+<td class="r Data">.003213034</td>
+<td class="r Data">0.033583</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">  9</th>
+<th class="l RowHeader" scope="row">ACT_CINS_MIN_LNINST</th>
+<td class="r Data">      42,48%</td>
+<td class="r Data">      59,25%</td>
+<td class="r Data" nowrap>     -39,47%</td>
+<td class="l Data">Customer minimal number of left installments on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,99%</td>
+<td class="r Data">  38</td>
+<td class="r Data">       1,07%</td>
+<td class="l Data">      10</td>
+<td class="r Data">(     7.59%)</td>
+<td class="r Data">.001362139</td>
+<td class="r Data">0.017035</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 10</th>
+<th class="l RowHeader" scope="row">ACT_CINS_N_LOAN</th>
+<td class="r Data">      59,44%</td>
+<td class="r Data">      59,00%</td>
+<td class="r Data">       0,74%</td>
+<td class="l Data">Actual customer loan number of Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">   4</td>
+<td class="r Data">      84,07%</td>
+<td class="l Data">       1</td>
+<td class="r Data">(     7.18%)</td>
+<td class="r Data">.000000369</td>
+<td class="r Data">0.004464</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 11</th>
+<th class="l RowHeader" scope="row">AGS3_MEAN_CMAXI_DUE</th>
+<td class="r Data">      21,76%</td>
+<td class="r Data">      58,97%</td>
+<td class="r Data" nowrap>    -171,02%</td>
+<td class="l Data">Mean calculated on last 3 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,82%</td>
+<td class="r Data">  18</td>
+<td class="r Data">      14,32%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     9.40%)</td>
+<td class="r Data">.000136994</td>
+<td class="r Data">0.009948</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 12</th>
+<th class="l RowHeader" scope="row">AGS3_MAX_CMAXI_DUE</th>
+<td class="r Data">      21,97%</td>
+<td class="r Data">      58,97%</td>
+<td class="r Data" nowrap>    -168,35%</td>
+<td class="l Data">Max calculated on last 3 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,82%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      14,32%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     9.40%)</td>
+<td class="r Data">.000136994</td>
+<td class="r Data">0.009948</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 13</th>
+<th class="l RowHeader" scope="row">ACT_CINS_MIN_PNINST</th>
+<td class="r Data">      29,72%</td>
+<td class="r Data">      58,36%</td>
+<td class="r Data" nowrap>     -96,40%</td>
+<td class="l Data">Customer minimal number of paid installments on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,99%</td>
+<td class="r Data">  38</td>
+<td class="r Data">       1,54%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     8.57%)</td>
+<td class="r Data">.000152207</td>
+<td class="r Data">0.007822</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 14</th>
+<th class="l RowHeader" scope="row">AGS9_MIN_CMAXI_DUE</th>
+<td class="r Data">       9,80%</td>
+<td class="r Data">      58,25%</td>
+<td class="r Data" nowrap>    -494,38%</td>
+<td class="l Data">Min calculated on last 9 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      77,45%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      20,45%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     4.58%)</td>
+<td class="r Data">.000000886</td>
+<td class="r Data">0.002430</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 15</th>
+<th class="l RowHeader" scope="row">ACT_CINS_CC</th>
+<td class="r Data">      26,30%</td>
+<td class="r Data">      58,24%</td>
+<td class="r Data" nowrap>    -121,47%</td>
+<td class="l Data">Customer credit capacity (installment plus spendings) over income on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,99%</td>
+<td class="r Data"> 692</td>
+<td class="r Data">       0,05%</td>
+<td class="l Data">0.348955</td>
+<td class="r Data">(     8.16%)</td>
+<td class="r Data">.000062274</td>
+<td class="r Data">0.006479</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 16</th>
+<th class="l RowHeader" scope="row">AGS6_MIN_CMAXI_DUE</th>
+<td class="r Data">      12,63%</td>
+<td class="r Data">      57,95%</td>
+<td class="r Data" nowrap>    -358,83%</td>
+<td class="l Data">Min calculated on last 6 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      79,65%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      18,30%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     6.13%)</td>
+<td class="r Data">.000034226</td>
+<td class="r Data">0.004140</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 17</th>
+<th class="l RowHeader" scope="row">AGS3_MIN_CMAXI_DUE</th>
+<td class="r Data">      15,25%</td>
+<td class="r Data">      57,74%</td>
+<td class="r Data" nowrap>    -278,53%</td>
+<td class="l Data">Min calculated on last 3 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,82%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      15,72%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     8.53%)</td>
+<td class="r Data">.000064667</td>
+<td class="r Data">0.006946</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 18</th>
+<th class="l RowHeader" scope="row">ACT_CINS_MAXDUE</th>
+<td class="r Data">      20,29%</td>
+<td class="r Data">      57,34%</td>
+<td class="r Data" nowrap>    -182,68%</td>
+<td class="l Data">Customer actual maximal due installments on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,99%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      14,03%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     8.52%)</td>
+<td class="r Data">.000054828</td>
+<td class="r Data">0.006479</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 19</th>
+<th class="l RowHeader" scope="row">ACT_CINS_DUEUTL</th>
+<td class="r Data">      20,13%</td>
+<td class="r Data">      57,34%</td>
+<td class="r Data" nowrap>    -184,83%</td>
+<td class="l Data">Customer due installments over all installments rate on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,99%</td>
+<td class="r Data">  32</td>
+<td class="r Data">      14,03%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     8.52%)</td>
+<td class="r Data">.000054828</td>
+<td class="r Data">0.006479</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 20</th>
+<th class="l RowHeader" scope="row">ACT_CINS_N_LOANS_ACT</th>
+<td class="r Data">      10,61%</td>
+<td class="r Data">      57,34%</td>
+<td class="r Data" nowrap>    -440,61%</td>
+<td class="l Data">Customer actual number of loans on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,99%</td>
+<td class="r Data">   4</td>
+<td class="r Data">      15,01%</td>
+<td class="l Data">       1</td>
+<td class="r Data">(     8.52%)</td>
+<td class="r Data">.000054828</td>
+<td class="r Data">0.006479</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 21</th>
+<th class="l RowHeader" scope="row">AGS12_MIN_CMAXI_DUE</th>
+<td class="r Data">       6,28%</td>
+<td class="r Data">      57,10%</td>
+<td class="r Data" nowrap>    -809,56%</td>
+<td class="l Data">Min calculated on last 12 months on Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,16%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      22,74%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     3.72%)</td>
+<td class="r Data">.000178496</td>
+<td class="r Data">0.003003</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 22</th>
+<th class="l RowHeader" scope="row">AGS12_MEAN_CMAXI_DAYS</th>
+<td class="r Data">      20,76%</td>
+<td class="r Data">      56,46%</td>
+<td class="r Data" nowrap>    -171,93%</td>
+<td class="l Data">Mean calculated on last 12 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,96%</td>
+<td class="r Data"> 177</td>
+<td class="r Data">       1,73%</td>
+<td class="l Data">      13</td>
+<td class="r Data">(     4.31%)</td>
+<td class="r Data">.000358864</td>
+<td class="r Data">0.009882</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 23</th>
+<th class="l RowHeader" scope="row">AGS12_MIN_CMAXI_DAYS</th>
+<td class="r Data">       6,34%</td>
+<td class="r Data">      55,85%</td>
+<td class="r Data" nowrap>    -780,85%</td>
+<td class="l Data">Min calculated on last 12 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,96%</td>
+<td class="r Data">  22</td>
+<td class="r Data">       4,03%</td>
+<td class="l Data">      10</td>
+<td class="r Data">(     1.16%)</td>
+<td class="r Data">.000820736</td>
+<td class="r Data">0.021274</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 24</th>
+<th class="l RowHeader" scope="row">AGS9_MEAN_CMAXI_DAYS</th>
+<td class="r Data">      18,67%</td>
+<td class="r Data">      55,40%</td>
+<td class="r Data" nowrap>    -196,66%</td>
+<td class="l Data">Mean calculated on last 9 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,36%</td>
+<td class="r Data"> 121</td>
+<td class="r Data">       1,68%</td>
+<td class="l Data">      13</td>
+<td class="r Data">(     7.57%)</td>
+<td class="r Data">.001222727</td>
+<td class="r Data">0.010696</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 25</th>
+<th class="l RowHeader" scope="row">AGS6_MAX_CMAXI_DAYS</th>
+<td class="r Data">      14,30%</td>
+<td class="r Data">      55,34%</td>
+<td class="r Data" nowrap>    -287,04%</td>
+<td class="l Data">Max calculated on last 6 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      80,38%</td>
+<td class="r Data">  17</td>
+<td class="r Data">      15,20%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     5.41%)</td>
+<td class="r Data">.000413331</td>
+<td class="r Data">0.005769</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 26</th>
+<th class="l RowHeader" scope="row">AGS6_MEAN_CMAXI_DAYS</th>
+<td class="r Data">       9,39%</td>
+<td class="r Data">      55,25%</td>
+<td class="r Data" nowrap>    -488,29%</td>
+<td class="l Data">Mean calculated on last 6 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      80,38%</td>
+<td class="r Data">  72</td>
+<td class="r Data">       1,59%</td>
+<td class="l Data">      13</td>
+<td class="r Data">(     5.03%)</td>
+<td class="r Data">.000290779</td>
+<td class="r Data">0.004184</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 27</th>
+<th class="l RowHeader" scope="row">AGS6_MIN_CMAXI_DAYS</th>
+<td class="r Data">       1,68%</td>
+<td class="r Data">      54,86%</td>
+<td class="r Data" nowrap>  -3 162,73%</td>
+<td class="l Data">Min calculated on last 6 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      80,38%</td>
+<td class="r Data">  17</td>
+<td class="r Data">       3,44%</td>
+<td class="l Data">      11</td>
+<td class="r Data">(     5.69%)</td>
+<td class="r Data">.001082336</td>
+<td class="r Data">0.017602</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 28</th>
+<th class="l RowHeader" scope="row">AGS9_MIN_CMAXI_DAYS</th>
+<td class="r Data">       7,31%</td>
+<td class="r Data">      54,84%</td>
+<td class="r Data" nowrap>    -650,54%</td>
+<td class="l Data">Min calculated on last 9 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,36%</td>
+<td class="r Data">  19</td>
+<td class="r Data">       3,81%</td>
+<td class="l Data">      10</td>
+<td class="r Data">(     5.53%)</td>
+<td class="r Data">.000523843</td>
+<td class="r Data">0.021933</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 29</th>
+<th class="l RowHeader" scope="row">AGS12_MAX_CMAXI_DAYS</th>
+<td class="r Data">      20,68%</td>
+<td class="r Data">      54,39%</td>
+<td class="r Data" nowrap>    -163,01%</td>
+<td class="l Data">Max calculated on last 12 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,96%</td>
+<td class="r Data">  18</td>
+<td class="r Data">      20,47%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     4.07%)</td>
+<td class="r Data">.000084464</td>
+<td class="r Data">0.002437</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 30</th>
+<th class="l RowHeader" scope="row">AGS12_MEAN_CMAXA_DUE</th>
+<td class="r Data">      32,53%</td>
+<td class="r Data">      53,91%</td>
+<td class="r Data" nowrap>     -65,73%</td>
+<td class="l Data">Mean calculated on last 12 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      63,71%</td>
+<td class="r Data"> 156</td>
+<td class="r Data">       9,44%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     3.37%)</td>
+<td class="r Data">.000682678</td>
+<td class="r Data">0.014229</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 31</th>
+<th class="l RowHeader" scope="row">AGS9_MEAN_CMAXA_DUE</th>
+<td class="r Data">      34,67%</td>
+<td class="r Data">      53,88%</td>
+<td class="r Data" nowrap>     -55,42%</td>
+<td class="l Data">Mean calculated on last 9 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      65,67%</td>
+<td class="r Data"> 102</td>
+<td class="r Data">       9,30%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     6.34%)</td>
+<td class="r Data">.001041803</td>
+<td class="r Data">0.013742</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 32</th>
+<th class="l RowHeader" scope="row">AGS9_MAX_CMAXI_DAYS</th>
+<td class="r Data">      17,36%</td>
+<td class="r Data">      53,79%</td>
+<td class="r Data" nowrap>    -209,78%</td>
+<td class="l Data">Max calculated on last 9 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,36%</td>
+<td class="r Data">  17</td>
+<td class="r Data">      18,28%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     7.55%)</td>
+<td class="r Data">.000025459</td>
+<td class="r Data">0.004582</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 33</th>
+<th class="l RowHeader" scope="row">AGS6_MEAN_CMAXA_DUE</th>
+<td class="r Data">      36,28%</td>
+<td class="r Data">      53,76%</td>
+<td class="r Data" nowrap>     -48,18%</td>
+<td class="l Data">Mean calculated on last 6 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      67,64%</td>
+<td class="r Data">  54</td>
+<td class="r Data">       9,57%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     7.76%)</td>
+<td class="r Data">.000537988</td>
+<td class="r Data">0.018091</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 34</th>
+<th class="l RowHeader" scope="row">AGS6_MAX_CMAXA_DUE</th>
+<td class="r Data">      34,64%</td>
+<td class="r Data">      53,34%</td>
+<td class="r Data" nowrap>     -53,98%</td>
+<td class="l Data">Max calculated on last 6 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      67,64%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      12,37%</td>
+<td class="l Data">       7</td>
+<td class="r Data">(     7.34%)</td>
+<td class="r Data">.000065796</td>
+<td class="r Data">0.013177</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 35</th>
+<th class="l RowHeader" scope="row">AGS9_MAX_CMAXA_DUE</th>
+<td class="r Data">      32,29%</td>
+<td class="r Data">      53,32%</td>
+<td class="r Data" nowrap>     -65,14%</td>
+<td class="l Data">Max calculated on last 9 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      65,67%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      14,54%</td>
+<td class="l Data">       7</td>
+<td class="r Data">(     6.09%)</td>
+<td class="r Data">.000663429</td>
+<td class="r Data">0.011681</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 36</th>
+<th class="l RowHeader" scope="row">AGS6_MIN_CMAXA_DUE</th>
+<td class="r Data">      31,90%</td>
+<td class="r Data">      53,17%</td>
+<td class="r Data" nowrap>     -66,67%</td>
+<td class="l Data">Min calculated on last 6 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      67,64%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      17,42%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     8.18%)</td>
+<td class="r Data">.000637032</td>
+<td class="r Data">0.015739</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 37</th>
+<th class="l RowHeader" scope="row">AGS3_MEAN_CMAXI_DAYS</th>
+<td class="r Data">      12,15%</td>
+<td class="r Data">      53,14%</td>
+<td class="r Data" nowrap>    -337,43%</td>
+<td class="l Data">Mean calculated on last 3 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,75%</td>
+<td class="r Data">  34</td>
+<td class="r Data">       1,76%</td>
+<td class="l Data">      13</td>
+<td class="r Data">(     7.92%)</td>
+<td class="r Data">.002074309</td>
+<td class="r Data">0.017817</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 38</th>
+<th class="l RowHeader" scope="row">AGS9_MIN_CMAXA_DUE</th>
+<td class="r Data">      30,37%</td>
+<td class="r Data">      53,11%</td>
+<td class="r Data" nowrap>     -74,87%</td>
+<td class="l Data">Min calculated on last 9 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      65,67%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      20,13%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     6.45%)</td>
+<td class="r Data">.000195517</td>
+<td class="r Data">0.017761</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 39</th>
+<th class="l RowHeader" scope="row">ACT_CALL_N_LOAN</th>
+<td class="r Data">      43,47%</td>
+<td class="r Data">      53,07%</td>
+<td class="r Data" nowrap>     -22,09%</td>
+<td class="l Data">Actual customer loan number</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">   8</td>
+<td class="r Data">      71,82%</td>
+<td class="l Data">       1</td>
+<td class="r Data">(     9.06%)</td>
+<td class="r Data">.000946577</td>
+<td class="r Data">0.008768</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 40</th>
+<th class="l RowHeader" scope="row">AGS3_MAX_CMAXI_DAYS</th>
+<td class="r Data">      12,59%</td>
+<td class="r Data">      53,05%</td>
+<td class="r Data" nowrap>    -321,20%</td>
+<td class="l Data">Max calculated on last 3 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,75%</td>
+<td class="r Data">  14</td>
+<td class="r Data">      10,05%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     7.60%)</td>
+<td class="r Data">.000140064</td>
+<td class="r Data">0.005025</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 41</th>
+<th class="l RowHeader" scope="row">AGS12_MAX_CMAXA_DUE</th>
+<td class="r Data">      29,32%</td>
+<td class="r Data">      53,03%</td>
+<td class="r Data" nowrap>     -80,87%</td>
+<td class="l Data">Max calculated on last 12 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      63,71%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      16,81%</td>
+<td class="l Data">       7</td>
+<td class="r Data">(     3.42%)</td>
+<td class="r Data">.001107374</td>
+<td class="r Data">0.008497</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 42</th>
+<th class="l RowHeader" scope="row">AGS3_MIN_CMAXI_DAYS</th>
+<td class="r Data">       9,96%</td>
+<td class="r Data">      53,00%</td>
+<td class="r Data" nowrap>    -432,27%</td>
+<td class="l Data">Min calculated on last 3 months on Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,75%</td>
+<td class="r Data">  16</td>
+<td class="r Data">       3,10%</td>
+<td class="l Data">      11</td>
+<td class="r Data">(     7.74%)</td>
+<td class="r Data">.001422311</td>
+<td class="r Data">0.009233</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 43</th>
+<th class="l RowHeader" scope="row">AGS3_MEAN_CMAXA_DUE</th>
+<td class="r Data">      36,03%</td>
+<td class="r Data">      52,89%</td>
+<td class="r Data" nowrap>     -46,80%</td>
+<td class="l Data">Mean calculated on last 3 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      69,35%</td>
+<td class="r Data">  24</td>
+<td class="r Data">      10,00%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     9.35%)</td>
+<td class="r Data">.000441728</td>
+<td class="r Data">0.023171</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 44</th>
+<th class="l RowHeader" scope="row">AGS12_MIN_CMAXA_DUE</th>
+<td class="r Data">      27,78%</td>
+<td class="r Data">      52,83%</td>
+<td class="r Data" nowrap>     -90,18%</td>
+<td class="l Data">Min calculated on last 12 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      63,71%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      22,67%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     4.86%)</td>
+<td class="r Data">.000222803</td>
+<td class="r Data">0.014879</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 45</th>
+<th class="l RowHeader" scope="row">AGR3_MAX_CMAXI_DUE</th>
+<td class="r Data">      23,47%</td>
+<td class="r Data">      52,79%</td>
+<td class="r Data" nowrap>    -124,98%</td>
+<td class="l Data">Max calculated on last 3 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      84,16%</td>
+<td class="r Data">  10</td>
+<td class="r Data">      12,35%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     8.79%)</td>
+<td class="r Data">.000037411</td>
+<td class="r Data">0.006861</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 46</th>
+<th class="l RowHeader" scope="row">AGR3_MEAN_CMAXI_DUE</th>
+<td class="r Data">      23,29%</td>
+<td class="r Data">      52,79%</td>
+<td class="r Data" nowrap>    -126,68%</td>
+<td class="l Data">Mean calculated on last 3 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      84,16%</td>
+<td class="r Data">  18</td>
+<td class="r Data">      12,35%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     8.79%)</td>
+<td class="r Data">.000037411</td>
+<td class="r Data">0.006861</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 47</th>
+<th class="l RowHeader" scope="row">AGS3_MAX_CMAXA_DUE</th>
+<td class="r Data">      35,14%</td>
+<td class="r Data">      52,68%</td>
+<td class="r Data" nowrap>     -49,92%</td>
+<td class="l Data">Max calculated on last 3 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      69,35%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      10,00%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     9.57%)</td>
+<td class="r Data">.000258101</td>
+<td class="r Data">0.017369</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 48</th>
+<th class="l RowHeader" scope="row">AGS3_MIN_CMAXA_DUE</th>
+<td class="r Data">      33,70%</td>
+<td class="r Data">      52,55%</td>
+<td class="r Data" nowrap>     -55,93%</td>
+<td class="l Data">Min calculated on last 3 months on Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      69,35%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      14,45%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     9.67%)</td>
+<td class="r Data">.000711974</td>
+<td class="r Data">0.023373</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 49</th>
+<th class="l RowHeader" scope="row">ACT3_N_GOOD_DAYS</th>
+<td class="r Data">      27,28%</td>
+<td class="r Data">      52,18%</td>
+<td class="r Data" nowrap>     -91,23%</td>
+<td class="l Data">Customer number of days lower than 15 on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">   5</td>
+<td class="r Data">      16,06%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     7.11%)</td>
+<td class="r Data">.000225594</td>
+<td class="r Data">0.008285</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 50</th>
+<th class="l RowHeader" scope="row">ACT12_N_ARREARS</th>
+<td class="r Data">      26,23%</td>
+<td class="r Data">      52,02%</td>
+<td class="r Data" nowrap>     -98,34%</td>
+<td class="l Data">Customer number in arrears on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">  14</td>
+<td class="r Data">      11,25%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     0.02%)</td>
+<td class="r Data">.000997233</td>
+<td class="r Data">0.019819</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 51</th>
+<th class="l RowHeader" scope="row">AGR3_MIN_CMAXI_DUE</th>
+<td class="r Data">      16,67%</td>
+<td class="r Data">      51,84%</td>
+<td class="r Data" nowrap>    -210,92%</td>
+<td class="l Data">Min calculated on last 3 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      84,16%</td>
+<td class="r Data">  10</td>
+<td class="r Data">      13,69%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     8.02%)</td>
+<td class="r Data">.000006223</td>
+<td class="r Data">0.003818</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 52</th>
+<th class="l RowHeader" scope="row">ACT6_N_GOOD_DAYS</th>
+<td class="r Data">      26,23%</td>
+<td class="r Data">      51,67%</td>
+<td class="r Data" nowrap>     -96,99%</td>
+<td class="l Data">Customer number of days lower than 15 on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">   8</td>
+<td class="r Data">      11,52%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     5.02%)</td>
+<td class="r Data">.000512041</td>
+<td class="r Data">0.011391</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 53</th>
+<th class="l RowHeader" scope="row">ACT9_N_ARREARS</th>
+<td class="r Data">      22,42%</td>
+<td class="r Data">      51,28%</td>
+<td class="r Data" nowrap>    -128,71%</td>
+<td class="l Data">Customer number in arrears on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">  11</td>
+<td class="r Data">      13,06%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     0.33%)</td>
+<td class="r Data">.001011860</td>
+<td class="r Data">0.021540</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 54</th>
+<th class="l RowHeader" scope="row">ACT9_N_GOOD_DAYS</th>
+<td class="r Data">      19,73%</td>
+<td class="r Data">      50,62%</td>
+<td class="r Data" nowrap>    -156,62%</td>
+<td class="l Data">Customer number of days lower than 15 on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">  11</td>
+<td class="r Data">       9,00%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     5.82%)</td>
+<td class="r Data">.001287639</td>
+<td class="r Data">0.009740</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 55</th>
+<th class="l RowHeader" scope="row">ACT6_N_ARREARS</th>
+<td class="r Data">      18,34%</td>
+<td class="r Data">      50,61%</td>
+<td class="r Data" nowrap>    -175,91%</td>
+<td class="l Data">Customer number in arrears on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">   8</td>
+<td class="r Data">      15,30%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     1.16%)</td>
+<td class="r Data">.000827234</td>
+<td class="r Data">0.017369</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 56</th>
+<th class="l RowHeader" scope="row">AGS12_MEAN_CMAXA_DAYS</th>
+<td class="r Data">      20,76%</td>
+<td class="r Data">      50,59%</td>
+<td class="r Data" nowrap>    -143,68%</td>
+<td class="l Data">Mean calculated on last 12 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      65,74%</td>
+<td class="r Data"> 229</td>
+<td class="r Data">       2,27%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     6.56%)</td>
+<td class="r Data">.000322760</td>
+<td class="r Data">0.008249</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 57</th>
+<th class="l RowHeader" scope="row">AGS6_MEAN_CMAXA_DAYS</th>
+<td class="r Data">      25,59%</td>
+<td class="r Data">      50,44%</td>
+<td class="r Data" nowrap>     -97,10%</td>
+<td class="l Data">Mean calculated on last 6 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      70,01%</td>
+<td class="r Data">  94</td>
+<td class="r Data">       2,51%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     6.46%)</td>
+<td class="r Data">.001822135</td>
+<td class="r Data">0.024273</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 58</th>
+<th class="l RowHeader" scope="row">AGS12_MAX_CMAXA_DAYS</th>
+<td class="r Data">      18,11%</td>
+<td class="r Data">      50,43%</td>
+<td class="r Data" nowrap>    -178,46%</td>
+<td class="l Data">Max calculated on last 12 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      65,74%</td>
+<td class="r Data">  22</td>
+<td class="r Data">      22,57%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     5.13%)</td>
+<td class="r Data">.001224827</td>
+<td class="r Data">0.007080</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 59</th>
+<th class="l RowHeader" scope="row">ACT12_N_ARREARS_DAYS</th>
+<td class="r Data">      18,86%</td>
+<td class="r Data">      50,18%</td>
+<td class="r Data" nowrap>    -165,99%</td>
+<td class="l Data">Customer number of days greter than 15 on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">   6</td>
+<td class="r Data">      28,06%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     3.98%)</td>
+<td class="r Data">.000316829</td>
+<td class="r Data">0.006860</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 60</th>
+<th class="l RowHeader" scope="row">AGS9_MEAN_CMAXA_DAYS</th>
+<td class="r Data">      22,91%</td>
+<td class="r Data">      49,73%</td>
+<td class="r Data" nowrap>    -117,11%</td>
+<td class="l Data">Mean calculated on last 9 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      67,76%</td>
+<td class="r Data"> 154</td>
+<td class="r Data">       2,46%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     7.26%)</td>
+<td class="r Data">.000561761</td>
+<td class="r Data">0.008736</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 61</th>
+<th class="l RowHeader" scope="row">AGS6_MIN_CMAXA_DAYS</th>
+<td class="r Data">      19,62%</td>
+<td class="r Data">      49,50%</td>
+<td class="r Data" nowrap>    -152,29%</td>
+<td class="l Data">Min calculated on last 6 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      70,01%</td>
+<td class="r Data">  22</td>
+<td class="r Data">       4,49%</td>
+<td class="l Data">      11</td>
+<td class="r Data">(     8.08%)</td>
+<td class="r Data">.000951183</td>
+<td class="r Data">0.010307</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 62</th>
+<th class="l RowHeader" scope="row">ACT9_N_ARREARS_DAYS</th>
+<td class="r Data">      16,19%</td>
+<td class="r Data">      49,46%</td>
+<td class="r Data" nowrap>    -205,51%</td>
+<td class="l Data">Customer number of days greter than 15 on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">   6</td>
+<td class="r Data">      29,62%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     3.86%)</td>
+<td class="r Data">.000228013</td>
+<td class="r Data">0.006699</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 63</th>
+<th class="l RowHeader" scope="row">AGS9_MAX_CMAXA_DAYS</th>
+<td class="r Data">      18,12%</td>
+<td class="r Data">      49,28%</td>
+<td class="r Data" nowrap>    -172,01%</td>
+<td class="l Data">Max calculated on last 9 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      67,76%</td>
+<td class="r Data">  18</td>
+<td class="r Data">      22,30%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     7.99%)</td>
+<td class="r Data">.001071702</td>
+<td class="r Data">0.007173</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 64</th>
+<th class="l RowHeader" scope="row">ACT3_N_ARREARS</th>
+<td class="r Data">      13,95%</td>
+<td class="r Data">      49,16%</td>
+<td class="r Data" nowrap>    -252,44%</td>
+<td class="l Data">Customer number in arrears on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">   5</td>
+<td class="r Data">      17,45%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     2.16%)</td>
+<td class="r Data">.001674440</td>
+<td class="r Data">0.016581</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 65</th>
+<th class="l RowHeader" scope="row">AGS12_MIN_CMAXA_DAYS</th>
+<td class="r Data">      11,59%</td>
+<td class="r Data">      49,13%</td>
+<td class="r Data" nowrap>    -323,90%</td>
+<td class="l Data">Min calculated on last 12 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      65,74%</td>
+<td class="r Data">  23</td>
+<td class="r Data">       4,90%</td>
+<td class="l Data">      10</td>
+<td class="r Data">(     5.13%)</td>
+<td class="r Data">.000801117</td>
+<td class="r Data">0.005191</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 66</th>
+<th class="l RowHeader" scope="row">ACT12_N_GOOD_DAYS</th>
+<td class="r Data">      13,50%</td>
+<td class="r Data">      48,96%</td>
+<td class="r Data" nowrap>    -262,74%</td>
+<td class="l Data">Customer number of days lower than 15 on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">  14</td>
+<td class="r Data">       6,47%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     7.32%)</td>
+<td class="r Data">.000867116</td>
+<td class="r Data">0.005011</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 67</th>
+<th class="l RowHeader" scope="row">AGS9_MIN_CMAXA_DAYS</th>
+<td class="r Data">      14,30%</td>
+<td class="r Data">      48,89%</td>
+<td class="r Data" nowrap>    -241,94%</td>
+<td class="l Data">Min calculated on last 9 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      67,76%</td>
+<td class="r Data">  20</td>
+<td class="r Data">       4,78%</td>
+<td class="l Data">      11</td>
+<td class="r Data">(     7.88%)</td>
+<td class="r Data">.000305121</td>
+<td class="r Data">0.006360</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 68</th>
+<th class="l RowHeader" scope="row">AGS6_MAX_CMAXA_DAYS</th>
+<td class="r Data">      17,26%</td>
+<td class="r Data">      48,80%</td>
+<td class="r Data" nowrap>    -182,74%</td>
+<td class="l Data">Max calculated on last 6 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      70,01%</td>
+<td class="r Data">  20</td>
+<td class="r Data">      21,62%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     8.65%)</td>
+<td class="r Data">.000113094</td>
+<td class="r Data">0.008854</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 69</th>
+<th class="l RowHeader" scope="row">ACT6_N_ARREARS_DAYS</th>
+<td class="r Data">      11,17%</td>
+<td class="r Data">      48,35%</td>
+<td class="r Data" nowrap>    -332,67%</td>
+<td class="l Data">Customer number of days greter than 15 on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">   5</td>
+<td class="r Data">      31,75%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     4.42%)</td>
+<td class="r Data">.000165527</td>
+<td class="r Data">0.007282</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 70</th>
+<th class="l RowHeader" scope="row">AGS3_MEAN_CMAXA_DAYS</th>
+<td class="r Data">      18,88%</td>
+<td class="r Data">      48,01%</td>
+<td class="r Data" nowrap>    -154,32%</td>
+<td class="l Data">Mean calculated on last 3 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      72,47%</td>
+<td class="r Data">  49</td>
+<td class="r Data">       4,27%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(    10.62%)</td>
+<td class="r Data">.000420501</td>
+<td class="r Data">0.008449</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 71</th>
+<th class="l RowHeader" scope="row">AGS3_MIN_CMAXA_DAYS</th>
+<td class="r Data">      15,27%</td>
+<td class="r Data">      47,87%</td>
+<td class="r Data" nowrap>    -213,49%</td>
+<td class="l Data">Min calculated on last 3 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      72,47%</td>
+<td class="r Data">  23</td>
+<td class="r Data">       4,95%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(    10.09%)</td>
+<td class="r Data">.000652939</td>
+<td class="r Data">0.010103</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 72</th>
+<th class="l RowHeader" scope="row">AGS3_MAX_CMAXA_DAYS</th>
+<td class="r Data">      13,01%</td>
+<td class="r Data">      47,35%</td>
+<td class="r Data" nowrap>    -263,81%</td>
+<td class="l Data">Max calculated on last 3 months on Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      72,47%</td>
+<td class="r Data">  21</td>
+<td class="r Data">      18,84%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(    10.54%)</td>
+<td class="r Data">.000395896</td>
+<td class="r Data">0.012348</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 73</th>
+<th class="l RowHeader" scope="row">ACT3_N_ARREARS_DAYS</th>
+<td class="r Data">       6,15%</td>
+<td class="r Data">      47,21%</td>
+<td class="r Data" nowrap>    -667,21%</td>
+<td class="l Data">Customer number of days greter than 15 on all loans</td>
+<td class="l Data">INT</td>
+<td class="r Data">      61,91%</td>
+<td class="r Data">   4</td>
+<td class="r Data">      34,94%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     4.60%)</td>
+<td class="r Data">.000323284</td>
+<td class="r Data">0.009921</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 74</th>
+<th class="l RowHeader" scope="row">ACT_CUS_ACTIVE</th>
+<td class="r Data">           .</td>
+<td class="r Data">      47,12%</td>
+<td class="r Data">           .</td>
+<td class="l Data">Customer had active (status=A) loans one month before</td>
+<td class="l Data">INT</td>
+<td class="r Data">      71,62%</td>
+<td class="r Data">   2</td>
+<td class="r Data">      28,38%</td>
+<td class="l Data">       1</td>
+<td class="r Data">(    11.21%)</td>
+<td class="r Data">.000068295</td>
+<td class="r Data">0.007927</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 75</th>
+<th class="l RowHeader" scope="row">AGR3_MEAN_CMAXA_DUE</th>
+<td class="r Data">      34,90%</td>
+<td class="r Data">      47,11%</td>
+<td class="r Data" nowrap>     -35,01%</td>
+<td class="l Data">Mean calculated on last 3 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      71,67%</td>
+<td class="r Data">  24</td>
+<td class="r Data">       8,71%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     9.47%)</td>
+<td class="r Data">.000599016</td>
+<td class="r Data">0.021411</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 76</th>
+<th class="l RowHeader" scope="row">AGR3_MAX_CMAXA_DUE</th>
+<td class="r Data">      33,93%</td>
+<td class="r Data">      46,93%</td>
+<td class="r Data" nowrap>     -38,29%</td>
+<td class="l Data">Max calculated on last 3 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      71,67%</td>
+<td class="r Data">  10</td>
+<td class="r Data">       8,71%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     9.70%)</td>
+<td class="r Data">.000504282</td>
+<td class="r Data">0.016231</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 77</th>
+<th class="l RowHeader" scope="row">AGR3_MIN_CMAXA_DUE</th>
+<td class="r Data">      32,64%</td>
+<td class="r Data">      46,83%</td>
+<td class="r Data" nowrap>     -43,45%</td>
+<td class="l Data">Min calculated on last 3 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      71,67%</td>
+<td class="r Data">  10</td>
+<td class="r Data">      13,13%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     9.76%)</td>
+<td class="r Data">.000956352</td>
+<td class="r Data">0.021834</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 78</th>
+<th class="l RowHeader" scope="row">AGR6_MEAN_CMAXI_DUE</th>
+<td class="r Data">      27,61%</td>
+<td class="r Data">      43,88%</td>
+<td class="r Data" nowrap>     -58,91%</td>
+<td class="l Data">Mean calculated on last 6 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      86,31%</td>
+<td class="r Data">  30</td>
+<td class="r Data">      10,13%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     6.02%)</td>
+<td class="r Data">.000221635</td>
+<td class="r Data">0.008663</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 79</th>
+<th class="l RowHeader" scope="row">AGR6_MAX_CMAXI_DUE</th>
+<td class="r Data">      27,71%</td>
+<td class="r Data">      43,88%</td>
+<td class="r Data" nowrap>     -58,37%</td>
+<td class="l Data">Max calculated on last 6 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      86,31%</td>
+<td class="r Data">  10</td>
+<td class="r Data">      10,13%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     6.02%)</td>
+<td class="r Data">.000221635</td>
+<td class="r Data">0.008663</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 80</th>
+<th class="l RowHeader" scope="row">AGR6_MIN_CMAXI_DUE</th>
+<td class="r Data">      14,94%</td>
+<td class="r Data">      43,02%</td>
+<td class="r Data" nowrap>    -187,98%</td>
+<td class="l Data">Min calculated on last 6 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      86,31%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      12,32%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     5.17%)</td>
+<td class="r Data">.000000040</td>
+<td class="r Data">0.000901</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 81</th>
+<th class="l RowHeader" scope="row">AGR3_MIN_CMAXI_DAYS</th>
+<td class="r Data">       5,11%</td>
+<td class="r Data">      41,35%</td>
+<td class="r Data" nowrap>    -708,61%</td>
+<td class="l Data">Min calculated on last 3 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      86,14%</td>
+<td class="r Data">  15</td>
+<td class="r Data">       2,86%</td>
+<td class="l Data">      11</td>
+<td class="r Data">(     0.53%)</td>
+<td class="r Data">.000386935</td>
+<td class="r Data">0.002438</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 82</th>
+<th class="l RowHeader" scope="row">AGR3_MEAN_CMAXI_DAYS</th>
+<td class="r Data">       4,51%</td>
+<td class="r Data">      41,34%</td>
+<td class="r Data" nowrap>    -817,59%</td>
+<td class="l Data">Mean calculated on last 3 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      86,14%</td>
+<td class="r Data">  25</td>
+<td class="r Data">       1,59%</td>
+<td class="l Data">13.66667</td>
+<td class="r Data">(     0.48%)</td>
+<td class="r Data">.000306437</td>
+<td class="r Data">0.001103</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 83</th>
+<th class="l RowHeader" scope="row">AGR3_MAX_CMAXI_DAYS</th>
+<td class="r Data">       5,38%</td>
+<td class="r Data">      41,29%</td>
+<td class="r Data" nowrap>    -667,22%</td>
+<td class="l Data">Max calculated on last 3 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      86,14%</td>
+<td class="r Data">  10</td>
+<td class="r Data">       8,05%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     0.44%)</td>
+<td class="r Data">.000043805</td>
+<td class="r Data">0.000068</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 84</th>
+<th class="l RowHeader" scope="row">AGR3_MEAN_CMAXA_DAYS</th>
+<td class="r Data">      24,15%</td>
+<td class="r Data">      38,93%</td>
+<td class="r Data" nowrap>     -61,18%</td>
+<td class="l Data">Mean calculated on last 3 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,65%</td>
+<td class="r Data">  32</td>
+<td class="r Data">       2,54%</td>
+<td class="l Data">14.33333</td>
+<td class="r Data">(     4.61%)</td>
+<td class="r Data">.001318218</td>
+<td class="r Data">0.002144</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 85</th>
+<th class="l RowHeader" scope="row">AGR3_MIN_CMAXA_DAYS</th>
+<td class="r Data">      18,41%</td>
+<td class="r Data">      38,62%</td>
+<td class="r Data" nowrap>    -109,80%</td>
+<td class="l Data">Min calculated on last 3 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,65%</td>
+<td class="r Data">  15</td>
+<td class="r Data">       4,03%</td>
+<td class="l Data">      14</td>
+<td class="r Data">(     5.01%)</td>
+<td class="r Data">.001937743</td>
+<td class="r Data">0.004698</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 86</th>
+<th class="l RowHeader" scope="row">AGR6_MEAN_CMAXA_DUE</th>
+<td class="r Data">      35,62%</td>
+<td class="r Data">      38,04%</td>
+<td class="r Data" nowrap>      -6,81%</td>
+<td class="l Data">Mean calculated on last 6 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      73,35%</td>
+<td class="r Data">  45</td>
+<td class="r Data">       6,17%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     4.19%)</td>
+<td class="r Data">.000549397</td>
+<td class="r Data">0.018239</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 87</th>
+<th class="l RowHeader" scope="row">AGR6_MAX_CMAXA_DUE</th>
+<td class="r Data">      33,05%</td>
+<td class="r Data">      37,84%</td>
+<td class="r Data" nowrap>     -14,48%</td>
+<td class="l Data">Max calculated on last 6 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      73,35%</td>
+<td class="r Data">  10</td>
+<td class="r Data">      10,49%</td>
+<td class="l Data">       7</td>
+<td class="r Data">(     3.98%)</td>
+<td class="r Data">.000890498</td>
+<td class="r Data">0.013541</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 88</th>
+<th class="l RowHeader" scope="row">ACT_CINS_N_LOANS_HIST</th>
+<td class="r Data">      37,64%</td>
+<td class="r Data">      37,84%</td>
+<td class="r Data" nowrap>      -0,52%</td>
+<td class="l Data">Customer historical number of loans on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">  16</td>
+<td class="r Data">      44,24%</td>
+<td class="l Data">       1</td>
+<td class="r Data">(     7.05%)</td>
+<td class="r Data">.000616536</td>
+<td class="r Data">0.007453</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 89</th>
+<th class="l RowHeader" scope="row">AGR6_MIN_CMAXA_DUE</th>
+<td class="r Data">      30,70%</td>
+<td class="r Data">      37,69%</td>
+<td class="r Data" nowrap>     -22,77%</td>
+<td class="l Data">Min calculated on last 6 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      73,35%</td>
+<td class="r Data">  10</td>
+<td class="r Data">      13,62%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     4.91%)</td>
+<td class="r Data">.001201231</td>
+<td class="r Data">0.016289</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 90</th>
+<th class="l RowHeader" scope="row">AGR3_MAX_CMAXA_DAYS</th>
+<td class="r Data">      14,80%</td>
+<td class="r Data">      37,63%</td>
+<td class="r Data" nowrap>    -154,30%</td>
+<td class="l Data">Max calculated on last 3 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,65%</td>
+<td class="r Data">  19</td>
+<td class="r Data">      15,23%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     5.66%)</td>
+<td class="r Data">.000146093</td>
+<td class="r Data">0.000848</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 91</th>
+<th class="l RowHeader" scope="row">ACT_CINS_N_STATB</th>
+<td class="r Data">      37,17%</td>
+<td class="r Data">      36,99%</td>
+<td class="r Data">       0,49%</td>
+<td class="l Data">Customer historical number of finished loans with status B on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">  16</td>
+<td class="r Data">      68,98%</td>
+<td class="l Data">       0</td>
+<td class="r Data">      0.95%</td>
+<td class="r Data">.000631354</td>
+<td class="r Data">0.013925</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 92</th>
+<th class="l RowHeader" scope="row">AGR9_MAX_CMAXI_DUE</th>
+<td class="r Data">      30,28%</td>
+<td class="r Data">      35,90%</td>
+<td class="r Data" nowrap>     -18,55%</td>
+<td class="l Data">Max calculated on last 9 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      88,70%</td>
+<td class="r Data">  10</td>
+<td class="r Data">       7,61%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     6.53%)</td>
+<td class="r Data">.000005977</td>
+<td class="r Data">0.002506</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 93</th>
+<th class="l RowHeader" scope="row">AGR9_MEAN_CMAXI_DUE</th>
+<td class="r Data">      30,21%</td>
+<td class="r Data">      35,90%</td>
+<td class="r Data" nowrap>     -18,84%</td>
+<td class="l Data">Mean calculated on last 9 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      88,70%</td>
+<td class="r Data">  37</td>
+<td class="r Data">       7,61%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     6.53%)</td>
+<td class="r Data">.000005977</td>
+<td class="r Data">0.002506</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 94</th>
+<th class="l RowHeader" scope="row">AGR9_MIN_CMAXI_DUE</th>
+<td class="r Data">       9,47%</td>
+<td class="r Data">      35,28%</td>
+<td class="r Data" nowrap>    -272,73%</td>
+<td class="l Data">Min calculated on last 9 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      88,70%</td>
+<td class="r Data">   7</td>
+<td class="r Data">      10,49%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     6.14%)</td>
+<td class="r Data">.000003948</td>
+<td class="r Data">0.000784</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 95</th>
+<th class="l RowHeader" scope="row">ACT_CALL_CC</th>
+<td class="r Data">      32,22%</td>
+<td class="r Data">      32,27%</td>
+<td class="r Data" nowrap>      -0,14%</td>
+<td class="l Data">Customer credit capacity (all installments plus spendings) over income</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">4062</td>
+<td class="r Data">       0,07%</td>
+<td class="l Data">    0.75</td>
+<td class="r Data">      4.95%</td>
+<td class="r Data">.000648810</td>
+<td class="r Data">0.004967</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 96</th>
+<th class="l RowHeader" scope="row">AGR9_MEAN_CMAXA_DUE</th>
+<td class="r Data">      36,05%</td>
+<td class="r Data">      31,87%</td>
+<td class="r Data">      11,60%</td>
+<td class="l Data">Mean calculated on last 9 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,16%</td>
+<td class="r Data">  65</td>
+<td class="r Data">       4,10%</td>
+<td class="l Data">       0</td>
+<td class="r Data">      1.33%</td>
+<td class="r Data">.001293499</td>
+<td class="r Data">0.019720</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 97</th>
+<th class="l RowHeader" scope="row">AGR6_MEAN_CMAXI_DAYS</th>
+<td class="r Data">       7,68%</td>
+<td class="r Data">      31,24%</td>
+<td class="r Data" nowrap>    -306,91%</td>
+<td class="l Data">Mean calculated on last 6 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      88,70%</td>
+<td class="r Data">  32</td>
+<td class="r Data">       0,98%</td>
+<td class="l Data">12.33333</td>
+<td class="r Data">      4.70%</td>
+<td class="r Data">.000069207</td>
+<td class="r Data">0.000408</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 98</th>
+<th class="l RowHeader" scope="row">AGR6_MIN_CMAXI_DAYS</th>
+<td class="r Data">       8,37%</td>
+<td class="r Data">      31,20%</td>
+<td class="r Data" nowrap>    -272,57%</td>
+<td class="l Data">Min calculated on last 6 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      88,70%</td>
+<td class="r Data">  14</td>
+<td class="r Data">       2,51%</td>
+<td class="l Data">      10</td>
+<td class="r Data">      4.45%</td>
+<td class="r Data">.000771764</td>
+<td class="r Data">0.003085</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row"> 99</th>
+<th class="l RowHeader" scope="row">AGR6_MAX_CMAXI_DAYS</th>
+<td class="r Data">       0,92%</td>
+<td class="r Data">      31,10%</td>
+<td class="r Data" nowrap>  -3 265,45%</td>
+<td class="l Data">Max calculated on last 6 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      88,70%</td>
+<td class="r Data">   8</td>
+<td class="r Data">       9,15%</td>
+<td class="l Data">      15</td>
+<td class="r Data">      4.47%</td>
+<td class="r Data">.000020038</td>
+<td class="r Data">0.000372</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">100</th>
+<th class="l RowHeader" scope="row">AGR9_MIN_CMAXA_DUE</th>
+<td class="r Data">      30,67%</td>
+<td class="r Data">      31,08%</td>
+<td class="r Data" nowrap>      -1,35%</td>
+<td class="l Data">Min calculated on last 9 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,16%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      13,71%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     1.62%)</td>
+<td class="r Data">.000635866</td>
+<td class="r Data">0.020397</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">101</th>
+<th class="l RowHeader" scope="row">AGR9_MAX_CMAXA_DUE</th>
+<td class="r Data">      31,54%</td>
+<td class="r Data">      30,31%</td>
+<td class="r Data">       3,91%</td>
+<td class="l Data">Max calculated on last 9 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,16%</td>
+<td class="r Data">  10</td>
+<td class="r Data">      11,35%</td>
+<td class="l Data">       7</td>
+<td class="r Data">(     8.14%)</td>
+<td class="r Data">.001168930</td>
+<td class="r Data">0.017297</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">102</th>
+<th class="l RowHeader" scope="row">AGR6_MEAN_CMAXA_DAYS</th>
+<td class="r Data">      34,62%</td>
+<td class="r Data">      29,54%</td>
+<td class="r Data">      14,68%</td>
+<td class="l Data">Mean calculated on last 6 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,48%</td>
+<td class="r Data">  42</td>
+<td class="r Data">       1,29%</td>
+<td class="l Data">13.66667</td>
+<td class="r Data">(     1.05%)</td>
+<td class="r Data">.001136180</td>
+<td class="r Data">0.008149</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">103</th>
+<th class="l RowHeader" scope="row">AGR6_MIN_CMAXA_DAYS</th>
+<td class="r Data">      27,62%</td>
+<td class="r Data">      29,08%</td>
+<td class="r Data" nowrap>      -5,29%</td>
+<td class="l Data">Min calculated on last 6 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,48%</td>
+<td class="r Data">  15</td>
+<td class="r Data">       3,00%</td>
+<td class="l Data">      11</td>
+<td class="r Data">(     1.02%)</td>
+<td class="r Data">.001935524</td>
+<td class="r Data">0.005000</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">104</th>
+<th class="l RowHeader" scope="row">AGR6_MAX_CMAXA_DAYS</th>
+<td class="r Data">      15,70%</td>
+<td class="r Data">      28,24%</td>
+<td class="r Data" nowrap>     -79,85%</td>
+<td class="l Data">Max calculated on last 6 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,48%</td>
+<td class="r Data">  16</td>
+<td class="r Data">      14,32%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     2.39%)</td>
+<td class="r Data">.000100773</td>
+<td class="r Data">0.001605</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">105</th>
+<th class="l RowHeader" scope="row">AGR12_MAX_CMAXI_DUE</th>
+<td class="r Data">      30,24%</td>
+<td class="r Data">      28,07%</td>
+<td class="r Data">       7,20%</td>
+<td class="l Data">Max calculated on last 12 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      91,00%</td>
+<td class="r Data">  10</td>
+<td class="r Data">       5,54%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     5.95%)</td>
+<td class="r Data">.000035735</td>
+<td class="r Data">0.000812</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">106</th>
+<th class="l RowHeader" scope="row">AGR12_MEAN_CMAXI_DUE</th>
+<td class="r Data">      30,47%</td>
+<td class="r Data">      28,07%</td>
+<td class="r Data">       7,88%</td>
+<td class="l Data">Mean calculated on last 12 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      91,00%</td>
+<td class="r Data">  42</td>
+<td class="r Data">       5,54%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     5.95%)</td>
+<td class="r Data">.000035735</td>
+<td class="r Data">0.000812</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">107</th>
+<th class="l RowHeader" scope="row">AGR12_MIN_CMAXI_DUE</th>
+<td class="r Data">       7,58%</td>
+<td class="r Data">      27,68%</td>
+<td class="r Data" nowrap>    -265,30%</td>
+<td class="l Data">Min calculated on last 12 months on unmissing Maximum Customer due for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      91,00%</td>
+<td class="r Data">   7</td>
+<td class="r Data">       8,54%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     5.69%)</td>
+<td class="r Data">.000006464</td>
+<td class="r Data">0.000471</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">108</th>
+<th class="l RowHeader" scope="row">ACT_CINS_N_STATC</th>
+<td class="r Data">      27,71%</td>
+<td class="r Data">      27,47%</td>
+<td class="r Data">       0,89%</td>
+<td class="l Data">Customer historical number of finished loans with status C on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">  13</td>
+<td class="r Data">      45,73%</td>
+<td class="l Data">       1</td>
+<td class="r Data">      2.90%</td>
+<td class="r Data">.001617990</td>
+<td class="r Data">0.012897</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">109</th>
+<th class="l RowHeader" scope="row">AGR12_MEAN_CMAXA_DUE</th>
+<td class="r Data">      34,83%</td>
+<td class="r Data">      23,28%</td>
+<td class="r Data">      33,17%</td>
+<td class="l Data">Mean calculated on last 12 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      77,04%</td>
+<td class="r Data">  84</td>
+<td class="r Data">       2,73%</td>
+<td class="l Data">       0</td>
+<td class="r Data">      1.94%</td>
+<td class="r Data">.001377406</td>
+<td class="r Data">0.021132</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">110</th>
+<th class="l RowHeader" scope="row">AGR12_MIN_CMAXA_DUE</th>
+<td class="r Data">      27,22%</td>
+<td class="r Data">      22,88%</td>
+<td class="r Data">      15,92%</td>
+<td class="l Data">Min calculated on last 12 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      77,04%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      13,47%</td>
+<td class="l Data">       0</td>
+<td class="r Data">      5.46%</td>
+<td class="r Data">.000524473</td>
+<td class="r Data">0.015359</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">111</th>
+<th class="l RowHeader" scope="row">AGR9_MEAN_CMAXI_DAYS</th>
+<td class="r Data">       2,00%</td>
+<td class="r Data">      22,25%</td>
+<td class="r Data" nowrap>  -1 009,50%</td>
+<td class="l Data">Mean calculated on last 9 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      91,34%</td>
+<td class="r Data">  40</td>
+<td class="r Data">       0,76%</td>
+<td class="l Data">12.44444</td>
+<td class="r Data">(     3.55%)</td>
+<td class="r Data">.000041696</td>
+<td class="r Data">0.003244</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">112</th>
+<th class="l RowHeader" scope="row">AGR9_MIN_CMAXI_DAYS</th>
+<td class="r Data">       3,15%</td>
+<td class="r Data">      22,21%</td>
+<td class="r Data" nowrap>    -604,68%</td>
+<td class="l Data">Min calculated on last 9 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      91,34%</td>
+<td class="r Data">  14</td>
+<td class="r Data">       1,95%</td>
+<td class="l Data">      10</td>
+<td class="r Data">(     5.08%)</td>
+<td class="r Data">.000342533</td>
+<td class="r Data">0.000815</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">113</th>
+<th class="l RowHeader" scope="row">AGR9_MAX_CMAXI_DAYS</th>
+<td class="r Data">       0,89%</td>
+<td class="r Data">      22,20%</td>
+<td class="r Data" nowrap>  -2 389,00%</td>
+<td class="l Data">Max calculated on last 9 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      91,34%</td>
+<td class="r Data">   6</td>
+<td class="r Data">       7,96%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     4.26%)</td>
+<td class="r Data">.000000004</td>
+<td class="r Data">0.000165</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">114</th>
+<th class="l RowHeader" scope="row">AGR12_MAX_CMAXA_DUE</th>
+<td class="r Data">      29,20%</td>
+<td class="r Data">      22,03%</td>
+<td class="r Data">      24,54%</td>
+<td class="l Data">Max calculated on last 12 months on unmissing Maximum Customer due for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      77,04%</td>
+<td class="r Data">  10</td>
+<td class="r Data">      12,27%</td>
+<td class="l Data">       7</td>
+<td class="r Data">(    13.42%)</td>
+<td class="r Data">.000218709</td>
+<td class="r Data">0.012786</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">115</th>
+<th class="l RowHeader" scope="row">AGR9_MEAN_CMAXA_DAYS</th>
+<td class="r Data">      34,23%</td>
+<td class="r Data">      21,59%</td>
+<td class="r Data">      36,94%</td>
+<td class="l Data">Mean calculated on last 9 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      84,09%</td>
+<td class="r Data">  52</td>
+<td class="r Data">       0,93%</td>
+<td class="l Data">13.88889</td>
+<td class="r Data">(    10.31%)</td>
+<td class="r Data">.000983179</td>
+<td class="r Data">0.001145</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">116</th>
+<th class="l RowHeader" scope="row">AGR9_MIN_CMAXA_DAYS</th>
+<td class="r Data">      25,23%</td>
+<td class="r Data">      21,21%</td>
+<td class="r Data">      15,95%</td>
+<td class="l Data">Min calculated on last 9 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      84,09%</td>
+<td class="r Data">  15</td>
+<td class="r Data">       2,56%</td>
+<td class="l Data">      12</td>
+<td class="r Data">(    11.09%)</td>
+<td class="r Data">.000595851</td>
+<td class="r Data">0.000785</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">117</th>
+<th class="l RowHeader" scope="row">AGS12_MEAN_CMAXC_DUE</th>
+<td class="r Data">      32,76%</td>
+<td class="r Data">      21,17%</td>
+<td class="r Data">      35,38%</td>
+<td class="l Data">Mean calculated on last 12 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      74,35%</td>
+<td class="r Data"> 170</td>
+<td class="r Data">       2,22%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     47.29%</td>
+<td class="r Data">.000906848</td>
+<td class="r Data">0.038103</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">118</th>
+<th class="l RowHeader" scope="row">AGR9_MAX_CMAXA_DAYS</th>
+<td class="r Data">      15,92%</td>
+<td class="r Data">      20,82%</td>
+<td class="r Data" nowrap>     -30,83%</td>
+<td class="l Data">Max calculated on last 9 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      84,09%</td>
+<td class="r Data">  14</td>
+<td class="r Data">      11,79%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(    12.10%)</td>
+<td class="r Data">.000085311</td>
+<td class="r Data">0.000776</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">119</th>
+<th class="l RowHeader" scope="row">AGS12_MIN_CMAXC_DUE</th>
+<td class="r Data">      27,44%</td>
+<td class="r Data">      20,59%</td>
+<td class="r Data">      24,96%</td>
+<td class="l Data">Min calculated on last 12 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      74,35%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      12,52%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     37.69%</td>
+<td class="r Data">.001178304</td>
+<td class="r Data">0.036491</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">120</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_N_LOANS_HIST</th>
+<td class="r Data">      27,45%</td>
+<td class="r Data">      19,66%</td>
+<td class="r Data">      28,37%</td>
+<td class="l Data">Customer historical number of loans on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      58,59%</td>
+<td class="r Data">  50</td>
+<td class="r Data">       4,12%</td>
+<td class="l Data">       1</td>
+<td class="r Data">     33.12%</td>
+<td class="r Data">.000645802</td>
+<td class="r Data">0.017456</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">121</th>
+<th class="l RowHeader" scope="row">AGS9_MEAN_CMAXC_DUE</th>
+<td class="r Data">      38,56%</td>
+<td class="r Data">      19,55%</td>
+<td class="r Data">      49,31%</td>
+<td class="l Data">Mean calculated on last 9 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,55%</td>
+<td class="r Data"> 113</td>
+<td class="r Data">       2,49%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     25.91%</td>
+<td class="r Data">.000992450</td>
+<td class="r Data">0.021742</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">122</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_N_LOAN</th>
+<td class="r Data">           .</td>
+<td class="r Data">      18,94%</td>
+<td class="r Data">           .</td>
+<td class="l Data">Actual customer loan number of Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">   8</td>
+<td class="r Data">      79,65%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     17.46%</td>
+<td class="r Data">.000828592</td>
+<td class="r Data">0.004765</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">123</th>
+<th class="l RowHeader" scope="row">AGS12_MAX_CMAXC_DAYS</th>
+<td class="r Data">      30,11%</td>
+<td class="r Data">      18,90%</td>
+<td class="r Data">      37,22%</td>
+<td class="l Data">Max calculated on last 12 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      76,94%</td>
+<td class="r Data">  17</td>
+<td class="r Data">      13,52%</td>
+<td class="l Data">      15</td>
+<td class="r Data">     14.58%</td>
+<td class="r Data">.000408819</td>
+<td class="r Data">0.003523</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">124</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_N_LOANS_ACT</th>
+<td class="r Data">      45,94%</td>
+<td class="r Data">      18,74%</td>
+<td class="r Data">      59,20%</td>
+<td class="l Data">Customer actual number of loans on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,99%</td>
+<td class="r Data">   8</td>
+<td class="r Data">       7,03%</td>
+<td class="l Data">       1</td>
+<td class="r Data">     14.36%</td>
+<td class="r Data">.000454705</td>
+<td class="r Data">0.004626</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">125</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_MIN_SENIORITY</th>
+<td class="r Data">      12,57%</td>
+<td class="r Data">      18,18%</td>
+<td class="r Data" nowrap>     -44,69%</td>
+<td class="l Data">Customer minimal seniority on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      58,59%</td>
+<td class="r Data"> 147</td>
+<td class="r Data">       3,47%</td>
+<td class="l Data">       2</td>
+<td class="r Data">      8.84%</td>
+<td class="r Data">.001766182</td>
+<td class="r Data">0.007943</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">126</th>
+<th class="l RowHeader" scope="row">AGS9_MIN_CMAXC_DUE</th>
+<td class="r Data">      33,44%</td>
+<td class="r Data">      17,86%</td>
+<td class="r Data">      46,59%</td>
+<td class="l Data">Min calculated on last 9 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,55%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      10,83%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     24.11%</td>
+<td class="r Data">.000755906</td>
+<td class="r Data">0.010715</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">127</th>
+<th class="l RowHeader" scope="row">AGS12_MEAN_CMAXC_DAYS</th>
+<td class="r Data">      22,41%</td>
+<td class="r Data">      17,79%</td>
+<td class="r Data">      20,61%</td>
+<td class="l Data">Mean calculated on last 12 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      76,94%</td>
+<td class="r Data"> 197</td>
+<td class="r Data">       2,98%</td>
+<td class="l Data">      15</td>
+<td class="r Data">     10.47%</td>
+<td class="r Data">.002795401</td>
+<td class="r Data">0.010408</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">128</th>
+<th class="l RowHeader" scope="row">ACT_LOANINC</th>
+<td class="r Data">      14,97%</td>
+<td class="r Data">      17,73%</td>
+<td class="r Data" nowrap>     -18,45%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">4056</td>
+<td class="r Data">       0,07%</td>
+<td class="l Data">3.428571</td>
+<td class="r Data">     49.35%</td>
+<td class="r Data">.002585772</td>
+<td class="r Data">0.013162</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">129</th>
+<th class="l RowHeader" scope="row">AGS9_MAX_CMAXC_DAYS</th>
+<td class="r Data">      25,21%</td>
+<td class="r Data">      17,43%</td>
+<td class="r Data">      30,86%</td>
+<td class="l Data">Max calculated on last 9 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,14%</td>
+<td class="r Data">  17</td>
+<td class="r Data">      13,59%</td>
+<td class="l Data">      15</td>
+<td class="r Data">     16.27%</td>
+<td class="r Data">.000051788</td>
+<td class="r Data">0.003709</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">130</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_N_STATC</th>
+<td class="r Data">      21,81%</td>
+<td class="r Data">      17,32%</td>
+<td class="r Data">      20,62%</td>
+<td class="l Data">Customer historical number of finished loans with status C on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      58,59%</td>
+<td class="r Data">  34</td>
+<td class="r Data">      22,57%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     20.10%</td>
+<td class="r Data">.000425871</td>
+<td class="r Data">0.006033</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">131</th>
+<th class="l RowHeader" scope="row">AGS12_MAX_CMAXC_DUE</th>
+<td class="r Data">      31,29%</td>
+<td class="r Data">      16,74%</td>
+<td class="r Data">      46,49%</td>
+<td class="l Data">Max calculated on last 12 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      74,35%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      15,54%</td>
+<td class="l Data">       7</td>
+<td class="r Data">      5.73%</td>
+<td class="r Data">.000190283</td>
+<td class="r Data">0.003572</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">132</th>
+<th class="l RowHeader" scope="row">APP_INCOME</th>
+<td class="r Data" nowrap>      -1,56%</td>
+<td class="r Data">      16,56%</td>
+<td class="r Data">   1 159,62%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">1896</td>
+<td class="r Data">       0,34%</td>
+<td class="l Data">     398</td>
+<td class="r Data">     41.95%</td>
+<td class="r Data">.003092914</td>
+<td class="r Data">0.008738</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">133</th>
+<th class="l RowHeader" scope="row">AGS3_MIN_CMAXC_DUE</th>
+<td class="r Data">      32,33%</td>
+<td class="r Data">      16,54%</td>
+<td class="r Data">      48,83%</td>
+<td class="l Data">Min calculated on last 3 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      77,79%</td>
+<td class="r Data">   9</td>
+<td class="r Data">       7,54%</td>
+<td class="l Data">       0</td>
+<td class="r Data">      3.40%</td>
+<td class="r Data">.001292498</td>
+<td class="r Data">0.021227</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">134</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_N_STATB</th>
+<td class="r Data">      20,79%</td>
+<td class="r Data">      16,54%</td>
+<td class="r Data">      20,45%</td>
+<td class="l Data">Customer historical number of finished loans with status B on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      58,59%</td>
+<td class="r Data">  33</td>
+<td class="r Data">       3,78%</td>
+<td class="l Data">       1</td>
+<td class="r Data">     17.34%</td>
+<td class="r Data">.000886216</td>
+<td class="r Data">0.009916</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">135</th>
+<th class="l RowHeader" scope="row">AGR12_MEAN_CMAXI_DAYS</th>
+<td class="r Data" nowrap>      -0,14%</td>
+<td class="r Data">      16,40%</td>
+<td class="r Data">  11 812,12%</td>
+<td class="l Data">Mean calculated on last 12 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      93,46%</td>
+<td class="r Data">  44</td>
+<td class="r Data">       0,44%</td>
+<td class="l Data">12.66667</td>
+<td class="r Data">      0.30%</td>
+<td class="r Data">.000463023</td>
+<td class="r Data">0.004027</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">136</th>
+<th class="l RowHeader" scope="row">AGR12_MIN_CMAXI_DAYS</th>
+<td class="r Data">       5,11%</td>
+<td class="r Data">      16,37%</td>
+<td class="r Data" nowrap>    -220,53%</td>
+<td class="l Data">Min calculated on last 12 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      93,46%</td>
+<td class="r Data">  13</td>
+<td class="r Data">       1,24%</td>
+<td class="l Data">       9</td>
+<td class="r Data">      0.44%</td>
+<td class="r Data">.000046196</td>
+<td class="r Data">0.001814</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">137</th>
+<th class="l RowHeader" scope="row">AGR12_MAX_CMAXI_DAYS</th>
+<td class="r Data">       2,14%</td>
+<td class="r Data">      16,36%</td>
+<td class="r Data" nowrap>    -664,88%</td>
+<td class="l Data">Max calculated on last 12 months on unmissing Maximum Customer days for Ins product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      93,46%</td>
+<td class="r Data">   6</td>
+<td class="r Data">       6,32%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     0.01%)</td>
+<td class="r Data">.000000456</td>
+<td class="r Data">0.000000</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">138</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_MIN_LNINST</th>
+<td class="r Data">      32,33%</td>
+<td class="r Data">      16,03%</td>
+<td class="r Data">      50,43%</td>
+<td class="l Data">Customer minimal number of left installments on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,99%</td>
+<td class="r Data">  26</td>
+<td class="r Data">       1,51%</td>
+<td class="l Data">      24</td>
+<td class="r Data">      8.61%</td>
+<td class="r Data">.001579464</td>
+<td class="r Data">0.005093</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">139</th>
+<th class="l RowHeader" scope="row">AGS3_MEAN_CMAXC_DUE</th>
+<td class="r Data">      32,97%</td>
+<td class="r Data">      15,90%</td>
+<td class="r Data">      51,78%</td>
+<td class="l Data">Mean calculated on last 3 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      77,79%</td>
+<td class="r Data">  25</td>
+<td class="r Data">       3,78%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     35.18%</td>
+<td class="r Data">.001991770</td>
+<td class="r Data">0.020475</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">140</th>
+<th class="l RowHeader" scope="row">AGS6_MEAN_CMAXC_DUE</th>
+<td class="r Data">      34,49%</td>
+<td class="r Data">      15,87%</td>
+<td class="r Data">      53,98%</td>
+<td class="l Data">Mean calculated on last 6 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      76,72%</td>
+<td class="r Data">  59</td>
+<td class="r Data">       2,95%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     26.25%</td>
+<td class="r Data">.000685742</td>
+<td class="r Data">0.013757</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">141</th>
+<th class="l RowHeader" scope="row">APP_SPENDINGS</th>
+<td class="r Data" nowrap>      -7,25%</td>
+<td class="r Data">      15,76%</td>
+<td class="r Data">     317,39%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data"> 168</td>
+<td class="r Data">       3,90%</td>
+<td class="l Data">     240</td>
+<td class="r Data">     28.60%</td>
+<td class="r Data">.000953804</td>
+<td class="r Data">0.009281</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">142</th>
+<th class="l RowHeader" scope="row">AGS6_MEAN_CMAXC_DAYS</th>
+<td class="r Data">      20,94%</td>
+<td class="r Data">      15,61%</td>
+<td class="r Data">      25,48%</td>
+<td class="l Data">Mean calculated on last 6 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      79,70%</td>
+<td class="r Data">  89</td>
+<td class="r Data">       2,51%</td>
+<td class="l Data">      15</td>
+<td class="r Data">      6.11%</td>
+<td class="r Data">.000773848</td>
+<td class="r Data">0.009992</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">143</th>
+<th class="l RowHeader" scope="row">AGR12_MEAN_CMAXA_DAYS</th>
+<td class="r Data">      33,78%</td>
+<td class="r Data">      15,44%</td>
+<td class="r Data">      54,29%</td>
+<td class="l Data">Mean calculated on last 12 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      86,43%</td>
+<td class="r Data">  61</td>
+<td class="r Data">       0,59%</td>
+<td class="l Data">14.66667</td>
+<td class="r Data">(    12.71%)</td>
+<td class="r Data">.000358856</td>
+<td class="r Data">0.002921</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">144</th>
+<th class="l RowHeader" scope="row">APP_LOAN_AMOUNT</th>
+<td class="r Data">      14,09%</td>
+<td class="r Data">      15,42%</td>
+<td class="r Data" nowrap>      -9,50%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data"> 825</td>
+<td class="r Data">       0,54%</td>
+<td class="l Data">    2448</td>
+<td class="r Data">     49.94%</td>
+<td class="r Data">.000228929</td>
+<td class="r Data">0.012581</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">145</th>
+<th class="l RowHeader" scope="row">AGR12_MIN_CMAXA_DAYS</th>
+<td class="r Data">      27,37%</td>
+<td class="r Data">      15,33%</td>
+<td class="r Data">      43,98%</td>
+<td class="l Data">Min calculated on last 12 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      86,43%</td>
+<td class="r Data">  15</td>
+<td class="r Data">       2,12%</td>
+<td class="l Data">      10</td>
+<td class="r Data">(    11.19%)</td>
+<td class="r Data">.000238500</td>
+<td class="r Data">0.001544</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">146</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_MAXDUE</th>
+<td class="r Data">      31,77%</td>
+<td class="r Data">      15,33%</td>
+<td class="r Data">      51,75%</td>
+<td class="l Data">Customer actual maximal due installments on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,99%</td>
+<td class="r Data">   9</td>
+<td class="r Data">       5,42%</td>
+<td class="l Data">       0</td>
+<td class="r Data">      8.59%</td>
+<td class="r Data">.002212184</td>
+<td class="r Data">0.013632</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">147</th>
+<th class="l RowHeader" scope="row">AGS6_MIN_CMAXC_DUE</th>
+<td class="r Data">      30,48%</td>
+<td class="r Data">      15,30%</td>
+<td class="r Data">      49,80%</td>
+<td class="l Data">Min calculated on last 6 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      76,72%</td>
+<td class="r Data">   9</td>
+<td class="r Data">       9,27%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(     9.24%)</td>
+<td class="r Data">.000289575</td>
+<td class="r Data">0.003423</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">148</th>
+<th class="l RowHeader" scope="row">AGS3_MAX_CMAXC_DUE</th>
+<td class="r Data">      33,21%</td>
+<td class="r Data">      15,29%</td>
+<td class="r Data">      53,96%</td>
+<td class="l Data">Max calculated on last 3 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      77,79%</td>
+<td class="r Data">   9</td>
+<td class="r Data">       8,25%</td>
+<td class="l Data">       7</td>
+<td class="r Data">     24.21%</td>
+<td class="r Data">.000571707</td>
+<td class="r Data">0.009622</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">149</th>
+<th class="l RowHeader" scope="row">AGS6_MAX_CMAXC_DUE</th>
+<td class="r Data">      34,18%</td>
+<td class="r Data">      15,28%</td>
+<td class="r Data">      55,31%</td>
+<td class="l Data">Max calculated on last 6 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      76,72%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      11,54%</td>
+<td class="l Data">       7</td>
+<td class="r Data">(     7.24%)</td>
+<td class="r Data">.000129748</td>
+<td class="r Data">0.004910</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">150</th>
+<th class="l RowHeader" scope="row">AGS6_MAX_CMAXC_DAYS</th>
+<td class="r Data">      20,33%</td>
+<td class="r Data">      15,26%</td>
+<td class="r Data">      24,92%</td>
+<td class="l Data">Max calculated on last 6 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      79,70%</td>
+<td class="r Data">  17</td>
+<td class="r Data">      13,42%</td>
+<td class="l Data">      15</td>
+<td class="r Data">      3.47%</td>
+<td class="r Data">.000001086</td>
+<td class="r Data">0.003905</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">151</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_DUEUTL</th>
+<td class="r Data">      25,97%</td>
+<td class="r Data">      15,22%</td>
+<td class="r Data">      41,42%</td>
+<td class="l Data">Customer due installments over all installments rate on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,99%</td>
+<td class="r Data">  66</td>
+<td class="r Data">       5,42%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     24.40%</td>
+<td class="r Data">.002145886</td>
+<td class="r Data">0.018087</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">152</th>
+<th class="l RowHeader" scope="row">AGR12_MAX_CMAXA_DAYS</th>
+<td class="r Data">      16,73%</td>
+<td class="r Data">      15,05%</td>
+<td class="r Data">      10,07%</td>
+<td class="l Data">Max calculated on last 12 months on unmissing Maximum Customer days for all product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      86,43%</td>
+<td class="r Data">  14</td>
+<td class="r Data">       9,39%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(    12.66%)</td>
+<td class="r Data">.000005734</td>
+<td class="r Data">0.001868</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">153</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_CC</th>
+<td class="r Data">      13,96%</td>
+<td class="r Data">      14,99%</td>
+<td class="r Data" nowrap>      -7,43%</td>
+<td class="l Data">Customer credit capacity (installment plus spendings) over income on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,99%</td>
+<td class="r Data"> 774</td>
+<td class="r Data">       0,07%</td>
+<td class="l Data">0.428308</td>
+<td class="r Data">     39.45%</td>
+<td class="r Data">.000850213</td>
+<td class="r Data">0.018881</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">154</th>
+<th class="l RowHeader" scope="row">AGS9_MAX_CMAXC_DUE</th>
+<td class="r Data">      35,05%</td>
+<td class="r Data">      14,95%</td>
+<td class="r Data">      57,35%</td>
+<td class="l Data">Max calculated on last 9 months on Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      75,55%</td>
+<td class="r Data">   9</td>
+<td class="r Data">      13,37%</td>
+<td class="l Data">       7</td>
+<td class="r Data">(     9.51%)</td>
+<td class="r Data">.000308430</td>
+<td class="r Data">0.011979</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">155</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_SENIORITY</th>
+<td class="r Data">      13,00%</td>
+<td class="r Data">      14,92%</td>
+<td class="r Data" nowrap>     -14,79%</td>
+<td class="l Data">Customer seniority on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      58,59%</td>
+<td class="r Data"> 204</td>
+<td class="r Data">       0,54%</td>
+<td class="l Data">      95</td>
+<td class="r Data">     66.94%</td>
+<td class="r Data">.001072786</td>
+<td class="r Data">0.025824</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">156</th>
+<th class="l RowHeader" scope="row">APP_INSTALLMENT</th>
+<td class="r Data">      13,39%</td>
+<td class="r Data">      14,92%</td>
+<td class="r Data" nowrap>     -11,40%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data"> 512</td>
+<td class="r Data">       0,68%</td>
+<td class="l Data">     152</td>
+<td class="r Data">     39.96%</td>
+<td class="r Data">.000796899</td>
+<td class="r Data">0.009604</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">157</th>
+<th class="l RowHeader" scope="row">AGS9_MEAN_CMAXC_DAYS</th>
+<td class="r Data">      21,03%</td>
+<td class="r Data">      14,66%</td>
+<td class="r Data">      30,29%</td>
+<td class="l Data">Mean calculated on last 9 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,14%</td>
+<td class="r Data"> 143</td>
+<td class="r Data">       2,76%</td>
+<td class="l Data">      15</td>
+<td class="r Data">     27.71%</td>
+<td class="r Data">.002450667</td>
+<td class="r Data">0.020646</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">158</th>
+<th class="l RowHeader" scope="row">AGS12_MIN_CMAXC_DAYS</th>
+<td class="r Data">       5,43%</td>
+<td class="r Data">      14,43%</td>
+<td class="r Data" nowrap>    -165,72%</td>
+<td class="l Data">Min calculated on last 12 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      76,94%</td>
+<td class="r Data">  20</td>
+<td class="r Data">       3,39%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     1.36%)</td>
+<td class="r Data">.001529210</td>
+<td class="r Data">0.003478</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">159</th>
+<th class="l RowHeader" scope="row">AGR3_MIN_CMAXC_DUE</th>
+<td class="r Data">      33,88%</td>
+<td class="r Data">      14,07%</td>
+<td class="r Data">      58,46%</td>
+<td class="l Data">Min calculated on last 3 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      79,80%</td>
+<td class="r Data">  10</td>
+<td class="r Data">       6,74%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     12.75%</td>
+<td class="r Data">.001376882</td>
+<td class="r Data">0.024748</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">160</th>
+<th class="l RowHeader" scope="row">AGS9_MIN_CMAXC_DAYS</th>
+<td class="r Data">       6,88%</td>
+<td class="r Data">      13,83%</td>
+<td class="r Data" nowrap>    -101,06%</td>
+<td class="l Data">Min calculated on last 9 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,14%</td>
+<td class="r Data">  20</td>
+<td class="r Data">       3,37%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     4.89%)</td>
+<td class="r Data">.001909747</td>
+<td class="r Data">0.006330</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">161</th>
+<th class="l RowHeader" scope="row">AGR3_MAX_CMAXC_DUE</th>
+<td class="r Data">      33,58%</td>
+<td class="r Data">      13,79%</td>
+<td class="r Data">      58,93%</td>
+<td class="l Data">Max calculated on last 3 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      79,80%</td>
+<td class="r Data">  10</td>
+<td class="r Data">       7,03%</td>
+<td class="l Data">       7</td>
+<td class="r Data">     26.44%</td>
+<td class="r Data">.000727895</td>
+<td class="r Data">0.013876</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">162</th>
+<th class="l RowHeader" scope="row">AGR3_MEAN_CMAXC_DUE</th>
+<td class="r Data">      34,29%</td>
+<td class="r Data">      13,58%</td>
+<td class="r Data">      60,39%</td>
+<td class="l Data">Mean calculated on last 3 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      79,80%</td>
+<td class="r Data">  24</td>
+<td class="r Data">       3,29%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     41.83%</td>
+<td class="r Data">.002161703</td>
+<td class="r Data">0.021222</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">163</th>
+<th class="l RowHeader" scope="row">ACT_CC</th>
+<td class="r Data">      12,45%</td>
+<td class="r Data">      13,49%</td>
+<td class="r Data" nowrap>      -8,33%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">4048</td>
+<td class="r Data">       0,10%</td>
+<td class="l Data">0.666667</td>
+<td class="r Data">     40.85%</td>
+<td class="r Data">.001122770</td>
+<td class="r Data">0.019404</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">164</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_MIN_PNINST</th>
+<td class="r Data">      23,99%</td>
+<td class="r Data">      13,25%</td>
+<td class="r Data">      44,75%</td>
+<td class="l Data">Customer minimal number of paid installments on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,99%</td>
+<td class="r Data">  20</td>
+<td class="r Data">      10,05%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(    12.37%)</td>
+<td class="r Data">.000427939</td>
+<td class="r Data">0.005942</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">165</th>
+<th class="l RowHeader" scope="row">ACT_CCSS_UTL</th>
+<td class="r Data">      17,25%</td>
+<td class="r Data">      13,15%</td>
+<td class="r Data">      23,79%</td>
+<td class="l Data">Customer actual utilization rate on product css</td>
+<td class="l Data">INT</td>
+<td class="r Data">      78,99%</td>
+<td class="r Data"> 116</td>
+<td class="r Data">       1,51%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(    10.44%)</td>
+<td class="r Data">.000407037</td>
+<td class="r Data">0.013086</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">166</th>
+<th class="l RowHeader" scope="row">ACT_AGE</th>
+<td class="r Data">      11,41%</td>
+<td class="r Data">      12,82%</td>
+<td class="r Data" nowrap>     -12,37%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">  64</td>
+<td class="r Data">       4,08%</td>
+<td class="l Data">      64</td>
+<td class="r Data">      4.63%</td>
+<td class="r Data">.001635092</td>
+<td class="r Data">0.010505</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">167</th>
+<th class="l RowHeader" scope="row">APP_CHAR_JOB_CODE</th>
+<td class="r Data">      12,63%</td>
+<td class="r Data">      12,63%</td>
+<td class="r Data">       0,00%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">NOM</td>
+<td class="r Data">           .</td>
+<td class="r Data">   4</td>
+<td class="r Data">      70,57%</td>
+<td class="l Data">Retired</td>
+<td class="r Data">(     4.06%)</td>
+<td class="r Data">.001050307</td>
+<td class="r Data">0.003042</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">168</th>
+<th class="l RowHeader" scope="row">AGS6_MIN_CMAXC_DAYS</th>
+<td class="r Data">      10,63%</td>
+<td class="r Data">      12,57%</td>
+<td class="r Data" nowrap>     -18,20%</td>
+<td class="l Data">Min calculated on last 6 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      79,70%</td>
+<td class="r Data">  21</td>
+<td class="r Data">       3,39%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(    20.80%)</td>
+<td class="r Data">.003116894</td>
+<td class="r Data">0.004688</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">169</th>
+<th class="l RowHeader" scope="row">AGS3_MEAN_CMAXC_DAYS</th>
+<td class="r Data">      15,65%</td>
+<td class="r Data">      12,08%</td>
+<td class="r Data">      22,80%</td>
+<td class="l Data">Mean calculated on last 3 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,45%</td>
+<td class="r Data">  47</td>
+<td class="r Data">       3,98%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(    10.57%)</td>
+<td class="r Data">.001576196</td>
+<td class="r Data">0.002923</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">170</th>
+<th class="l RowHeader" scope="row">AGS3_MAX_CMAXC_DAYS</th>
+<td class="r Data">      21,39%</td>
+<td class="r Data">      11,94%</td>
+<td class="r Data">      44,19%</td>
+<td class="l Data">Max calculated on last 3 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,45%</td>
+<td class="r Data">  21</td>
+<td class="r Data">      12,13%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(     8.53%)</td>
+<td class="r Data">.000069231</td>
+<td class="r Data">0.003823</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">171</th>
+<th class="l RowHeader" scope="row">ACT_CINS_SENIORITY</th>
+<td class="r Data">       6,64%</td>
+<td class="r Data">      11,80%</td>
+<td class="r Data" nowrap>     -77,78%</td>
+<td class="l Data">Customer seniority on product ins</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data"> 185</td>
+<td class="r Data">       1,10%</td>
+<td class="l Data">     103</td>
+<td class="r Data">     27.25%</td>
+<td class="r Data">.000738445</td>
+<td class="r Data">0.007355</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">172</th>
+<th class="l RowHeader" scope="row">AGS3_MIN_CMAXC_DAYS</th>
+<td class="r Data">       6,85%</td>
+<td class="r Data">      11,77%</td>
+<td class="r Data" nowrap>     -71,88%</td>
+<td class="l Data">Min calculated on last 3 months on Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,45%</td>
+<td class="r Data">  21</td>
+<td class="r Data">       4,78%</td>
+<td class="l Data">      15</td>
+<td class="r Data">(    11.12%)</td>
+<td class="r Data">.000797587</td>
+<td class="r Data">0.007600</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">173</th>
+<th class="l RowHeader" scope="row">APP_CHAR_MARITAL_STATUS</th>
+<td class="r Data">      11,61%</td>
+<td class="r Data">      11,61%</td>
+<td class="r Data" nowrap>      -0,00%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">NOM</td>
+<td class="r Data">           .</td>
+<td class="r Data">   4</td>
+<td class="r Data">      40,78%</td>
+<td class="l Data">Maried</td>
+<td class="r Data">     42.10%</td>
+<td class="r Data">.000751319</td>
+<td class="r Data">0.007776</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">174</th>
+<th class="l RowHeader" scope="row">APP_NUMBER_OF_CHILDREN</th>
+<td class="r Data">      10,85%</td>
+<td class="r Data">      10,83%</td>
+<td class="r Data">       0,23%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">   4</td>
+<td class="r Data">      77,01%</td>
+<td class="l Data">       0</td>
+<td class="r Data">      1.81%</td>
+<td class="r Data">.000179512</td>
+<td class="r Data">0.002619</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">175</th>
+<th class="l RowHeader" scope="row">AGR6_MEAN_CMAXC_DUE</th>
+<td class="r Data">      34,80%</td>
+<td class="r Data">       9,59%</td>
+<td class="r Data">      72,45%</td>
+<td class="l Data">Mean calculated on last 6 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,19%</td>
+<td class="r Data">  45</td>
+<td class="r Data">       2,07%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     36.10%</td>
+<td class="r Data">.001669899</td>
+<td class="r Data">0.019529</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">176</th>
+<th class="l RowHeader" scope="row">AGR6_MAX_CMAXC_DUE</th>
+<td class="r Data">      33,34%</td>
+<td class="r Data">       9,38%</td>
+<td class="r Data">      71,87%</td>
+<td class="l Data">Max calculated on last 6 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,19%</td>
+<td class="r Data">  10</td>
+<td class="r Data">       9,03%</td>
+<td class="l Data">       7</td>
+<td class="r Data">     53.73%</td>
+<td class="r Data">.000106515</td>
+<td class="r Data">0.009725</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">177</th>
+<th class="l RowHeader" scope="row">AGR6_MIN_CMAXC_DUE</th>
+<td class="r Data">      29,09%</td>
+<td class="r Data">       9,34%</td>
+<td class="r Data">      67,90%</td>
+<td class="l Data">Min calculated on last 6 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      81,19%</td>
+<td class="r Data">  10</td>
+<td class="r Data">       7,08%</td>
+<td class="l Data">       0</td>
+<td class="r Data">(    17.15%)</td>
+<td class="r Data">.000703656</td>
+<td class="r Data">0.007428</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">178</th>
+<th class="l RowHeader" scope="row">APP_CHAR_GENDER</th>
+<td class="r Data">       9,10%</td>
+<td class="r Data">       9,10%</td>
+<td class="r Data">       0,00%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">NOM</td>
+<td class="r Data">           .</td>
+<td class="r Data">   2</td>
+<td class="r Data">      52,39%</td>
+<td class="l Data">Female</td>
+<td class="r Data">     32.42%</td>
+<td class="r Data">.000033872</td>
+<td class="r Data">0.001762</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">179</th>
+<th class="l RowHeader" scope="row">AGR9_MEAN_CMAXC_DUE</th>
+<td class="r Data">      32,31%</td>
+<td class="r Data">       8,02%</td>
+<td class="r Data">      75,17%</td>
+<td class="l Data">Mean calculated on last 9 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,45%</td>
+<td class="r Data">  65</td>
+<td class="r Data">       1,17%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     45.36%</td>
+<td class="r Data">.000428235</td>
+<td class="r Data">0.028763</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">180</th>
+<th class="l RowHeader" scope="row">AGR9_MAX_CMAXC_DUE</th>
+<td class="r Data">      29,12%</td>
+<td class="r Data">       7,66%</td>
+<td class="r Data">      73,70%</td>
+<td class="l Data">Max calculated on last 9 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,45%</td>
+<td class="r Data">  10</td>
+<td class="r Data">       9,54%</td>
+<td class="l Data">       7</td>
+<td class="r Data">      9.38%</td>
+<td class="r Data">.000666183</td>
+<td class="r Data">0.019277</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">181</th>
+<th class="l RowHeader" scope="row">APP_N_INSTALLMENTS</th>
+<td class="r Data">       7,36%</td>
+<td class="r Data">       7,36%</td>
+<td class="r Data">       0,00%</td>
+<td class="l Data">&nbsp;</td>
+<td class="l Data">INT</td>
+<td class="r Data">           .</td>
+<td class="r Data">   3</td>
+<td class="r Data">      56,39%</td>
+<td class="l Data">      12</td>
+<td class="r Data">     35.78%</td>
+<td class="r Data">.000376222</td>
+<td class="r Data">0.000457</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">182</th>
+<th class="l RowHeader" scope="row">AGR9_MIN_CMAXC_DUE</th>
+<td class="r Data">      25,36%</td>
+<td class="r Data">       7,22%</td>
+<td class="r Data">      71,52%</td>
+<td class="l Data">Min calculated on last 9 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      82,45%</td>
+<td class="r Data">   9</td>
+<td class="r Data">       7,37%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     41.94%</td>
+<td class="r Data">.001158647</td>
+<td class="r Data">0.014164</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">183</th>
+<th class="l RowHeader" scope="row">AGR12_MEAN_CMAXC_DUE</th>
+<td class="r Data">      29,20%</td>
+<td class="r Data">       6,74%</td>
+<td class="r Data">      76,92%</td>
+<td class="l Data">Mean calculated on last 12 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      83,46%</td>
+<td class="r Data">  83</td>
+<td class="r Data">       0,81%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     17.56%</td>
+<td class="r Data">.000667166</td>
+<td class="r Data">0.016737</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">184</th>
+<th class="l RowHeader" scope="row">AGR3_MEAN_CMAXC_DAYS</th>
+<td class="r Data">      31,36%</td>
+<td class="r Data">       6,73%</td>
+<td class="r Data">      78,56%</td>
+<td class="l Data">Mean calculated on last 3 months on unmissing Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      88,19%</td>
+<td class="r Data">  30</td>
+<td class="r Data">       1,61%</td>
+<td class="l Data">14.66667</td>
+<td class="r Data">      6.68%</td>
+<td class="r Data">.000774088</td>
+<td class="r Data">0.000584</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">185</th>
+<th class="l RowHeader" scope="row">AGR12_MAX_CMAXC_DUE</th>
+<td class="r Data">      25,10%</td>
+<td class="r Data">       6,62%</td>
+<td class="r Data">      73,61%</td>
+<td class="l Data">Max calculated on last 12 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      83,46%</td>
+<td class="r Data">  10</td>
+<td class="r Data">      10,08%</td>
+<td class="l Data">       7</td>
+<td class="r Data">     45.36%</td>
+<td class="r Data">.000274122</td>
+<td class="r Data">0.010877</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">186</th>
+<th class="l RowHeader" scope="row">AGR9_MEAN_CMAXC_DAYS</th>
+<td class="r Data">      44,56%</td>
+<td class="r Data">       6,42%</td>
+<td class="r Data">      85,60%</td>
+<td class="l Data">Mean calculated on last 9 months on unmissing Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      91,46%</td>
+<td class="r Data">  46</td>
+<td class="r Data">       0,56%</td>
+<td class="l Data">14.33333</td>
+<td class="r Data">     49.88%</td>
+<td class="r Data">.000474100</td>
+<td class="r Data">0.004085</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">187</th>
+<th class="l RowHeader" scope="row">AGR6_MEAN_CMAXC_DAYS</th>
+<td class="r Data">      42,93%</td>
+<td class="r Data">       6,35%</td>
+<td class="r Data">      85,21%</td>
+<td class="l Data">Mean calculated on last 6 months on unmissing Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      90,04%</td>
+<td class="r Data">  41</td>
+<td class="r Data">       1,00%</td>
+<td class="l Data">14.66667</td>
+<td class="r Data">     54.11%</td>
+<td class="r Data">.000831212</td>
+<td class="r Data">0.004920</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">188</th>
+<th class="l RowHeader" scope="row">AGR3_MIN_CMAXC_DAYS</th>
+<td class="r Data">      22,33%</td>
+<td class="r Data">       5,76%</td>
+<td class="r Data">      74,20%</td>
+<td class="l Data">Min calculated on last 3 months on unmissing Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      88,19%</td>
+<td class="r Data">  14</td>
+<td class="r Data">       2,42%</td>
+<td class="l Data">      14</td>
+<td class="r Data">(    42.09%)</td>
+<td class="r Data">.001580904</td>
+<td class="r Data">0.006103</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">189</th>
+<th class="l RowHeader" scope="row">AGR6_MIN_CMAXC_DAYS</th>
+<td class="r Data">      37,36%</td>
+<td class="r Data">       5,57%</td>
+<td class="r Data">      85,10%</td>
+<td class="l Data">Min calculated on last 6 months on unmissing Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      90,04%</td>
+<td class="r Data">  14</td>
+<td class="r Data">       1,76%</td>
+<td class="l Data">      14</td>
+<td class="r Data">     29.61%</td>
+<td class="r Data">.000802737</td>
+<td class="r Data">0.001302</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">190</th>
+<th class="l RowHeader" scope="row">AGR12_MIN_CMAXC_DUE</th>
+<td class="r Data">      22,40%</td>
+<td class="r Data">       5,33%</td>
+<td class="r Data">      76,22%</td>
+<td class="l Data">Min calculated on last 12 months on unmissing Maximum Customer due for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      83,46%</td>
+<td class="r Data">   9</td>
+<td class="r Data">       7,81%</td>
+<td class="l Data">       0</td>
+<td class="r Data">     19.14%</td>
+<td class="r Data">.001053488</td>
+<td class="r Data">0.015966</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">191</th>
+<th class="l RowHeader" scope="row">AGR12_MEAN_CMAXC_DAYS</th>
+<td class="r Data">      43,60%</td>
+<td class="r Data">       5,02%</td>
+<td class="r Data">      88,48%</td>
+<td class="l Data">Mean calculated on last 12 months on unmissing Maximum Customer days for Css product</td>
+<td class="l Data">INT</td>
+<td class="r Data">      92,73%</td>
+<td class="r Data">  56</td>
+<td class="r Data">       0,56%</td>
+<td class="l Data">14.66667</td>
+<td class="r Data">(    20.27%)</td>
+<td class="r Data">.000242255</td>
+<td class="r Data">0.001170</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

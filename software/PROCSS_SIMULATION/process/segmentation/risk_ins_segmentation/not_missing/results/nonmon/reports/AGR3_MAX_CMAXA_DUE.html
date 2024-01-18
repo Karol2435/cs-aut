@@ -1,0 +1,5786 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.2, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1250">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.AfterCaption
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.Batch
+{
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 7px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #C1C1C1;
+}
+.BeforeCaption
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.Body
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.BodyDate
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+  width: 100%;
+  text-align: right;
+  vertical-align: top;
+}
+.ByContentFolder
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.Byline
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.BylineContainer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 1px;
+  border-spacing: 1px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+.Caption
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.Cell
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Container
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ContentFolder
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.ContentItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.ContentProcLabel
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ContentProcName
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Contents
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.ContentsDate
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+}
+.ContentTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Continued
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+  width: 100%;
+  text-align: left;
+}
+.Data
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.Date
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+}
+.Document
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+a:link {
+color:#800080
+}
+a:visited {
+color:#0000FF
+}
+a:active {
+color:#0000FF
+}
+.ErrorBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ErrorContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ErrorContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ExtendedPage
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 2pt;
+  border: 1pt solid #000000;
+  text-align: center;
+}
+.FatalBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FatalContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FatalContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FolderAction
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.Footer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Frame
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Graph
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #C1C1C1;
+}
+.Header
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeadersAndFooters
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.HeaderStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.Index
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.IndexAction
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.IndexItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.IndexProcName
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.IndexTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.LayoutContainer
+{
+  padding: 0px;
+  border-spacing: 30px;
+  border: 0px solid #000000;
+}
+.LayoutRegion
+{
+  padding: 0px;
+  border-spacing: 30px;
+  border: 0px solid #000000;
+}
+.List
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: disc;
+  width: 100%;
+  text-align: left;
+}
+.List10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: circle;
+  width: 100%;
+  text-align: left;
+}
+.List3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.ListItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Note
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.NoteBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.NoteContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.NoteContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Output
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 7px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #C1C1C1;
+}
+.PageNo
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+  text-align: right;
+  vertical-align: top;
+}
+.Pages
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.PagesDate
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+}
+.PagesItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.PagesProcLabel
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.PagesProcName
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.PagesTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Paragraph
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+  text-align: left;
+}
+.Parskip
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  padding: 0px;
+  border-spacing: 0px;
+  border: 0px solid #000000;
+}
+.PrePage
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  text-align: left;
+}
+.ProcTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ProcTitleFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooter
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowHeader
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.SystemFooter
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SysTitleAndFooterContainer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 1px;
+  border-spacing: 1px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+.Table
+{
+  border-collapse: separate;
+  border-spacing: 0px;
+  border-top-width: 1px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 1px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+}
+.TitleAndNoteContainer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 1px;
+  border-spacing: 1px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+.TitlesAndFooters
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.UserText
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  text-align: left;
+}
+.WarnBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.WarnContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.WarnContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="Body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Attributes for variable AGR3_MAX_CMAXA_DUE</td>
+</tr>
+<tr>
+<td class="c SystemTitle2">Max calculated on last 3 months on unmissing Maximum Customer due for all product                                                                                                                                                                               </td>
+</tr>
+<tr>
+<td class="c SystemTitle3">Table with statistics</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="Table" cellspacing="0" cellpadding="3" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.KARTA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r Header" scope="col">Attribute<br>number</th>
+<th class="l Header" scope="col">Condition</th>
+<th class="r Header" scope="col">Bad rate (br)</th>
+<th class="r Header" scope="col">Percent of population<br>(%POP)</th>
+<th class="r Header" scope="col">Percent of goods<br>(%GD)</th>
+<th class="r Header" scope="col">Percent of bads (%BD)</th>
+<th class="r Header" scope="col">Percent of indeterminated<br>(%IND)</th>
+<th class="r Header" scope="col">Population<br>(POP)</th>
+<th class="r Header" scope="col">Number of<br>goods (GD)</th>
+<th class="r Header" scope="col">Number of<br>bads (BD)</th>
+<th class="r Header" scope="col">Number of<br>indeterminated<br>(IND)</th>
+<th class="r Header" scope="col">Weight of evidence<br>(wi)</th>
+<th class="r Header" scope="col">Information value<br>(ivi)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r RowHeader" scope="row">1</th>
+<td class="l Data">not missing(AGR3_MAX_CMAXA_DUE) and AGR3_MAX_CMAXA_DUE &lt;= 0</td>
+<td class="r Data">      48,18%</td>
+<td class="r Data">       8,71%</td>
+<td class="r Data">       4,78%</td>
+<td class="r Data">      29,35%</td>
+<td class="r Data">      14,97%</td>
+<td class="r Data"> 357</td>
+<td class="r Data"> 160</td>
+<td class="r Data">172</td>
+<td class="r Data"> 25</td>
+<td class="r Data" nowrap>       -1,81</td>
+<td class="r Data">        0,45</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">2</th>
+<td class="l Data">0 &lt; AGR3_MAX_CMAXA_DUE &lt;= 3</td>
+<td class="r Data">      35,38%</td>
+<td class="r Data">       7,93%</td>
+<td class="r Data">       5,65%</td>
+<td class="r Data">      19,62%</td>
+<td class="r Data">      12,57%</td>
+<td class="r Data"> 325</td>
+<td class="r Data"> 189</td>
+<td class="r Data">115</td>
+<td class="r Data"> 21</td>
+<td class="r Data" nowrap>       -1,25</td>
+<td class="r Data">        0,17</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">3</th>
+<td class="l Data">3 &lt; AGR3_MAX_CMAXA_DUE &lt;= 6</td>
+<td class="r Data">      20,51%</td>
+<td class="r Data">       3,81%</td>
+<td class="r Data">       3,47%</td>
+<td class="r Data">       5,46%</td>
+<td class="r Data">       4,79%</td>
+<td class="r Data"> 156</td>
+<td class="r Data"> 116</td>
+<td class="r Data"> 32</td>
+<td class="r Data">  8</td>
+<td class="r Data" nowrap>       -0,45</td>
+<td class="r Data">        0,01</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">4</th>
+<td class="l Data">6 &lt; AGR3_MAX_CMAXA_DUE</td>
+<td class="r Data">      16,72%</td>
+<td class="r Data">       7,88%</td>
+<td class="r Data">       7,44%</td>
+<td class="r Data">       9,22%</td>
+<td class="r Data">      11,98%</td>
+<td class="r Data"> 323</td>
+<td class="r Data"> 249</td>
+<td class="r Data"> 54</td>
+<td class="r Data"> 20</td>
+<td class="r Data" nowrap>       -0,21</td>
+<td class="r Data">        0,00</td>
+</tr>
+<tr>
+<th class="r RowHeader" scope="row">5</th>
+<td class="l Data">missing(AGR3_MAX_CMAXA_DUE)</td>
+<td class="r Data">       7,25%</td>
+<td class="r Data">      71,67%</td>
+<td class="r Data">      78,65%</td>
+<td class="r Data">      36,35%</td>
+<td class="r Data">      55,69%</td>
+<td class="r Data">2937</td>
+<td class="r Data">2631</td>
+<td class="r Data">213</td>
+<td class="r Data"> 93</td>
+<td class="r Data">        0,77</td>
+<td class="r Data">        0,33</td>
+</tr>
+<tr>
+<th class="r Header" scope="col">&nbsp;</th>
+<th class="l Header" scope="col">&nbsp;</th>
+<th class="r Header" scope="col">&nbsp;</th>
+<th class="r Header" scope="col">     100,00%</th>
+<th class="r Header" scope="col">&nbsp;</th>
+<th class="r Header" scope="col">&nbsp;</th>
+<th class="r Header" scope="col">&nbsp;</th>
+<th class="r Header" scope="col">4098</th>
+<th class="r Header" scope="col">3345</th>
+<th class="r Header" scope="col">586</th>
+<th class="r Header" scope="col">167</th>
+<th class="r Header" scope="col">&nbsp;</th>
+<th class="r Header" scope="col">        0,96</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX1"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Numbers - all statistics for default12 by year on state EM</td>
+</tr>
+<tr>
+<td class="c SystemTitle2">Attributes for variable AGR3_MAX_CMAXA_DUE</td>
+</tr>
+<tr>
+<td class="c SystemTitle3">Max calculated on last 3 months on unmissing Maximum Customer due for all product                                                                                                                                                                               </td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="Table" cellspacing="0" cellpadding="3" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Tabulate: Table 1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m Header" rowspan="3" scope="col">year</th>
+<th class="c Header" colspan="70" scope="colgroup">GRP</th>
+</tr>
+<tr>
+<th class="c Header" colspan="14" scope="colgroup">           1</th>
+<th class="c Header" colspan="14" scope="colgroup">           2</th>
+<th class="c Header" colspan="14" scope="colgroup">           3</th>
+<th class="c Header" colspan="14" scope="colgroup">           4</th>
+<th class="c Header" colspan="14" scope="colgroup">           5</th>
+</tr>
+<tr>
+<th class="c Header" scope="col">All</th>
+<th class="c Header" scope="col">Average</th>
+<th class="c Header" scope="col">All percent</th>
+<th class="c Header" scope="col">All assigned</th>
+<th class="c Header" scope="col">N</th>
+<th class="c Header" scope="col">Good</th>
+<th class="c Header" scope="col">Bad</th>
+<th class="c Header" scope="col">Bad rate</th>
+<th class="c Header" scope="col">All percent N</th>
+<th class="c Header" scope="col">Good N</th>
+<th class="c Header" scope="col">Bad N</th>
+<th class="c Header" scope="col">Bad rate N</th>
+<th class="c Header" scope="col">Limit percent</th>
+<th class="c Header" scope="col">Average limit</th>
+<th class="c Header" scope="col">All</th>
+<th class="c Header" scope="col">Average</th>
+<th class="c Header" scope="col">All percent</th>
+<th class="c Header" scope="col">All assigned</th>
+<th class="c Header" scope="col">N</th>
+<th class="c Header" scope="col">Good</th>
+<th class="c Header" scope="col">Bad</th>
+<th class="c Header" scope="col">Bad rate</th>
+<th class="c Header" scope="col">All percent N</th>
+<th class="c Header" scope="col">Good N</th>
+<th class="c Header" scope="col">Bad N</th>
+<th class="c Header" scope="col">Bad rate N</th>
+<th class="c Header" scope="col">Limit percent</th>
+<th class="c Header" scope="col">Average limit</th>
+<th class="c Header" scope="col">All</th>
+<th class="c Header" scope="col">Average</th>
+<th class="c Header" scope="col">All percent</th>
+<th class="c Header" scope="col">All assigned</th>
+<th class="c Header" scope="col">N</th>
+<th class="c Header" scope="col">Good</th>
+<th class="c Header" scope="col">Bad</th>
+<th class="c Header" scope="col">Bad rate</th>
+<th class="c Header" scope="col">All percent N</th>
+<th class="c Header" scope="col">Good N</th>
+<th class="c Header" scope="col">Bad N</th>
+<th class="c Header" scope="col">Bad rate N</th>
+<th class="c Header" scope="col">Limit percent</th>
+<th class="c Header" scope="col">Average limit</th>
+<th class="c Header" scope="col">All</th>
+<th class="c Header" scope="col">Average</th>
+<th class="c Header" scope="col">All percent</th>
+<th class="c Header" scope="col">All assigned</th>
+<th class="c Header" scope="col">N</th>
+<th class="c Header" scope="col">Good</th>
+<th class="c Header" scope="col">Bad</th>
+<th class="c Header" scope="col">Bad rate</th>
+<th class="c Header" scope="col">All percent N</th>
+<th class="c Header" scope="col">Good N</th>
+<th class="c Header" scope="col">Bad N</th>
+<th class="c Header" scope="col">Bad rate N</th>
+<th class="c Header" scope="col">Limit percent</th>
+<th class="c Header" scope="col">Average limit</th>
+<th class="c Header" scope="col">All</th>
+<th class="c Header" scope="col">Average</th>
+<th class="c Header" scope="col">All percent</th>
+<th class="c Header" scope="col">All assigned</th>
+<th class="c Header" scope="col">N</th>
+<th class="c Header" scope="col">Good</th>
+<th class="c Header" scope="col">Bad</th>
+<th class="c Header" scope="col">Bad rate</th>
+<th class="c Header" scope="col">All percent N</th>
+<th class="c Header" scope="col">Good N</th>
+<th class="c Header" scope="col">Bad N</th>
+<th class="c Header" scope="col">Bad rate N</th>
+<th class="c Header" scope="col">Limit percent</th>
+<th class="c Header" scope="col">Average limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t RowHeader" scope="row">1975</th>
+<td class="r b Data">          235 668,00</td>
+<td class="r b Data">            4 284,87</td>
+<td class="r b Data">            10,22 %</td>
+<td class="r b Data">          235 668,00</td>
+<td class="r b Data">                  55</td>
+<td class="r b Data">          151 032,00</td>
+<td class="r b Data">           76 776,00</td>
+<td class="r b Data">      32,58%</td>
+<td class="r b Data">            10,20 %</td>
+<td class="r b Data">          35</td>
+<td class="r b Data">          17</td>
+<td class="r b Data">      30,91%</td>
+<td class="r b Data">            10,22 %</td>
+<td class="r b Data">            4 284,87</td>
+<td class="r b Data">          321 192,00</td>
+<td class="r b Data">            4 399,89</td>
+<td class="r b Data">            13,93 %</td>
+<td class="r b Data">          321 192,00</td>
+<td class="r b Data">                  73</td>
+<td class="r b Data">          125 160,00</td>
+<td class="r b Data">          176 388,00</td>
+<td class="r b Data">      54,92%</td>
+<td class="r b Data">            13,54 %</td>
+<td class="r b Data">          35</td>
+<td class="r b Data">          35</td>
+<td class="r b Data">      47,95%</td>
+<td class="r b Data">            13,93 %</td>
+<td class="r b Data">            4 399,89</td>
+<td class="r b Data">          154 740,00</td>
+<td class="r b Data">            4 298,33</td>
+<td class="r b Data">             6,71 %</td>
+<td class="r b Data">          154 740,00</td>
+<td class="r b Data">                  36</td>
+<td class="r b Data">           75 204,00</td>
+<td class="r b Data">           66 816,00</td>
+<td class="r b Data">      43,18%</td>
+<td class="r b Data">             6,68 %</td>
+<td class="r b Data">          22</td>
+<td class="r b Data">          11</td>
+<td class="r b Data">      30,56%</td>
+<td class="r b Data">             6,71 %</td>
+<td class="r b Data">            4 298,33</td>
+<td class="r b Data">          394 872,00</td>
+<td class="r b Data">            4 339,25</td>
+<td class="r b Data">            17,13 %</td>
+<td class="r b Data">          394 872,00</td>
+<td class="r b Data">                  91</td>
+<td class="r b Data">          259 452,00</td>
+<td class="r b Data">          108 528,00</td>
+<td class="r b Data">      27,48%</td>
+<td class="r b Data">            16,88 %</td>
+<td class="r b Data">          61</td>
+<td class="r b Data">          25</td>
+<td class="r b Data">      27,47%</td>
+<td class="r b Data">            17,13 %</td>
+<td class="r b Data">            4 339,25</td>
+<td class="r b Data">        1 198 476,00</td>
+<td class="r b Data">            4 219,99</td>
+<td class="r b Data">            52,00 %</td>
+<td class="r b Data">        1 198 476,00</td>
+<td class="r b Data">                 284</td>
+<td class="r b Data">          952 908,00</td>
+<td class="r b Data">          186 756,00</td>
+<td class="r b Data">      15,58%</td>
+<td class="r b Data">            52,69 %</td>
+<td class="r b Data">         239</td>
+<td class="r b Data">          34</td>
+<td class="r b Data">      11,97%</td>
+<td class="r b Data">            52,00 %</td>
+<td class="r b Data">            4 219,99</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1976</th>
+<td class="r b Data">          227 256,00</td>
+<td class="r b Data">            4 456,00</td>
+<td class="r b Data">             9,84 %</td>
+<td class="r b Data">          227 256,00</td>
+<td class="r b Data">                  51</td>
+<td class="r b Data">           95 076,00</td>
+<td class="r b Data">          113 304,00</td>
+<td class="r b Data">      49,86%</td>
+<td class="r b Data">             9,90 %</td>
+<td class="r b Data">          28</td>
+<td class="r b Data">          18</td>
+<td class="r b Data">      35,29%</td>
+<td class="r b Data">             9,84 %</td>
+<td class="r b Data">            4 456,00</td>
+<td class="r b Data">          222 504,00</td>
+<td class="r b Data">            4 944,53</td>
+<td class="r b Data">             9,63 %</td>
+<td class="r b Data">          222 504,00</td>
+<td class="r b Data">                  45</td>
+<td class="r b Data">          122 496,00</td>
+<td class="r b Data">           81 840,00</td>
+<td class="r b Data">      36,78%</td>
+<td class="r b Data">             8,74 %</td>
+<td class="r b Data">          30</td>
+<td class="r b Data">          12</td>
+<td class="r b Data">      26,67%</td>
+<td class="r b Data">             9,63 %</td>
+<td class="r b Data">            4 944,53</td>
+<td class="r b Data">          152 700,00</td>
+<td class="r b Data">            4 241,67</td>
+<td class="r b Data">             6,61 %</td>
+<td class="r b Data">          152 700,00</td>
+<td class="r b Data">                  36</td>
+<td class="r b Data">           85 692,00</td>
+<td class="r b Data">           55 536,00</td>
+<td class="r b Data">      36,37%</td>
+<td class="r b Data">             6,99 %</td>
+<td class="r b Data">          23</td>
+<td class="r b Data">          11</td>
+<td class="r b Data">      30,56%</td>
+<td class="r b Data">             6,61 %</td>
+<td class="r b Data">            4 241,67</td>
+<td class="r b Data">          254 628,00</td>
+<td class="r b Data">            4 467,16</td>
+<td class="r b Data">            11,02 %</td>
+<td class="r b Data">          254 628,00</td>
+<td class="r b Data">                  57</td>
+<td class="r b Data">          184 020,00</td>
+<td class="r b Data">           54 840,00</td>
+<td class="r b Data">      21,54%</td>
+<td class="r b Data">            11,07 %</td>
+<td class="r b Data">          40</td>
+<td class="r b Data">          11</td>
+<td class="r b Data">      19,30%</td>
+<td class="r b Data">            11,02 %</td>
+<td class="r b Data">            4 467,16</td>
+<td class="r b Data">        1 453 596,00</td>
+<td class="r b Data">            4 458,88</td>
+<td class="r b Data">            62,91 %</td>
+<td class="r b Data">        1 453 596,00</td>
+<td class="r b Data">                 326</td>
+<td class="r b Data">        1 156 908,00</td>
+<td class="r b Data">          222 000,00</td>
+<td class="r b Data">      15,27%</td>
+<td class="r b Data">            63,30 %</td>
+<td class="r b Data">         276</td>
+<td class="r b Data">          37</td>
+<td class="r b Data">      11,35%</td>
+<td class="r b Data">            62,91 %</td>
+<td class="r b Data">            4 458,88</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1977</th>
+<td class="r b Data">          194 748,00</td>
+<td class="r b Data">            3 606,44</td>
+<td class="r b Data">             8,74 %</td>
+<td class="r b Data">          194 748,00</td>
+<td class="r b Data">                  54</td>
+<td class="r b Data">           64 536,00</td>
+<td class="r b Data">          105 120,00</td>
+<td class="r b Data">      53,98%</td>
+<td class="r b Data">            10,09 %</td>
+<td class="r b Data">          27</td>
+<td class="r b Data">          22</td>
+<td class="r b Data">      40,74%</td>
+<td class="r b Data">             8,74 %</td>
+<td class="r b Data">            3 606,44</td>
+<td class="r b Data">          211 872,00</td>
+<td class="r b Data">            3 997,58</td>
+<td class="r b Data">             9,51 %</td>
+<td class="r b Data">          211 872,00</td>
+<td class="r b Data">                  53</td>
+<td class="r b Data">          131 520,00</td>
+<td class="r b Data">           75 228,00</td>
+<td class="r b Data">      35,51%</td>
+<td class="r b Data">             9,91 %</td>
+<td class="r b Data">          31</td>
+<td class="r b Data">          20</td>
+<td class="r b Data">      37,74%</td>
+<td class="r b Data">             9,51 %</td>
+<td class="r b Data">            3 997,58</td>
+<td class="r b Data">           81 108,00</td>
+<td class="r b Data">            3 862,29</td>
+<td class="r b Data">             3,64 %</td>
+<td class="r b Data">           81 108,00</td>
+<td class="r b Data">                  21</td>
+<td class="r b Data">           61 836,00</td>
+<td class="r b Data">           15 600,00</td>
+<td class="r b Data">      19,23%</td>
+<td class="r b Data">             3,93 %</td>
+<td class="r b Data">          15</td>
+<td class="r b Data">           4</td>
+<td class="r b Data">      19,05%</td>
+<td class="r b Data">             3,64 %</td>
+<td class="r b Data">            3 862,29</td>
+<td class="r b Data">          227 964,00</td>
+<td class="r b Data">            4 383,92</td>
+<td class="r b Data">            10,24 %</td>
+<td class="r b Data">          227 964,00</td>
+<td class="r b Data">                  52</td>
+<td class="r b Data">          140 100,00</td>
+<td class="r b Data">           77 400,00</td>
+<td class="r b Data">      33,95%</td>
+<td class="r b Data">             9,72 %</td>
+<td class="r b Data">          36</td>
+<td class="r b Data">          13</td>
+<td class="r b Data">      25,00%</td>
+<td class="r b Data">            10,24 %</td>
+<td class="r b Data">            4 383,92</td>
+<td class="r b Data">        1 511 352,00</td>
+<td class="r b Data">            4 257,33</td>
+<td class="r b Data">            67,86 %</td>
+<td class="r b Data">        1 511 352,00</td>
+<td class="r b Data">                 355</td>
+<td class="r b Data">        1 243 188,00</td>
+<td class="r b Data">          213 372,00</td>
+<td class="r b Data">      14,12%</td>
+<td class="r b Data">            66,36 %</td>
+<td class="r b Data">         314</td>
+<td class="r b Data">          30</td>
+<td class="r b Data">       8,45%</td>
+<td class="r b Data">            67,86 %</td>
+<td class="r b Data">            4 257,33</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1978</th>
+<td class="r b Data">          213 900,00</td>
+<td class="r b Data">            4 974,42</td>
+<td class="r b Data">             9,52 %</td>
+<td class="r b Data">          213 900,00</td>
+<td class="r b Data">                  43</td>
+<td class="r b Data">           62 640,00</td>
+<td class="r b Data">          125 892,00</td>
+<td class="r b Data">      58,86%</td>
+<td class="r b Data">             8,10 %</td>
+<td class="r b Data">          14</td>
+<td class="r b Data">          24</td>
+<td class="r b Data">      55,81%</td>
+<td class="r b Data">             9,52 %</td>
+<td class="r b Data">            4 974,42</td>
+<td class="r b Data">          202 560,00</td>
+<td class="r b Data">            3 617,14</td>
+<td class="r b Data">             9,01 %</td>
+<td class="r b Data">          202 560,00</td>
+<td class="r b Data">                  56</td>
+<td class="r b Data">          124 836,00</td>
+<td class="r b Data">           52 704,00</td>
+<td class="r b Data">      26,02%</td>
+<td class="r b Data">            10,55 %</td>
+<td class="r b Data">          32</td>
+<td class="r b Data">          18</td>
+<td class="r b Data">      32,14%</td>
+<td class="r b Data">             9,01 %</td>
+<td class="r b Data">            3 617,14</td>
+<td class="r b Data">           88 788,00</td>
+<td class="r b Data">            3 171,00</td>
+<td class="r b Data">             3,95 %</td>
+<td class="r b Data">           88 788,00</td>
+<td class="r b Data">                  28</td>
+<td class="r b Data">           59 064,00</td>
+<td class="r b Data">           27 276,00</td>
+<td class="r b Data">      30,72%</td>
+<td class="r b Data">             5,27 %</td>
+<td class="r b Data">          20</td>
+<td class="r b Data">           7</td>
+<td class="r b Data">      25,00%</td>
+<td class="r b Data">             3,95 %</td>
+<td class="r b Data">            3 171,00</td>
+<td class="r b Data">          272 232,00</td>
+<td class="r b Data">            4 861,29</td>
+<td class="r b Data">            12,11 %</td>
+<td class="r b Data">          272 232,00</td>
+<td class="r b Data">                  56</td>
+<td class="r b Data">          185 328,00</td>
+<td class="r b Data">           82 560,00</td>
+<td class="r b Data">      30,33%</td>
+<td class="r b Data">            10,55 %</td>
+<td class="r b Data">          41</td>
+<td class="r b Data">          13</td>
+<td class="r b Data">      23,21%</td>
+<td class="r b Data">            12,11 %</td>
+<td class="r b Data">            4 861,29</td>
+<td class="r b Data">        1 469 736,00</td>
+<td class="r b Data">            4 223,38</td>
+<td class="r b Data">            65,40 %</td>
+<td class="r b Data">        1 469 736,00</td>
+<td class="r b Data">                 348</td>
+<td class="r b Data">        1 277 988,00</td>
+<td class="r b Data">           90 504,00</td>
+<td class="r b Data">       6,16%</td>
+<td class="r b Data">            65,54 %</td>
+<td class="r b Data">         310</td>
+<td class="r b Data">          21</td>
+<td class="r b Data">       6,03%</td>
+<td class="r b Data">            65,40 %</td>
+<td class="r b Data">            4 223,38</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1979</th>
+<td class="r b Data">          254 988,00</td>
+<td class="r b Data">            4 722,00</td>
+<td class="r b Data">            10,96 %</td>
+<td class="r b Data">          254 988,00</td>
+<td class="r b Data">                  54</td>
+<td class="r b Data">          116 664,00</td>
+<td class="r b Data">           97 140,00</td>
+<td class="r b Data">      38,10%</td>
+<td class="r b Data">            10,29 %</td>
+<td class="r b Data">          27</td>
+<td class="r b Data">          21</td>
+<td class="r b Data">      38,89%</td>
+<td class="r b Data">            10,96 %</td>
+<td class="r b Data">            4 722,00</td>
+<td class="r b Data">          183 624,00</td>
+<td class="r b Data">            4 372,00</td>
+<td class="r b Data">             7,89 %</td>
+<td class="r b Data">          183 624,00</td>
+<td class="r b Data">                  42</td>
+<td class="r b Data">          108 528,00</td>
+<td class="r b Data">           70 032,00</td>
+<td class="r b Data">      38,14%</td>
+<td class="r b Data">             8,00 %</td>
+<td class="r b Data">          23</td>
+<td class="r b Data">          18</td>
+<td class="r b Data">      42,86%</td>
+<td class="r b Data">             7,89 %</td>
+<td class="r b Data">            4 372,00</td>
+<td class="r b Data">           82 140,00</td>
+<td class="r b Data">            3 733,64</td>
+<td class="r b Data">             3,53 %</td>
+<td class="r b Data">           82 140,00</td>
+<td class="r b Data">                  22</td>
+<td class="r b Data">           48 252,00</td>
+<td class="r b Data">           33 888,00</td>
+<td class="r b Data">      41,26%</td>
+<td class="r b Data">             4,19 %</td>
+<td class="r b Data">          16</td>
+<td class="r b Data">           6</td>
+<td class="r b Data">      27,27%</td>
+<td class="r b Data">             3,53 %</td>
+<td class="r b Data">            3 733,64</td>
+<td class="r b Data">          190 524,00</td>
+<td class="r b Data">            4 141,83</td>
+<td class="r b Data">             8,19 %</td>
+<td class="r b Data">          190 524,00</td>
+<td class="r b Data">                  46</td>
+<td class="r b Data">          156 984,00</td>
+<td class="r b Data">           12 996,00</td>
+<td class="r b Data">       6,82%</td>
+<td class="r b Data">             8,76 %</td>
+<td class="r b Data">          39</td>
+<td class="r b Data">           3</td>
+<td class="r b Data">       6,52%</td>
+<td class="r b Data">             8,19 %</td>
+<td class="r b Data">            4 141,83</td>
+<td class="r b Data">        1 615 752,00</td>
+<td class="r b Data">            4 475,77</td>
+<td class="r b Data">            69,43 %</td>
+<td class="r b Data">        1 615 752,00</td>
+<td class="r b Data">                 361</td>
+<td class="r b Data">        1 337 256,00</td>
+<td class="r b Data">          183 072,00</td>
+<td class="r b Data">      11,33%</td>
+<td class="r b Data">            68,76 %</td>
+<td class="r b Data">         318</td>
+<td class="r b Data">          27</td>
+<td class="r b Data">       7,48%</td>
+<td class="r b Data">            69,43 %</td>
+<td class="r b Data">            4 475,77</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1980</th>
+<td class="r b Data">          135 000,00</td>
+<td class="r b Data">            4 218,75</td>
+<td class="r b Data">             6,54 %</td>
+<td class="r b Data">          135 000,00</td>
+<td class="r b Data">                  32</td>
+<td class="r b Data">           59 640,00</td>
+<td class="r b Data">           59 292,00</td>
+<td class="r b Data">      43,92%</td>
+<td class="r b Data">             6,49 %</td>
+<td class="r b Data">          15</td>
+<td class="r b Data">          13</td>
+<td class="r b Data">      40,63%</td>
+<td class="r b Data">             6,54 %</td>
+<td class="r b Data">            4 218,75</td>
+<td class="r b Data">          145 056,00</td>
+<td class="r b Data">            3 920,43</td>
+<td class="r b Data">             7,03 %</td>
+<td class="r b Data">          145 056,00</td>
+<td class="r b Data">                  37</td>
+<td class="r b Data">           90 156,00</td>
+<td class="r b Data">           54 900,00</td>
+<td class="r b Data">      37,85%</td>
+<td class="r b Data">             7,51 %</td>
+<td class="r b Data">          24</td>
+<td class="r b Data">          13</td>
+<td class="r b Data">      35,14%</td>
+<td class="r b Data">             7,03 %</td>
+<td class="r b Data">            3 920,43</td>
+<td class="r b Data">           82 656,00</td>
+<td class="r b Data">            3 593,74</td>
+<td class="r b Data">             4,01 %</td>
+<td class="r b Data">           82 656,00</td>
+<td class="r b Data">                  23</td>
+<td class="r b Data">           58 128,00</td>
+<td class="r b Data">           14 736,00</td>
+<td class="r b Data">      17,83%</td>
+<td class="r b Data">             4,67 %</td>
+<td class="r b Data">          18</td>
+<td class="r b Data">           4</td>
+<td class="r b Data">      17,39%</td>
+<td class="r b Data">             4,01 %</td>
+<td class="r b Data">            3 593,74</td>
+<td class="r b Data">          179 076,00</td>
+<td class="r b Data">            4 839,89</td>
+<td class="r b Data">             8,68 %</td>
+<td class="r b Data">          179 076,00</td>
+<td class="r b Data">                  37</td>
+<td class="r b Data">          148 140,00</td>
+<td class="r b Data">           10 740,00</td>
+<td class="r b Data">       6,00%</td>
+<td class="r b Data">             7,51 %</td>
+<td class="r b Data">          30</td>
+<td class="r b Data">           4</td>
+<td class="r b Data">      10,81%</td>
+<td class="r b Data">             8,68 %</td>
+<td class="r b Data">            4 839,89</td>
+<td class="r b Data">        1 521 456,00</td>
+<td class="r b Data">            4 179,82</td>
+<td class="r b Data">            73,74 %</td>
+<td class="r b Data">        1 521 456,00</td>
+<td class="r b Data">                 364</td>
+<td class="r b Data">        1 377 288,00</td>
+<td class="r b Data">          109 044,00</td>
+<td class="r b Data">       7,17%</td>
+<td class="r b Data">            73,83 %</td>
+<td class="r b Data">         333</td>
+<td class="r b Data">          23</td>
+<td class="r b Data">       6,32%</td>
+<td class="r b Data">            73,74 %</td>
+<td class="r b Data">            4 179,82</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1981</th>
+<td class="r b Data">          177 708,00</td>
+<td class="r b Data">            3 863,22</td>
+<td class="r b Data">             7,97 %</td>
+<td class="r b Data">          177 708,00</td>
+<td class="r b Data">                  46</td>
+<td class="r b Data">           67 788,00</td>
+<td class="r b Data">           93 504,00</td>
+<td class="r b Data">      52,62%</td>
+<td class="r b Data">             8,53 %</td>
+<td class="r b Data">          16</td>
+<td class="r b Data">          25</td>
+<td class="r b Data">      54,35%</td>
+<td class="r b Data">             7,97 %</td>
+<td class="r b Data">            3 863,22</td>
+<td class="r b Data">          141 012,00</td>
+<td class="r b Data">            3 525,30</td>
+<td class="r b Data">             6,33 %</td>
+<td class="r b Data">          141 012,00</td>
+<td class="r b Data">                  40</td>
+<td class="r b Data">           68 856,00</td>
+<td class="r b Data">           58 308,00</td>
+<td class="r b Data">      41,35%</td>
+<td class="r b Data">             7,42 %</td>
+<td class="r b Data">          22</td>
+<td class="r b Data">          14</td>
+<td class="r b Data">      35,00%</td>
+<td class="r b Data">             6,33 %</td>
+<td class="r b Data">            3 525,30</td>
+<td class="r b Data">           92 064,00</td>
+<td class="r b Data">            4 384,00</td>
+<td class="r b Data">             4,13 %</td>
+<td class="r b Data">           92 064,00</td>
+<td class="r b Data">                  21</td>
+<td class="r b Data">           79 260,00</td>
+<td class="r b Data">            6 468,00</td>
+<td class="r b Data">       7,03%</td>
+<td class="r b Data">             3,90 %</td>
+<td class="r b Data">          16</td>
+<td class="r b Data">           4</td>
+<td class="r b Data">      19,05%</td>
+<td class="r b Data">             4,13 %</td>
+<td class="r b Data">            4 384,00</td>
+<td class="r b Data">          164 076,00</td>
+<td class="r b Data">            3 646,13</td>
+<td class="r b Data">             7,36 %</td>
+<td class="r b Data">          164 076,00</td>
+<td class="r b Data">                  45</td>
+<td class="r b Data">          127 884,00</td>
+<td class="r b Data">           26 652,00</td>
+<td class="r b Data">      16,24%</td>
+<td class="r b Data">             8,35 %</td>
+<td class="r b Data">          37</td>
+<td class="r b Data">           6</td>
+<td class="r b Data">      13,33%</td>
+<td class="r b Data">             7,36 %</td>
+<td class="r b Data">            3 646,13</td>
+<td class="r b Data">        1 653 936,00</td>
+<td class="r b Data">            4 273,74</td>
+<td class="r b Data">            74,21 %</td>
+<td class="r b Data">        1 653 936,00</td>
+<td class="r b Data">                 387</td>
+<td class="r b Data">        1 419 144,00</td>
+<td class="r b Data">          171 012,00</td>
+<td class="r b Data">      10,34%</td>
+<td class="r b Data">            71,80 %</td>
+<td class="r b Data">         352</td>
+<td class="r b Data">          26</td>
+<td class="r b Data">       6,72%</td>
+<td class="r b Data">            74,21 %</td>
+<td class="r b Data">            4 273,74</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1982</th>
+<td class="r b Data">          186 060,00</td>
+<td class="r b Data">            4 134,67</td>
+<td class="r b Data">             8,41 %</td>
+<td class="r b Data">          186 060,00</td>
+<td class="r b Data">                  45</td>
+<td class="r b Data">           85 188,00</td>
+<td class="r b Data">           95 388,00</td>
+<td class="r b Data">      51,27%</td>
+<td class="r b Data">             8,67 %</td>
+<td class="r b Data">          23</td>
+<td class="r b Data">          20</td>
+<td class="r b Data">      44,44%</td>
+<td class="r b Data">             8,41 %</td>
+<td class="r b Data">            4 134,67</td>
+<td class="r b Data">          204 660,00</td>
+<td class="r b Data">            4 759,53</td>
+<td class="r b Data">             9,26 %</td>
+<td class="r b Data">          204 660,00</td>
+<td class="r b Data">                  43</td>
+<td class="r b Data">          117 228,00</td>
+<td class="r b Data">           78 252,00</td>
+<td class="r b Data">      38,24%</td>
+<td class="r b Data">             8,29 %</td>
+<td class="r b Data">          24</td>
+<td class="r b Data">          17</td>
+<td class="r b Data">      39,53%</td>
+<td class="r b Data">             9,26 %</td>
+<td class="r b Data">            4 759,53</td>
+<td class="r b Data">           85 752,00</td>
+<td class="r b Data">            3 573,00</td>
+<td class="r b Data">             3,88 %</td>
+<td class="r b Data">           85 752,00</td>
+<td class="r b Data">                  24</td>
+<td class="r b Data">           53 064,00</td>
+<td class="r b Data">           15 036,00</td>
+<td class="r b Data">      17,53%</td>
+<td class="r b Data">             4,62 %</td>
+<td class="r b Data">          16</td>
+<td class="r b Data">           5</td>
+<td class="r b Data">      20,83%</td>
+<td class="r b Data">             3,88 %</td>
+<td class="r b Data">            3 573,00</td>
+<td class="r b Data">          176 460,00</td>
+<td class="r b Data">            6 302,14</td>
+<td class="r b Data">             7,98 %</td>
+<td class="r b Data">          176 460,00</td>
+<td class="r b Data">                  28</td>
+<td class="r b Data">          167 580,00</td>
+<td class="r b Data">            8 880,00</td>
+<td class="r b Data">       5,03%</td>
+<td class="r b Data">             5,39 %</td>
+<td class="r b Data">          25</td>
+<td class="r b Data">           3</td>
+<td class="r b Data">      10,71%</td>
+<td class="r b Data">             7,98 %</td>
+<td class="r b Data">            6 302,14</td>
+<td class="r b Data">        1 558 320,00</td>
+<td class="r b Data">            4 111,66</td>
+<td class="r b Data">            70,47 %</td>
+<td class="r b Data">        1 558 320,00</td>
+<td class="r b Data">                 379</td>
+<td class="r b Data">        1 402 764,00</td>
+<td class="r b Data">          111 756,00</td>
+<td class="r b Data">       7,17%</td>
+<td class="r b Data">            73,03 %</td>
+<td class="r b Data">         349</td>
+<td class="r b Data">          22</td>
+<td class="r b Data">       5,80%</td>
+<td class="r b Data">            70,47 %</td>
+<td class="r b Data">            4 111,66</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1983</th>
+<td class="r b Data">          163 536,00</td>
+<td class="r b Data">            4 193,23</td>
+<td class="r b Data">             6,48 %</td>
+<td class="r b Data">          163 536,00</td>
+<td class="r b Data">                  39</td>
+<td class="r b Data">           59 640,00</td>
+<td class="r b Data">           94 200,00</td>
+<td class="r b Data">      57,60%</td>
+<td class="r b Data">             7,10 %</td>
+<td class="r b Data">          16</td>
+<td class="r b Data">          21</td>
+<td class="r b Data">      53,85%</td>
+<td class="r b Data">             6,48 %</td>
+<td class="r b Data">            4 193,23</td>
+<td class="r b Data">          146 916,00</td>
+<td class="r b Data">            4 591,13</td>
+<td class="r b Data">             5,82 %</td>
+<td class="r b Data">          146 916,00</td>
+<td class="r b Data">                  32</td>
+<td class="r b Data">           89 532,00</td>
+<td class="r b Data">           46 788,00</td>
+<td class="r b Data">      31,85%</td>
+<td class="r b Data">             5,83 %</td>
+<td class="r b Data">          19</td>
+<td class="r b Data">          10</td>
+<td class="r b Data">      31,25%</td>
+<td class="r b Data">             5,82 %</td>
+<td class="r b Data">            4 591,13</td>
+<td class="r b Data">           39 720,00</td>
+<td class="r b Data">            3 055,38</td>
+<td class="r b Data">             1,57 %</td>
+<td class="r b Data">           39 720,00</td>
+<td class="r b Data">                  13</td>
+<td class="r b Data">           33 780,00</td>
+<td class="r b Data">            5 940,00</td>
+<td class="r b Data">      14,95%</td>
+<td class="r b Data">             2,37 %</td>
+<td class="r b Data">          10</td>
+<td class="r b Data">           3</td>
+<td class="r b Data">      23,08%</td>
+<td class="r b Data">             1,57 %</td>
+<td class="r b Data">            3 055,38</td>
+<td class="r b Data">          153 204,00</td>
+<td class="r b Data">            4 255,67</td>
+<td class="r b Data">             6,07 %</td>
+<td class="r b Data">          153 204,00</td>
+<td class="r b Data">                  36</td>
+<td class="r b Data">          106 620,00</td>
+<td class="r b Data">           38 904,00</td>
+<td class="r b Data">      25,39%</td>
+<td class="r b Data">             6,56 %</td>
+<td class="r b Data">          28</td>
+<td class="r b Data">           6</td>
+<td class="r b Data">      16,67%</td>
+<td class="r b Data">             6,07 %</td>
+<td class="r b Data">            4 255,67</td>
+<td class="r b Data">        2 022 084,00</td>
+<td class="r b Data">            4 713,48</td>
+<td class="r b Data">            80,07 %</td>
+<td class="r b Data">        2 022 084,00</td>
+<td class="r b Data">                 429</td>
+<td class="r b Data">        1 733 016,00</td>
+<td class="r b Data">          202 944,00</td>
+<td class="r b Data">      10,04%</td>
+<td class="r b Data">            78,14 %</td>
+<td class="r b Data">         388</td>
+<td class="r b Data">          25</td>
+<td class="r b Data">       5,83%</td>
+<td class="r b Data">            80,07 %</td>
+<td class="r b Data">            4 713,48</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1984</th>
+<td class="r b Data">          208 320,00</td>
+<td class="r b Data">            4 844,65</td>
+<td class="r b Data">             8,88 %</td>
+<td class="r b Data">          208 320,00</td>
+<td class="r b Data">                  43</td>
+<td class="r b Data">           76 812,00</td>
+<td class="r b Data">           94 440,00</td>
+<td class="r b Data">      45,33%</td>
+<td class="r b Data">             8,29 %</td>
+<td class="r b Data">          19</td>
+<td class="r b Data">          20</td>
+<td class="r b Data">      46,51%</td>
+<td class="r b Data">             8,88 %</td>
+<td class="r b Data">            4 844,65</td>
+<td class="r b Data">          149 508,00</td>
+<td class="r b Data">            4 530,55</td>
+<td class="r b Data">             6,37 %</td>
+<td class="r b Data">          149 508,00</td>
+<td class="r b Data">                  33</td>
+<td class="r b Data">          117 960,00</td>
+<td class="r b Data">           28 272,00</td>
+<td class="r b Data">      18,91%</td>
+<td class="r b Data">             6,36 %</td>
+<td class="r b Data">          25</td>
+<td class="r b Data">           7</td>
+<td class="r b Data">      21,21%</td>
+<td class="r b Data">             6,37 %</td>
+<td class="r b Data">            4 530,55</td>
+<td class="r b Data">           59 964,00</td>
+<td class="r b Data">            4 283,14</td>
+<td class="r b Data">             2,56 %</td>
+<td class="r b Data">           59 964,00</td>
+<td class="r b Data">                  14</td>
+<td class="r b Data">           41 520,00</td>
+<td class="r b Data">           18 444,00</td>
+<td class="r b Data">      30,76%</td>
+<td class="r b Data">             2,70 %</td>
+<td class="r b Data">           8</td>
+<td class="r b Data">           6</td>
+<td class="r b Data">      42,86%</td>
+<td class="r b Data">             2,56 %</td>
+<td class="r b Data">            4 283,14</td>
+<td class="r b Data">          117 372,00</td>
+<td class="r b Data">            4 347,11</td>
+<td class="r b Data">             5,00 %</td>
+<td class="r b Data">          117 372,00</td>
+<td class="r b Data">                  27</td>
+<td class="r b Data">          104 916,00</td>
+<td class="r b Data">           12 456,00</td>
+<td class="r b Data">      10,61%</td>
+<td class="r b Data">             5,20 %</td>
+<td class="r b Data">          26</td>
+<td class="r b Data">           1</td>
+<td class="r b Data">       3,70%</td>
+<td class="r b Data">             5,00 %</td>
+<td class="r b Data">            4 347,11</td>
+<td class="r b Data">        1 811 088,00</td>
+<td class="r b Data">            4 505,19</td>
+<td class="r b Data">            77,19 %</td>
+<td class="r b Data">        1 811 088,00</td>
+<td class="r b Data">                 402</td>
+<td class="r b Data">        1 621 236,00</td>
+<td class="r b Data">          126 960,00</td>
+<td class="r b Data">       7,01%</td>
+<td class="r b Data">            77,46 %</td>
+<td class="r b Data">         373</td>
+<td class="r b Data">          20</td>
+<td class="r b Data">       4,98%</td>
+<td class="r b Data">            77,19 %</td>
+<td class="r b Data">            4 505,19</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1985</th>
+<td class="r b Data">          218 316,00</td>
+<td class="r b Data">            5 324,78</td>
+<td class="r b Data">             9,57 %</td>
+<td class="r b Data">          218 316,00</td>
+<td class="r b Data">                  41</td>
+<td class="r b Data">          106 260,00</td>
+<td class="r b Data">          110 508,00</td>
+<td class="r b Data">      50,62%</td>
+<td class="r b Data">             8,23 %</td>
+<td class="r b Data">          19</td>
+<td class="r b Data">          21</td>
+<td class="r b Data">      51,22%</td>
+<td class="r b Data">             9,57 %</td>
+<td class="r b Data">            5 324,78</td>
+<td class="r b Data">          116 580,00</td>
+<td class="r b Data">            4 663,20</td>
+<td class="r b Data">             5,11 %</td>
+<td class="r b Data">          116 580,00</td>
+<td class="r b Data">                  25</td>
+<td class="r b Data">           69 060,00</td>
+<td class="r b Data">           45 312,00</td>
+<td class="r b Data">      38,87%</td>
+<td class="r b Data">             5,02 %</td>
+<td class="r b Data">          14</td>
+<td class="r b Data">          10</td>
+<td class="r b Data">      40,00%</td>
+<td class="r b Data">             5,11 %</td>
+<td class="r b Data">            4 663,20</td>
+<td class="r b Data">           51 492,00</td>
+<td class="r b Data">            3 678,00</td>
+<td class="r b Data">             2,26 %</td>
+<td class="r b Data">           51 492,00</td>
+<td class="r b Data">                  14</td>
+<td class="r b Data">           40 464,00</td>
+<td class="r b Data">           11 028,00</td>
+<td class="r b Data">      21,42%</td>
+<td class="r b Data">             2,81 %</td>
+<td class="r b Data">          12</td>
+<td class="r b Data">           2</td>
+<td class="r b Data">      14,29%</td>
+<td class="r b Data">             2,26 %</td>
+<td class="r b Data">            3 678,00</td>
+<td class="r b Data">           80 928,00</td>
+<td class="r b Data">            3 678,55</td>
+<td class="r b Data">             3,55 %</td>
+<td class="r b Data">           80 928,00</td>
+<td class="r b Data">                  22</td>
+<td class="r b Data">           61 668,00</td>
+<td class="r b Data">           19 260,00</td>
+<td class="r b Data">      23,80%</td>
+<td class="r b Data">             4,42 %</td>
+<td class="r b Data">          18</td>
+<td class="r b Data">           4</td>
+<td class="r b Data">      18,18%</td>
+<td class="r b Data">             3,55 %</td>
+<td class="r b Data">            3 678,55</td>
+<td class="r b Data">        1 813 968,00</td>
+<td class="r b Data">            4 580,73</td>
+<td class="r b Data">            79,52 %</td>
+<td class="r b Data">        1 813 968,00</td>
+<td class="r b Data">                 396</td>
+<td class="r b Data">        1 628 184,00</td>
+<td class="r b Data">           91 944,00</td>
+<td class="r b Data">       5,07%</td>
+<td class="r b Data">            79,52 %</td>
+<td class="r b Data">         367</td>
+<td class="r b Data">          18</td>
+<td class="r b Data">       4,55%</td>
+<td class="r b Data">            79,52 %</td>
+<td class="r b Data">            4 580,73</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1986</th>
+<td class="r b Data">          176 244,00</td>
+<td class="r b Data">            4 638,00</td>
+<td class="r b Data">             7,89 %</td>
+<td class="r b Data">          176 244,00</td>
+<td class="r b Data">                  38</td>
+<td class="r b Data">           43 632,00</td>
+<td class="r b Data">          115 176,00</td>
+<td class="r b Data">      65,35%</td>
+<td class="r b Data">             7,34 %</td>
+<td class="r b Data">          11</td>
+<td class="r b Data">          24</td>
+<td class="r b Data">      63,16%</td>
+<td class="r b Data">             7,89 %</td>
+<td class="r b Data">            4 638,00</td>
+<td class="r b Data">          148 128,00</td>
+<td class="r b Data">            4 356,71</td>
+<td class="r b Data">             6,63 %</td>
+<td class="r b Data">          148 128,00</td>
+<td class="r b Data">                  34</td>
+<td class="r b Data">           93 312,00</td>
+<td class="r b Data">           43 536,00</td>
+<td class="r b Data">      29,39%</td>
+<td class="r b Data">             6,56 %</td>
+<td class="r b Data">          24</td>
+<td class="r b Data">           8</td>
+<td class="r b Data">      23,53%</td>
+<td class="r b Data">             6,63 %</td>
+<td class="r b Data">            4 356,71</td>
+<td class="r b Data">           19 536,00</td>
+<td class="r b Data">            2 790,86</td>
+<td class="r b Data">             0,87 %</td>
+<td class="r b Data">           19 536,00</td>
+<td class="r b Data">                   7</td>
+<td class="r b Data">           19 536,00</td>
+<td class="r b Data">.</td>
+<td class="r b Data">.</td>
+<td class="r b Data">             1,35 %</td>
+<td class="r b Data">           7</td>
+<td class="r b Data">           0</td>
+<td class="r b Data">       0,00%</td>
+<td class="r b Data">             0,87 %</td>
+<td class="r b Data">            2 790,86</td>
+<td class="r b Data">          130 896,00</td>
+<td class="r b Data">            3 966,55</td>
+<td class="r b Data">             5,86 %</td>
+<td class="r b Data">          130 896,00</td>
+<td class="r b Data">                  33</td>
+<td class="r b Data">           81 924,00</td>
+<td class="r b Data">           48 048,00</td>
+<td class="r b Data">      36,71%</td>
+<td class="r b Data">             6,37 %</td>
+<td class="r b Data">          24</td>
+<td class="r b Data">           8</td>
+<td class="r b Data">      24,24%</td>
+<td class="r b Data">             5,86 %</td>
+<td class="r b Data">            3 966,55</td>
+<td class="r b Data">        1 758 012,00</td>
+<td class="r b Data">            4 330,08</td>
+<td class="r b Data">            78,74 %</td>
+<td class="r b Data">        1 758 012,00</td>
+<td class="r b Data">                 406</td>
+<td class="r b Data">        1 589 760,00</td>
+<td class="r b Data">          134 028,00</td>
+<td class="r b Data">       7,62%</td>
+<td class="r b Data">            78,38 %</td>
+<td class="r b Data">         375</td>
+<td class="r b Data">          23</td>
+<td class="r b Data">       5,67%</td>
+<td class="r b Data">            78,74 %</td>
+<td class="r b Data">            4 330,08</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1987</th>
+<td class="r b Data">          217 908,00</td>
+<td class="r b Data">            4 737,13</td>
+<td class="r b Data">             9,25 %</td>
+<td class="r b Data">          217 908,00</td>
+<td class="r b Data">                  46</td>
+<td class="r b Data">           61 392,00</td>
+<td class="r b Data">          135 492,00</td>
+<td class="r b Data">      62,18%</td>
+<td class="r b Data">             8,68 %</td>
+<td class="r b Data">          13</td>
+<td class="r b Data">          30</td>
+<td class="r b Data">      65,22%</td>
+<td class="r b Data">             9,25 %</td>
+<td class="r b Data">            4 737,13</td>
+<td class="r b Data">           64 080,00</td>
+<td class="r b Data">            4 005,00</td>
+<td class="r b Data">             2,72 %</td>
+<td class="r b Data">           64 080,00</td>
+<td class="r b Data">                  16</td>
+<td class="r b Data">           60 180,00</td>
+<td class="r b Data">            3 900,00</td>
+<td class="r b Data">       6,09%</td>
+<td class="r b Data">             3,02 %</td>
+<td class="r b Data">          14</td>
+<td class="r b Data">           2</td>
+<td class="r b Data">      12,50%</td>
+<td class="r b Data">             2,72 %</td>
+<td class="r b Data">            4 005,00</td>
+<td class="r b Data">           18 276,00</td>
+<td class="r b Data">            3 046,00</td>
+<td class="r b Data">             0,78 %</td>
+<td class="r b Data">           18 276,00</td>
+<td class="r b Data">                   6</td>
+<td class="r b Data">           16 068,00</td>
+<td class="r b Data">.</td>
+<td class="r b Data">.</td>
+<td class="r b Data">             1,13 %</td>
+<td class="r b Data">           5</td>
+<td class="r b Data">           0</td>
+<td class="r b Data">       0,00%</td>
+<td class="r b Data">             0,78 %</td>
+<td class="r b Data">            3 046,00</td>
+<td class="r b Data">          126 168,00</td>
+<td class="r b Data">            4 852,62</td>
+<td class="r b Data">             5,35 %</td>
+<td class="r b Data">          126 168,00</td>
+<td class="r b Data">                  26</td>
+<td class="r b Data">          107 388,00</td>
+<td class="r b Data">           18 780,00</td>
+<td class="r b Data">      14,88%</td>
+<td class="r b Data">             4,91 %</td>
+<td class="r b Data">          22</td>
+<td class="r b Data">           4</td>
+<td class="r b Data">      15,38%</td>
+<td class="r b Data">             5,35 %</td>
+<td class="r b Data">            4 852,62</td>
+<td class="r b Data">        1 929 756,00</td>
+<td class="r b Data">            4 426,05</td>
+<td class="r b Data">            81,90 %</td>
+<td class="r b Data">        1 929 756,00</td>
+<td class="r b Data">                 436</td>
+<td class="r b Data">        1 732 896,00</td>
+<td class="r b Data">          127 176,00</td>
+<td class="r b Data">       6,59%</td>
+<td class="r b Data">            82,26 %</td>
+<td class="r b Data">         406</td>
+<td class="r b Data">          21</td>
+<td class="r b Data">       4,82%</td>
+<td class="r b Data">            81,90 %</td>
+<td class="r b Data">            4 426,05</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX2"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Chart - number distribution by year on state EM</td>
+</tr>
+<tr>
+<td class="c SystemTitle2">Attributes for variable AGR3_MAX_CMAXA_DUE</td>
+</tr>
+<tr>
+<td class="c SystemTitle3">Max calculated on last 3 months on unmissing Maximum Customer due for all product                                                                                                                                                                               </td>
+</tr>
+</table><br>
+<div>
+<CENTER>
+<OBJECT 
+ CLASSID="CLSID:CE9E88DD-FC6F-11d4-87EC-00B0D025628B"
+ CODEBASE="http://www2.sas.com/codebase/graph/v92/sasgraph.exe#version=9,2"
+style=" width: 640px; height: 480px; border-width: 0px;" ALIGN="top" class="Graph">
+<PARAM NAME="ENCODING" VALUE="windows-1250">
+<PARAM NAME="XMLPARM1" VALUE='
+<?xml version="1.0" encoding="windows-1250" ?>
+<SASReport version="1.0" xmlns:style="http://www.sas.com/sasreportmodel/styles">
+  <Data>
+    <IQData type="2DEmbedded" name="GraphData">
+      <EmbeddedData>
+        <Variables>
+          <Variable encoding="Text" name="GRP_AGR3_MAX_CMAXA_DUE1" varName="GRP_AGR3_MAX_CMAXA_DUE" label="GRP" type="Numeric"/>
+          <Variable encoding="Text" name="year2" varName="year" label="year" type="String"/>
+          <Variable SASFormat="F12.0" encoding="Text" name="n_Sum4" varName="n_Sum" label="Number of accounts" type="Numeric"/>
+          <Variable SASFormat="PROCENT19.0" encoding="Text" name="n_PctSum_019" varName="n_PctSum_01" label="Number percent" type="Numeric"/>
+          <Variable encoding="Text" name="__FREQ__14" varName="__FREQ__" label="Frequency" type="Numeric"/>
+        </Variables>
+        <ValuesList>
+        '
+        >
+        <PARAM NAME="XMLPARM2" VALUE='
+          <V>1</V>
+          <V>1975</V>
+          <V>55</V>
+          <V>10.204081632653</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1975</V>
+          <V>73</V>
+          <V>13.5435992578849</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1975</V>
+          <V>36</V>
+          <V>6.67903525046382</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1975</V>
+          <V>91</V>
+          <V>16.8831168831168</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1975</V>
+          <V>284</V>
+          <V>52.6901669758812</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1976</V>
+          <V>51</V>
+          <V>9.90291262135922</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1976</V>
+          <V>45</V>
+          <V>8.7378640776699</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1976</V>
+          <V>36</V>
+          <V>6.99029126213592</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1976</V>
+          <V>57</V>
+          <V>11.0679611650485</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1976</V>
+          <V>326</V>
+          <V>63.3009708737864</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1977</V>
+          <V>54</V>
+          <V>10.0934579439252</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1977</V>
+          <V>53</V>
+          <V>9.90654205607476</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1977</V>
+          <V>21</V>
+          <V>3.92523364485981</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1977</V>
+          <V>52</V>
+          <V>9.7196261682243</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1977</V>
+          <V>355</V>
+          <V>66.3551401869159</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1978</V>
+          <V>43</V>
+          <V>8.09792843691148</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1978</V>
+          <V>56</V>
+          <V>10.5461393596986</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1978</V>
+          <V>28</V>
+          <V>5.27306967984934</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1978</V>
+          <V>56</V>
+          <V>10.5461393596986</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1978</V>
+          <V>348</V>
+          <V>65.5367231638418</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1979</V>
+          <V>54</V>
+          <V>10.2857142857142</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1979</V>
+          <V>42</V>
+          <V>8</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1979</V>
+          <V>22</V>
+          <V>4.19047619047619</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1979</V>
+          <V>46</V>
+          <V>8.76190476190476</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1979</V>
+          <V>361</V>
+          <V>68.7619047619047</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1980</V>
+          <V>32</V>
+          <V>6.49087221095334</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1980</V>
+          <V>37</V>
+          <V>7.5050709939148</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1980</V>
+          <V>23</V>
+          <V>4.66531440162271</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1980</V>
+          <V>37</V>
+          <V>7.5050709939148</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1980</V>
+          <V>364</V>
+          <V>73.8336713995943</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1981</V>
+          <V>46</V>
+          <V>8.5343228200371</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1981</V>
+          <V>40</V>
+          <V>7.42115027829313</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1981</V>
+          <V>21</V>
+          <V>3.89610389610389</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1981</V>
+          <V>45</V>
+          <V>8.34879406307977</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1981</V>
+          <V>387</V>
+          <V>71.799628942486</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1982</V>
+          <V>45</V>
+          <V>8.67052023121387</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1982</V>
+          <V>43</V>
+          <V>8.28516377649325</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1982</V>
+          <V>24</V>
+          <V>4.6242774566474</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1982</V>
+          <V>28</V>
+          <V>5.39499036608863</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1982</V>
+          <V>379</V>
+          <V>73.0250481695568</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1983</V>
+          <V>39</V>
+          <V>7.10382513661202</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1983</V>
+          <V>32</V>
+          <V>5.8287795992714</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1983</V>
+          <V>13</V>
+          <V>2.367941712204</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1983</V>
+          <V>36</V>
+          <V>6.55737704918032</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1983</V>
+          <V>429</V>
+          <V>78.1420765027322</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1984</V>
+          <V>43</V>
+          <V>8.28516377649325</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1984</V>
+          <V>33</V>
+          <V>6.35838150289017</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1984</V>
+          <V>14</V>
+          <V>2.69749518304431</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1984</V>
+          <V>27</V>
+          <V>5.20231213872832</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1984</V>
+          <V>402</V>
+          <V>77.4566473988439</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1985</V>
+          <V>41</V>
+          <V>8.23293172690763</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1985</V>
+          <V>25</V>
+          <V>5.02008032128514</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1985</V>
+          <V>14</V>
+          <V>2.81124497991967</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1985</V>
+          <V>22</V>
+          <V>4.41767068273092</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1985</V>
+          <V>396</V>
+          <V>79.5180722891566</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1986</V>
+          <V>38</V>
+          <V>7.33590733590733</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1986</V>
+          <V>34</V>
+          <V>6.56370656370656</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1986</V>
+          <V>7</V>
+          <V>1.35135135135135</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1986</V>
+          <V>33</V>
+          <V>6.37065637065637</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1986</V>
+          <V>406</V>
+          <V>78.3783783783783</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1987</V>
+          <V>46</V>
+          <V>8.67924528301887</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1987</V>
+          <V>16</V>
+          <V>3.0188679245283</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1987</V>
+          <V>6</V>
+          <V>1.13207547169811</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1987</V>
+          <V>26</V>
+          <V>4.90566037735849</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1987</V>
+          <V>436</V>
+          <V>82.2641509433962</V>
+          <V>1</V>
+        </ValuesList>
+      </EmbeddedData>
+    </IQData>
+  </Data>
+'
+>
+<PARAM NAME="XMLPARM3" VALUE='
+  <style:Scheme name="GraphStyleScheme" version="9.2P">
+    <style:Style name="GraphScheme">
+      <style:Style context="GraphDataStyle1" color="#6F7EB3" altColor="#445694" fillType="Pattern" markerSymbol="circle" lineStyle="Solid"/>
+      <style:Style context="GraphDataStyle2" color="#D05B5B" altColor="#A23A2E" fillType="Pattern" markerSymbol="plus" lineStyle="Dash3"/>
+      <style:Style context="GraphDataStyle3" color="#66A5A0" altColor="#01665E" fillType="Pattern" markerSymbol="X" lineStyle="Dash3Dash1"/>
+      <style:Style context="GraphDataStyle4" color="#A9865B" altColor="#543005" fillType="Pattern" markerSymbol="triangle" lineStyle="Dash4"/>
+      <style:Style context="GraphDataStyle5" color="#B689CD" altColor="#9D3CDB" fillType="Pattern" markerSymbol="square" lineStyle="Dash3Dash1Dash1"/>
+      <style:Style context="GraphDataStyle6" color="#BABC5C" altColor="#7F8E1F" fillType="Pattern" markerSymbol="asterisk" lineStyle="Dash4Dash2"/>
+      <style:Style context="GraphDataStyle7" color="#94BDE1" altColor="#2597FA" fillType="Pattern" markerSymbol="diamond" lineStyle="Dash4Dash1Dash1"/>
+      <style:Style context="GraphDataStyle8" color="#CD7BA1" altColor="#B26084" fillType="Pattern" lineStyle="Dash2Space"/>
+      <style:Style context="GraphDataStyle9" color="#CF974B" altColor="#D17800" fillType="Pattern" lineStyle="Dash3Dot1"/>
+      <style:Style context="GraphDataStyle10" color="#87C873" altColor="#47A82A" fillType="Pattern" lineStyle="Dash3Dot2"/>
+      <style:Style context="GraphDataStyle11" color="#B7AEF1" altColor="#B38EF3" fillType="Pattern" lineStyle="Dash1"/>
+      <style:Style context="GraphDataStyle12" color="#DDD17E" altColor="#F9DA04" fillType="Pattern"/>
+      <style:Style context="TwoColorRamp" fillGradientStartColor="#F3F5FC" fillGradientEndColor="#445694"/>
+      <style:Style context="TwoColorAltRamp" fillGradientStartColor="#FFF1EF" fillGradientEndColor="#A23A23"/>
+      <style:Style context="ThreeColorRamp" fillGradientStartColor="#AFB5A6" fillGradientNeutralColor="#FFFFFF" fillGradientEndColor="#667FA2"/>
+      <style:Style context="ThreeColorAltRamp" fillGradientStartColor="#445694" fillGradientNeutralColor="#EBC79E" fillGradientEndColor="#FF3A2E"/>
+      <style:Style context="BackFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="AxisLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="GridLines" lineColor="#E6E6E6" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="ReferenceLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="Outlines" lineColor="#000000" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="BorderLines" lineColor="#D1D1D1" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="TitleText" textColor="#000000" fontSize="11pt" fontFamily="Arial, Albany AMT" fontWeight="bold" fontStyle="normal"/>
+      <style:Style context="FootnoteText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="italic"/>
+      <style:Style context="LabelText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="ValueText" textColor="#000000" fontSize="9pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="DataText" textColor="#000000" fontSize="7pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="WallFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="FloorFill" fillColor="#DCDAC9" fillType="Pattern"/>
+      <style:Style context="LegendFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="DropShadow" shadowColor="#8F8F8F" xOffset="5%" yOffset="5%"/>
+    </style:Style>
+  </style:Scheme>
+  <View style:scheme="GraphStyleScheme">
+    <Section>
+      <Body>
+        <Graph name="Graph_19700487851154622512" style:height="480px" style:width="640px" style:style="GraphScheme"  view2D="false" usePlotContrast="true">
+          <ChartDataList>
+            <ChartData name="ChartData0" collation="Linguistic" data="GraphData">
+              <Roles>
+                <Role variable="GRP_AGR3_MAX_CMAXA_DUE1" type="Category" sortOrder="Ascending">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="year2" type="Series" sortOrder="Ascending" missingEnabled="true">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="n_Sum4" type="Subgroup" sortOrder="Ascending" missingEnabled="true">
+                </Role>
+                <Role variable="n_PctSum_019" type="Response" statistic="Sum">
+                </Role>
+                <Role variable="__FREQ__14" type="Frequency">
+                </Role>
+              </Roles>
+            </ChartData>
+          </ChartDataList>
+          <ChartAreas>
+            <ChartArea>
+              <ChartBorderLine lineVisible="false"/>
+              <Charts>
+                <Bar name="Chart0" chartData="ChartData0" styleBy="Series" barShape="Block">
+                </Bar>
+              </Charts>
+              <Axes>
+                <Axis name="Axis0" role="Category" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis1" role="Response" gridPosition="Back" appendLabelStatistic="true">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis2" role="Series" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+              </Axes>
+            </ChartArea>
+          </ChartAreas>
+          <Legends>
+            <Legend chart="Chart0" isVisible="false">
+            </Legend>
+          </Legends>
+        </Graph>
+      </Body>
+    </Section>
+  </View>
+  <Formats>
+    <Format name="PROCENT">
+      <Type> Picture </Type>
+      <Name-Options max="40" default="19" round="True" />
+      <Mapping>
+        <Range> LOW--0.005 </Range>
+        <Label> &amp;apos;00.000.000.009,99 %&amp;apos; </Label> 
+        <Label-Options  mult="100" prefix="-" />
+      </Mapping>
+      <Mapping>
+        <Range> -0.005&amp;lt;-HIGH </Range>
+        <Label> &amp;apos;00.000.000.009,99 %&amp;apos; </Label> 
+        <Label-Options  mult="100" />
+      </Mapping>
+    </Format>
+  </Formats>
+</SASReport>
+'
+>
+<PARAM NAME="XMLPARMCOUNT" VALUE="3">
+Sorry, there was a problem with the Graph control or plug-in in your browser.
+The graph "Block chart of GRP_AGR3_MAX_CMAXA_DUE" cannot be displayed.
+</OBJECT> 
+</CENTER>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX3"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Chart - balance distribution by year on state EM</td>
+</tr>
+<tr>
+<td class="c SystemTitle2">Attributes for variable AGR3_MAX_CMAXA_DUE</td>
+</tr>
+<tr>
+<td class="c SystemTitle3">Max calculated on last 3 months on unmissing Maximum Customer due for all product                                                                                                                                                                               </td>
+</tr>
+</table><br>
+<div>
+<CENTER>
+<OBJECT 
+ CLASSID="CLSID:CE9E88DD-FC6F-11d4-87EC-00B0D025628B"
+ CODEBASE="http://www2.sas.com/codebase/graph/v92/sasgraph.exe#version=9,2"
+style=" width: 640px; height: 480px; border-width: 0px;" ALIGN="top" class="Graph">
+<PARAM NAME="ENCODING" VALUE="windows-1250">
+<PARAM NAME="XMLPARM1" VALUE='
+<?xml version="1.0" encoding="windows-1250" ?>
+<SASReport version="1.0" xmlns:style="http://www.sas.com/sasreportmodel/styles">
+  <Data>
+    <IQData type="2DEmbedded" name="GraphData">
+      <EmbeddedData>
+        <Variables>
+          <Variable encoding="Text" name="GRP_AGR3_MAX_CMAXA_DUE1" varName="GRP_AGR3_MAX_CMAXA_DUE" label="GRP" type="Numeric"/>
+          <Variable encoding="Text" name="year2" varName="year" label="year" type="String"/>
+          <Variable SASFormat="LICZBA20.0" encoding="Text" name="all_Sum4" varName="all_Sum" label="Balance" type="Numeric"/>
+          <Variable SASFormat="PROCENT19.0" encoding="Text" name="all_PctSum_019" varName="all_PctSum_01" label="Balance percent" type="Numeric"/>
+          <Variable encoding="Text" name="__FREQ__14" varName="__FREQ__" label="Frequency" type="Numeric"/>
+        </Variables>
+        <ValuesList>
+        '
+        >
+        <PARAM NAME="XMLPARM2" VALUE='
+          <V>1</V>
+          <V>1975</V>
+          <V>235668</V>
+          <V>10.2244389027431</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1975</V>
+          <V>321192</V>
+          <V>13.9348913728205</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1975</V>
+          <V>154740</V>
+          <V>6.71338355572446</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1975</V>
+          <V>394872</V>
+          <V>17.1314927712035</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1975</V>
+          <V>1198476</V>
+          <V>51.9957933975083</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1976</V>
+          <V>227256</V>
+          <V>9.83500989317449</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1976</V>
+          <V>222504</V>
+          <V>9.62935650223051</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1976</V>
+          <V>152700</V>
+          <V>6.60843282768219</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1976</V>
+          <V>254628</V>
+          <V>11.0195941980816</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1976</V>
+          <V>1453596</V>
+          <V>62.9076065788312</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1977</V>
+          <V>194748</V>
+          <V>8.74468578079283</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1977</V>
+          <V>211872</V>
+          <V>9.51359739636935</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1977</V>
+          <V>81108</V>
+          <V>3.64195768022544</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1977</V>
+          <V>227964</V>
+          <V>10.2361695592902</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1977</V>
+          <V>1511352</V>
+          <V>67.8635895833221</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1978</V>
+          <V>213900</V>
+          <V>9.51844415490099</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1978</V>
+          <V>202560</V>
+          <V>9.0138197663242</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1978</V>
+          <V>88788</V>
+          <V>3.95102206463464</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1978</V>
+          <V>272232</V>
+          <V>12.114189290215</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1978</V>
+          <V>1469736</V>
+          <V>65.402524723925</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1979</V>
+          <V>254988</V>
+          <V>10.9576678922642</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1979</V>
+          <V>183624</V>
+          <V>7.89092352992744</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1979</V>
+          <V>82140</V>
+          <V>3.52982430808739</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1979</V>
+          <V>190524</V>
+          <V>8.18743908539132</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1979</V>
+          <V>1615752</V>
+          <V>69.4341451843295</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1980</V>
+          <V>135000</V>
+          <V>6.54309427290228</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1980</V>
+          <V>145056</V>
+          <V>7.03048209518602</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1980</V>
+          <V>82656</V>
+          <V>4.00611852015563</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1980</V>
+          <V>179076</V>
+          <V>8.6793418519574</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1980</V>
+          <V>1521456</V>
+          <V>73.7409632597986</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1981</V>
+          <V>177708</V>
+          <V>7.9732734624434</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1981</V>
+          <V>141012</V>
+          <V>6.32682398927492</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1981</V>
+          <V>92064</V>
+          <V>4.13066067957767</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1981</V>
+          <V>164076</V>
+          <V>7.36164278830364</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1981</V>
+          <V>1653936</V>
+          <V>74.2075990804003</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1982</V>
+          <V>186060</V>
+          <V>8.41423772595796</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1982</V>
+          <V>204660</V>
+          <V>9.25539015905921</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1982</V>
+          <V>85752</V>
+          <V>3.8779840560913</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1982</V>
+          <V>176460</V>
+          <V>7.9800945346799</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1982</V>
+          <V>1558320</V>
+          <V>70.4722935242116</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1983</V>
+          <V>163536</V>
+          <V>6.475493573448</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1983</V>
+          <V>146916</V>
+          <V>5.81739564277399</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1983</V>
+          <V>39720</V>
+          <V>1.57278278016678</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1983</V>
+          <V>153204</V>
+          <V>6.06637998622033</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1983</V>
+          <V>2022084</V>
+          <V>80.0679480173909</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1984</V>
+          <V>208320</V>
+          <V>8.87884165895223</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1984</V>
+          <V>149508</V>
+          <V>6.37220554313859</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1984</V>
+          <V>59964</V>
+          <V>2.55573570102444</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1984</V>
+          <V>117372</V>
+          <V>5.00253169736243</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1984</V>
+          <V>1811088</V>
+          <V>77.1906853995223</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1985</V>
+          <V>218316</V>
+          <V>9.56987380790818</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1985</V>
+          <V>116580</V>
+          <V>5.1102800002104</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1985</V>
+          <V>51492</V>
+          <V>2.25714992083405</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1985</V>
+          <V>80928</V>
+          <V>3.54747589515378</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1985</V>
+          <V>1813968</V>
+          <V>79.5152203758935</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1986</V>
+          <V>176244</V>
+          <V>7.89335081798052</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1986</V>
+          <V>148128</V>
+          <V>6.634133757551</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1986</V>
+          <V>19536</V>
+          <V>0.87494894339703</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1986</V>
+          <V>130896</V>
+          <V>5.86237289593052</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1986</V>
+          <V>1758012</V>
+          <V>78.7351935851409</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1987</V>
+          <V>217908</V>
+          <V>9.24832823187283</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1987</V>
+          <V>64080</V>
+          <V>2.71964715888545</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1987</V>
+          <V>18276</V>
+          <V>0.77565966722519</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1987</V>
+          <V>126168</V>
+          <V>5.3547509791239</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1987</V>
+          <V>1929756</V>
+          <V>81.9016139628926</V>
+          <V>1</V>
+        </ValuesList>
+      </EmbeddedData>
+    </IQData>
+  </Data>
+'
+>
+<PARAM NAME="XMLPARM3" VALUE='
+  <style:Scheme name="GraphStyleScheme" version="9.2P">
+    <style:Style name="GraphScheme">
+      <style:Style context="GraphDataStyle1" color="#6F7EB3" altColor="#445694" fillType="Pattern" markerSymbol="circle" lineStyle="Solid"/>
+      <style:Style context="GraphDataStyle2" color="#D05B5B" altColor="#A23A2E" fillType="Pattern" markerSymbol="plus" lineStyle="Dash3"/>
+      <style:Style context="GraphDataStyle3" color="#66A5A0" altColor="#01665E" fillType="Pattern" markerSymbol="X" lineStyle="Dash3Dash1"/>
+      <style:Style context="GraphDataStyle4" color="#A9865B" altColor="#543005" fillType="Pattern" markerSymbol="triangle" lineStyle="Dash4"/>
+      <style:Style context="GraphDataStyle5" color="#B689CD" altColor="#9D3CDB" fillType="Pattern" markerSymbol="square" lineStyle="Dash3Dash1Dash1"/>
+      <style:Style context="GraphDataStyle6" color="#BABC5C" altColor="#7F8E1F" fillType="Pattern" markerSymbol="asterisk" lineStyle="Dash4Dash2"/>
+      <style:Style context="GraphDataStyle7" color="#94BDE1" altColor="#2597FA" fillType="Pattern" markerSymbol="diamond" lineStyle="Dash4Dash1Dash1"/>
+      <style:Style context="GraphDataStyle8" color="#CD7BA1" altColor="#B26084" fillType="Pattern" lineStyle="Dash2Space"/>
+      <style:Style context="GraphDataStyle9" color="#CF974B" altColor="#D17800" fillType="Pattern" lineStyle="Dash3Dot1"/>
+      <style:Style context="GraphDataStyle10" color="#87C873" altColor="#47A82A" fillType="Pattern" lineStyle="Dash3Dot2"/>
+      <style:Style context="GraphDataStyle11" color="#B7AEF1" altColor="#B38EF3" fillType="Pattern" lineStyle="Dash1"/>
+      <style:Style context="GraphDataStyle12" color="#DDD17E" altColor="#F9DA04" fillType="Pattern"/>
+      <style:Style context="TwoColorRamp" fillGradientStartColor="#F3F5FC" fillGradientEndColor="#445694"/>
+      <style:Style context="TwoColorAltRamp" fillGradientStartColor="#FFF1EF" fillGradientEndColor="#A23A23"/>
+      <style:Style context="ThreeColorRamp" fillGradientStartColor="#AFB5A6" fillGradientNeutralColor="#FFFFFF" fillGradientEndColor="#667FA2"/>
+      <style:Style context="ThreeColorAltRamp" fillGradientStartColor="#445694" fillGradientNeutralColor="#EBC79E" fillGradientEndColor="#FF3A2E"/>
+      <style:Style context="BackFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="AxisLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="GridLines" lineColor="#E6E6E6" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="ReferenceLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="Outlines" lineColor="#000000" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="BorderLines" lineColor="#D1D1D1" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="TitleText" textColor="#000000" fontSize="11pt" fontFamily="Arial, Albany AMT" fontWeight="bold" fontStyle="normal"/>
+      <style:Style context="FootnoteText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="italic"/>
+      <style:Style context="LabelText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="ValueText" textColor="#000000" fontSize="9pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="DataText" textColor="#000000" fontSize="7pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="WallFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="FloorFill" fillColor="#DCDAC9" fillType="Pattern"/>
+      <style:Style context="LegendFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="DropShadow" shadowColor="#8F8F8F" xOffset="5%" yOffset="5%"/>
+    </style:Style>
+  </style:Scheme>
+  <View style:scheme="GraphStyleScheme">
+    <Section>
+      <Body>
+        <Graph name="Graph_19700487851374622512" style:height="480px" style:width="640px" style:style="GraphScheme"  view2D="false" usePlotContrast="true">
+          <ChartDataList>
+            <ChartData name="ChartData0" collation="Linguistic" data="GraphData">
+              <Roles>
+                <Role variable="GRP_AGR3_MAX_CMAXA_DUE1" type="Category" sortOrder="Ascending">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="year2" type="Series" sortOrder="Ascending" missingEnabled="true">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="all_Sum4" type="Subgroup" sortOrder="Ascending" missingEnabled="true">
+                </Role>
+                <Role variable="all_PctSum_019" type="Response" statistic="Sum">
+                </Role>
+                <Role variable="__FREQ__14" type="Frequency">
+                </Role>
+              </Roles>
+            </ChartData>
+          </ChartDataList>
+          <ChartAreas>
+            <ChartArea>
+              <ChartBorderLine lineVisible="false"/>
+              <Charts>
+                <Bar name="Chart0" chartData="ChartData0" styleBy="Series" barShape="Block">
+                </Bar>
+              </Charts>
+              <Axes>
+                <Axis name="Axis0" role="Category" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis1" role="Response" gridPosition="Back" appendLabelStatistic="true">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis2" role="Series" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+              </Axes>
+            </ChartArea>
+          </ChartAreas>
+          <Legends>
+            <Legend chart="Chart0" isVisible="false">
+            </Legend>
+          </Legends>
+        </Graph>
+      </Body>
+    </Section>
+  </View>
+  <Formats>
+    <Format name="LICZBA">
+      <Type> Picture </Type>
+      <Name-Options max="40" default="20" round="True" />
+      <Mapping>
+        <Range> LOW--0.005 </Range>
+        <Label> &amp;apos;0 000 000 000 009,99&amp;apos; </Label> 
+        <Label-Options  mult="100" prefix="-" />
+      </Mapping>
+      <Mapping>
+        <Range> -0.005&amp;lt;-HIGH </Range>
+        <Label> &amp;apos;0 000 000 000 009,99&amp;apos; </Label> 
+        <Label-Options  mult="100" />
+      </Mapping>
+    </Format>
+  <Format name="PROCENT">
+    <Type> Picture </Type>
+    <Name-Options max="40" default="19" round="True" />
+    <Mapping>
+      <Range> LOW--0.005 </Range>
+      <Label> &amp;apos;00.000.000.009,99 %&amp;apos; </Label> 
+      <Label-Options  mult="100" prefix="-" />
+    </Mapping>
+    <Mapping>
+      <Range> -0.005&amp;lt;-HIGH </Range>
+      <Label> &amp;apos;00.000.000.009,99 %&amp;apos; </Label> 
+      <Label-Options  mult="100" />
+    </Mapping>
+  </Format>
+</Formats>
+</SASReport>
+'
+>
+<PARAM NAME="XMLPARMCOUNT" VALUE="3">
+Sorry, there was a problem with the Graph control or plug-in in your browser.
+The graph "Block chart of GRP_AGR3_MAX_CMAXA_DUE" cannot be displayed.
+</OBJECT> 
+</CENTER>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX4"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Chart - average balance for attributes by year on state EM</td>
+</tr>
+<tr>
+<td class="c SystemTitle2">Attributes for variable AGR3_MAX_CMAXA_DUE</td>
+</tr>
+<tr>
+<td class="c SystemTitle3">Max calculated on last 3 months on unmissing Maximum Customer due for all product                                                                                                                                                                               </td>
+</tr>
+</table><br>
+<div>
+<CENTER>
+<OBJECT 
+ CLASSID="CLSID:CE9E88DD-FC6F-11d4-87EC-00B0D025628B"
+ CODEBASE="http://www2.sas.com/codebase/graph/v92/sasgraph.exe#version=9,2"
+style=" width: 640px; height: 480px; border-width: 0px;" ALIGN="top" class="Graph">
+<PARAM NAME="ENCODING" VALUE="windows-1250">
+<PARAM NAME="XMLPARM1" VALUE='
+<?xml version="1.0" encoding="windows-1250" ?>
+<SASReport version="1.0" xmlns:style="http://www.sas.com/sasreportmodel/styles">
+  <Data>
+    <IQData type="2DEmbedded" name="GraphData">
+      <EmbeddedData>
+        <Variables>
+          <Variable encoding="Text" name="GRP_AGR3_MAX_CMAXA_DUE1" varName="GRP_AGR3_MAX_CMAXA_DUE" label="GRP" type="Numeric"/>
+          <Variable encoding="Text" name="year2" varName="year" label="year" type="String"/>
+          <Variable SASFormat="LICZBA20.0" encoding="Text" name="all_Sum4" varName="all_Sum" label="Balance" type="Numeric"/>
+          <Variable SASFormat="LICZBA20.0" encoding="Text" name="sr_Sum9" varName="sr_Sum" label="Average balance" type="Numeric"/>
+          <Variable encoding="Text" name="__FREQ__14" varName="__FREQ__" label="Frequency" type="Numeric"/>
+        </Variables>
+        <ValuesList>
+        '
+        >
+        <PARAM NAME="XMLPARM2" VALUE='
+          <V>1</V>
+          <V>1975</V>
+          <V>235668</V>
+          <V>4284.87272727272</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1975</V>
+          <V>321192</V>
+          <V>4399.8904109589</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1975</V>
+          <V>154740</V>
+          <V>4298.33333333333</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1975</V>
+          <V>394872</V>
+          <V>4339.25274725274</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1975</V>
+          <V>1198476</V>
+          <V>4219.98591549295</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1976</V>
+          <V>227256</V>
+          <V>4456</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1976</V>
+          <V>222504</V>
+          <V>4944.53333333333</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1976</V>
+          <V>152700</V>
+          <V>4241.66666666666</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1976</V>
+          <V>254628</V>
+          <V>4467.15789473684</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1976</V>
+          <V>1453596</V>
+          <V>4458.88343558282</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1977</V>
+          <V>194748</V>
+          <V>3606.44444444444</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1977</V>
+          <V>211872</V>
+          <V>3997.58490566037</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1977</V>
+          <V>81108</V>
+          <V>3862.28571428571</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1977</V>
+          <V>227964</V>
+          <V>4383.92307692307</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1977</V>
+          <V>1511352</V>
+          <V>4257.32957746478</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1978</V>
+          <V>213900</V>
+          <V>4974.41860465116</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1978</V>
+          <V>202560</V>
+          <V>3617.14285714285</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1978</V>
+          <V>88788</V>
+          <V>3171</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1978</V>
+          <V>272232</V>
+          <V>4861.28571428571</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1978</V>
+          <V>1469736</V>
+          <V>4223.37931034482</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1979</V>
+          <V>254988</V>
+          <V>4722</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1979</V>
+          <V>183624</V>
+          <V>4372</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1979</V>
+          <V>82140</V>
+          <V>3733.63636363636</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1979</V>
+          <V>190524</V>
+          <V>4141.82608695652</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1979</V>
+          <V>1615752</V>
+          <V>4475.76731301939</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1980</V>
+          <V>135000</V>
+          <V>4218.75</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1980</V>
+          <V>145056</V>
+          <V>3920.43243243243</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1980</V>
+          <V>82656</V>
+          <V>3593.73913043478</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1980</V>
+          <V>179076</V>
+          <V>4839.89189189189</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1980</V>
+          <V>1521456</V>
+          <V>4179.82417582417</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1981</V>
+          <V>177708</V>
+          <V>3863.21739130434</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1981</V>
+          <V>141012</V>
+          <V>3525.3</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1981</V>
+          <V>92064</V>
+          <V>4384</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1981</V>
+          <V>164076</V>
+          <V>3646.13333333333</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1981</V>
+          <V>1653936</V>
+          <V>4273.73643410852</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1982</V>
+          <V>186060</V>
+          <V>4134.66666666666</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1982</V>
+          <V>204660</V>
+          <V>4759.53488372093</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1982</V>
+          <V>85752</V>
+          <V>3573</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1982</V>
+          <V>176460</V>
+          <V>6302.14285714285</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1982</V>
+          <V>1558320</V>
+          <V>4111.66226912928</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1983</V>
+          <V>163536</V>
+          <V>4193.23076923077</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1983</V>
+          <V>146916</V>
+          <V>4591.125</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1983</V>
+          <V>39720</V>
+          <V>3055.38461538461</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1983</V>
+          <V>153204</V>
+          <V>4255.66666666666</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1983</V>
+          <V>2022084</V>
+          <V>4713.48251748251</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1984</V>
+          <V>208320</V>
+          <V>4844.65116279069</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1984</V>
+          <V>149508</V>
+          <V>4530.54545454545</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1984</V>
+          <V>59964</V>
+          <V>4283.14285714285</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1984</V>
+          <V>117372</V>
+          <V>4347.11111111111</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1984</V>
+          <V>1811088</V>
+          <V>4505.19402985074</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1985</V>
+          <V>218316</V>
+          <V>5324.78048780487</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1985</V>
+          <V>116580</V>
+          <V>4663.2</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1985</V>
+          <V>51492</V>
+          <V>3678</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1985</V>
+          <V>80928</V>
+          <V>3678.54545454545</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1985</V>
+          <V>1813968</V>
+          <V>4580.72727272727</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1986</V>
+          <V>176244</V>
+          <V>4638</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1986</V>
+          <V>148128</V>
+          <V>4356.70588235294</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1986</V>
+          <V>19536</V>
+          <V>2790.85714285714</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1986</V>
+          <V>130896</V>
+          <V>3966.54545454545</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1986</V>
+          <V>1758012</V>
+          <V>4330.07881773399</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1987</V>
+          <V>217908</V>
+          <V>4737.1304347826</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1987</V>
+          <V>64080</V>
+          <V>4005</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1987</V>
+          <V>18276</V>
+          <V>3046</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1987</V>
+          <V>126168</V>
+          <V>4852.61538461538</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1987</V>
+          <V>1929756</V>
+          <V>4426.04587155963</V>
+          <V>1</V>
+        </ValuesList>
+      </EmbeddedData>
+    </IQData>
+  </Data>
+'
+>
+<PARAM NAME="XMLPARM3" VALUE='
+  <style:Scheme name="GraphStyleScheme" version="9.2P">
+    <style:Style name="GraphScheme">
+      <style:Style context="GraphDataStyle1" color="#6F7EB3" altColor="#445694" fillType="Pattern" markerSymbol="circle" lineStyle="Solid"/>
+      <style:Style context="GraphDataStyle2" color="#D05B5B" altColor="#A23A2E" fillType="Pattern" markerSymbol="plus" lineStyle="Dash3"/>
+      <style:Style context="GraphDataStyle3" color="#66A5A0" altColor="#01665E" fillType="Pattern" markerSymbol="X" lineStyle="Dash3Dash1"/>
+      <style:Style context="GraphDataStyle4" color="#A9865B" altColor="#543005" fillType="Pattern" markerSymbol="triangle" lineStyle="Dash4"/>
+      <style:Style context="GraphDataStyle5" color="#B689CD" altColor="#9D3CDB" fillType="Pattern" markerSymbol="square" lineStyle="Dash3Dash1Dash1"/>
+      <style:Style context="GraphDataStyle6" color="#BABC5C" altColor="#7F8E1F" fillType="Pattern" markerSymbol="asterisk" lineStyle="Dash4Dash2"/>
+      <style:Style context="GraphDataStyle7" color="#94BDE1" altColor="#2597FA" fillType="Pattern" markerSymbol="diamond" lineStyle="Dash4Dash1Dash1"/>
+      <style:Style context="GraphDataStyle8" color="#CD7BA1" altColor="#B26084" fillType="Pattern" lineStyle="Dash2Space"/>
+      <style:Style context="GraphDataStyle9" color="#CF974B" altColor="#D17800" fillType="Pattern" lineStyle="Dash3Dot1"/>
+      <style:Style context="GraphDataStyle10" color="#87C873" altColor="#47A82A" fillType="Pattern" lineStyle="Dash3Dot2"/>
+      <style:Style context="GraphDataStyle11" color="#B7AEF1" altColor="#B38EF3" fillType="Pattern" lineStyle="Dash1"/>
+      <style:Style context="GraphDataStyle12" color="#DDD17E" altColor="#F9DA04" fillType="Pattern"/>
+      <style:Style context="TwoColorRamp" fillGradientStartColor="#F3F5FC" fillGradientEndColor="#445694"/>
+      <style:Style context="TwoColorAltRamp" fillGradientStartColor="#FFF1EF" fillGradientEndColor="#A23A23"/>
+      <style:Style context="ThreeColorRamp" fillGradientStartColor="#AFB5A6" fillGradientNeutralColor="#FFFFFF" fillGradientEndColor="#667FA2"/>
+      <style:Style context="ThreeColorAltRamp" fillGradientStartColor="#445694" fillGradientNeutralColor="#EBC79E" fillGradientEndColor="#FF3A2E"/>
+      <style:Style context="BackFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="AxisLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="GridLines" lineColor="#E6E6E6" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="ReferenceLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="Outlines" lineColor="#000000" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="BorderLines" lineColor="#D1D1D1" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="TitleText" textColor="#000000" fontSize="11pt" fontFamily="Arial, Albany AMT" fontWeight="bold" fontStyle="normal"/>
+      <style:Style context="FootnoteText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="italic"/>
+      <style:Style context="LabelText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="ValueText" textColor="#000000" fontSize="9pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="DataText" textColor="#000000" fontSize="7pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="WallFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="FloorFill" fillColor="#DCDAC9" fillType="Pattern"/>
+      <style:Style context="LegendFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="DropShadow" shadowColor="#8F8F8F" xOffset="5%" yOffset="5%"/>
+    </style:Style>
+  </style:Scheme>
+  <View style:scheme="GraphStyleScheme">
+    <Section>
+      <Body>
+        <Graph name="Graph_1970048786674622512" style:height="480px" style:width="640px" style:style="GraphScheme"  view2D="false" usePlotContrast="true">
+          <ChartDataList>
+            <ChartData name="ChartData0" collation="Linguistic" data="GraphData">
+              <Roles>
+                <Role variable="GRP_AGR3_MAX_CMAXA_DUE1" type="Category" sortOrder="Ascending">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="year2" type="Series" sortOrder="Ascending" missingEnabled="true">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="all_Sum4" type="Subgroup" sortOrder="Ascending" missingEnabled="true">
+                </Role>
+                <Role variable="sr_Sum9" type="Response" statistic="Sum">
+                </Role>
+                <Role variable="__FREQ__14" type="Frequency">
+                </Role>
+              </Roles>
+            </ChartData>
+          </ChartDataList>
+          <ChartAreas>
+            <ChartArea>
+              <ChartBorderLine lineVisible="false"/>
+              <Charts>
+                <Bar name="Chart0" chartData="ChartData0" styleBy="Series" barShape="Block">
+                </Bar>
+              </Charts>
+              <Axes>
+                <Axis name="Axis0" role="Category" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis1" role="Response" gridPosition="Back" appendLabelStatistic="true">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis2" role="Series" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+              </Axes>
+            </ChartArea>
+          </ChartAreas>
+          <Legends>
+            <Legend chart="Chart0" isVisible="false">
+            </Legend>
+          </Legends>
+        </Graph>
+      </Body>
+    </Section>
+  </View>
+  <Formats>
+    <Format name="LICZBA">
+      <Type> Picture </Type>
+      <Name-Options max="40" default="20" round="True" />
+      <Mapping>
+        <Range> LOW--0.005 </Range>
+        <Label> &amp;apos;0 000 000 000 009,99&amp;apos; </Label> 
+        <Label-Options  mult="100" prefix="-" />
+      </Mapping>
+      <Mapping>
+        <Range> -0.005&amp;lt;-HIGH </Range>
+        <Label> &amp;apos;0 000 000 000 009,99&amp;apos; </Label> 
+        <Label-Options  mult="100" />
+      </Mapping>
+    </Format>
+  </Formats>
+</SASReport>
+'
+>
+<PARAM NAME="XMLPARMCOUNT" VALUE="3">
+Sorry, there was a problem with the Graph control or plug-in in your browser.
+The graph "Block chart of GRP_AGR3_MAX_CMAXA_DUE" cannot be displayed.
+</OBJECT> 
+</CENTER>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX5"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Chart - average credit limit for attributes by year on state EM</td>
+</tr>
+<tr>
+<td class="c SystemTitle2">Attributes for variable AGR3_MAX_CMAXA_DUE</td>
+</tr>
+<tr>
+<td class="c SystemTitle3">Max calculated on last 3 months on unmissing Maximum Customer due for all product                                                                                                                                                                               </td>
+</tr>
+</table><br>
+<div>
+<CENTER>
+<OBJECT 
+ CLASSID="CLSID:CE9E88DD-FC6F-11d4-87EC-00B0D025628B"
+ CODEBASE="http://www2.sas.com/codebase/graph/v92/sasgraph.exe#version=9,2"
+style=" width: 640px; height: 480px; border-width: 0px;" ALIGN="top" class="Graph">
+<PARAM NAME="ENCODING" VALUE="windows-1250">
+<PARAM NAME="XMLPARM1" VALUE='
+<?xml version="1.0" encoding="windows-1250" ?>
+<SASReport version="1.0" xmlns:style="http://www.sas.com/sasreportmodel/styles">
+  <Data>
+    <IQData type="2DEmbedded" name="GraphData">
+      <EmbeddedData>
+        <Variables>
+          <Variable encoding="Text" name="GRP_AGR3_MAX_CMAXA_DUE1" varName="GRP_AGR3_MAX_CMAXA_DUE" label="GRP" type="Numeric"/>
+          <Variable encoding="Text" name="year2" varName="year" label="year" type="String"/>
+          <Variable SASFormat="PROCENT19.0" encoding="Text" name="credit_limit_PctSum_014" varName="credit_limit_PctSum_01" label="Limit percent" type="Numeric"/>
+          <Variable SASFormat="LICZBA20.0" encoding="Text" name="credit_limit_sr_Sum9" varName="credit_limit_sr_Sum" label="Average credit limit" type="Numeric"/>
+          <Variable encoding="Text" name="__FREQ__14" varName="__FREQ__" label="Frequency" type="Numeric"/>
+        </Variables>
+        <ValuesList>
+        '
+        >
+        <PARAM NAME="XMLPARM2" VALUE='
+          <V>1</V>
+          <V>1975</V>
+          <V>10.2244389027431</V>
+          <V>4284.87272727272</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1975</V>
+          <V>13.9348913728205</V>
+          <V>4399.8904109589</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1975</V>
+          <V>6.71338355572446</V>
+          <V>4298.33333333333</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1975</V>
+          <V>17.1314927712035</V>
+          <V>4339.25274725274</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1975</V>
+          <V>51.9957933975083</V>
+          <V>4219.98591549295</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1976</V>
+          <V>9.83500989317449</V>
+          <V>4456</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1976</V>
+          <V>9.62935650223051</V>
+          <V>4944.53333333333</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1976</V>
+          <V>6.60843282768219</V>
+          <V>4241.66666666666</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1976</V>
+          <V>11.0195941980816</V>
+          <V>4467.15789473684</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1976</V>
+          <V>62.9076065788312</V>
+          <V>4458.88343558282</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1977</V>
+          <V>8.74468578079283</V>
+          <V>3606.44444444444</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1977</V>
+          <V>9.51359739636935</V>
+          <V>3997.58490566037</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1977</V>
+          <V>3.64195768022544</V>
+          <V>3862.28571428571</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1977</V>
+          <V>10.2361695592902</V>
+          <V>4383.92307692307</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1977</V>
+          <V>67.8635895833221</V>
+          <V>4257.32957746478</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1978</V>
+          <V>9.51844415490099</V>
+          <V>4974.41860465116</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1978</V>
+          <V>9.0138197663242</V>
+          <V>3617.14285714285</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1978</V>
+          <V>3.95102206463464</V>
+          <V>3171</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1978</V>
+          <V>12.114189290215</V>
+          <V>4861.28571428571</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1978</V>
+          <V>65.402524723925</V>
+          <V>4223.37931034482</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1979</V>
+          <V>10.9576678922642</V>
+          <V>4722</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1979</V>
+          <V>7.89092352992744</V>
+          <V>4372</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1979</V>
+          <V>3.52982430808739</V>
+          <V>3733.63636363636</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1979</V>
+          <V>8.18743908539132</V>
+          <V>4141.82608695652</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1979</V>
+          <V>69.4341451843295</V>
+          <V>4475.76731301939</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1980</V>
+          <V>6.54309427290228</V>
+          <V>4218.75</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1980</V>
+          <V>7.03048209518602</V>
+          <V>3920.43243243243</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1980</V>
+          <V>4.00611852015563</V>
+          <V>3593.73913043478</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1980</V>
+          <V>8.6793418519574</V>
+          <V>4839.89189189189</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1980</V>
+          <V>73.7409632597986</V>
+          <V>4179.82417582417</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1981</V>
+          <V>7.9732734624434</V>
+          <V>3863.21739130434</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1981</V>
+          <V>6.32682398927492</V>
+          <V>3525.3</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1981</V>
+          <V>4.13066067957767</V>
+          <V>4384</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1981</V>
+          <V>7.36164278830364</V>
+          <V>3646.13333333333</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1981</V>
+          <V>74.2075990804003</V>
+          <V>4273.73643410852</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1982</V>
+          <V>8.41423772595796</V>
+          <V>4134.66666666666</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1982</V>
+          <V>9.25539015905921</V>
+          <V>4759.53488372093</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1982</V>
+          <V>3.8779840560913</V>
+          <V>3573</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1982</V>
+          <V>7.9800945346799</V>
+          <V>6302.14285714285</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1982</V>
+          <V>70.4722935242116</V>
+          <V>4111.66226912928</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1983</V>
+          <V>6.475493573448</V>
+          <V>4193.23076923077</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1983</V>
+          <V>5.81739564277399</V>
+          <V>4591.125</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1983</V>
+          <V>1.57278278016678</V>
+          <V>3055.38461538461</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1983</V>
+          <V>6.06637998622033</V>
+          <V>4255.66666666666</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1983</V>
+          <V>80.0679480173909</V>
+          <V>4713.48251748251</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1984</V>
+          <V>8.87884165895223</V>
+          <V>4844.65116279069</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1984</V>
+          <V>6.37220554313859</V>
+          <V>4530.54545454545</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1984</V>
+          <V>2.55573570102444</V>
+          <V>4283.14285714285</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1984</V>
+          <V>5.00253169736243</V>
+          <V>4347.11111111111</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1984</V>
+          <V>77.1906853995223</V>
+          <V>4505.19402985074</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1985</V>
+          <V>9.56987380790818</V>
+          <V>5324.78048780487</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1985</V>
+          <V>5.1102800002104</V>
+          <V>4663.2</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1985</V>
+          <V>2.25714992083405</V>
+          <V>3678</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1985</V>
+          <V>3.54747589515378</V>
+          <V>3678.54545454545</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1985</V>
+          <V>79.5152203758935</V>
+          <V>4580.72727272727</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1986</V>
+          <V>7.89092352992744</V>
+          <V>4638</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1986</V>
+          <V>6.634133757551</V>
+          <V>4356.70588235294</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1986</V>
+          <V>0.87494894339703</V>
+          <V>2790.85714285714</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1986</V>
+          <V>5.86237289593052</V>
+          <V>3966.54545454545</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1986</V>
+          <V>78.7351935851409</V>
+          <V>4330.07881773399</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1987</V>
+          <V>9.24832823187283</V>
+          <V>4737.1304347826</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1987</V>
+          <V>2.71964715888545</V>
+          <V>4005</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1987</V>
+          <V>0.77565966722519</V>
+          <V>3046</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1987</V>
+          <V>5.3547509791239</V>
+          <V>4852.61538461538</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1987</V>
+          <V>81.9016139628926</V>
+          <V>4426.04587155963</V>
+          <V>1</V>
+        </ValuesList>
+      </EmbeddedData>
+    </IQData>
+  </Data>
+'
+>
+<PARAM NAME="XMLPARM3" VALUE='
+  <style:Scheme name="GraphStyleScheme" version="9.2P">
+    <style:Style name="GraphScheme">
+      <style:Style context="GraphDataStyle1" color="#6F7EB3" altColor="#445694" fillType="Pattern" markerSymbol="circle" lineStyle="Solid"/>
+      <style:Style context="GraphDataStyle2" color="#D05B5B" altColor="#A23A2E" fillType="Pattern" markerSymbol="plus" lineStyle="Dash3"/>
+      <style:Style context="GraphDataStyle3" color="#66A5A0" altColor="#01665E" fillType="Pattern" markerSymbol="X" lineStyle="Dash3Dash1"/>
+      <style:Style context="GraphDataStyle4" color="#A9865B" altColor="#543005" fillType="Pattern" markerSymbol="triangle" lineStyle="Dash4"/>
+      <style:Style context="GraphDataStyle5" color="#B689CD" altColor="#9D3CDB" fillType="Pattern" markerSymbol="square" lineStyle="Dash3Dash1Dash1"/>
+      <style:Style context="GraphDataStyle6" color="#BABC5C" altColor="#7F8E1F" fillType="Pattern" markerSymbol="asterisk" lineStyle="Dash4Dash2"/>
+      <style:Style context="GraphDataStyle7" color="#94BDE1" altColor="#2597FA" fillType="Pattern" markerSymbol="diamond" lineStyle="Dash4Dash1Dash1"/>
+      <style:Style context="GraphDataStyle8" color="#CD7BA1" altColor="#B26084" fillType="Pattern" lineStyle="Dash2Space"/>
+      <style:Style context="GraphDataStyle9" color="#CF974B" altColor="#D17800" fillType="Pattern" lineStyle="Dash3Dot1"/>
+      <style:Style context="GraphDataStyle10" color="#87C873" altColor="#47A82A" fillType="Pattern" lineStyle="Dash3Dot2"/>
+      <style:Style context="GraphDataStyle11" color="#B7AEF1" altColor="#B38EF3" fillType="Pattern" lineStyle="Dash1"/>
+      <style:Style context="GraphDataStyle12" color="#DDD17E" altColor="#F9DA04" fillType="Pattern"/>
+      <style:Style context="TwoColorRamp" fillGradientStartColor="#F3F5FC" fillGradientEndColor="#445694"/>
+      <style:Style context="TwoColorAltRamp" fillGradientStartColor="#FFF1EF" fillGradientEndColor="#A23A23"/>
+      <style:Style context="ThreeColorRamp" fillGradientStartColor="#AFB5A6" fillGradientNeutralColor="#FFFFFF" fillGradientEndColor="#667FA2"/>
+      <style:Style context="ThreeColorAltRamp" fillGradientStartColor="#445694" fillGradientNeutralColor="#EBC79E" fillGradientEndColor="#FF3A2E"/>
+      <style:Style context="BackFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="AxisLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="GridLines" lineColor="#E6E6E6" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="ReferenceLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="Outlines" lineColor="#000000" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="BorderLines" lineColor="#D1D1D1" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="TitleText" textColor="#000000" fontSize="11pt" fontFamily="Arial, Albany AMT" fontWeight="bold" fontStyle="normal"/>
+      <style:Style context="FootnoteText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="italic"/>
+      <style:Style context="LabelText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="ValueText" textColor="#000000" fontSize="9pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="DataText" textColor="#000000" fontSize="7pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="WallFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="FloorFill" fillColor="#DCDAC9" fillType="Pattern"/>
+      <style:Style context="LegendFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="DropShadow" shadowColor="#8F8F8F" xOffset="5%" yOffset="5%"/>
+    </style:Style>
+  </style:Scheme>
+  <View style:scheme="GraphStyleScheme">
+    <Section>
+      <Body>
+        <Graph name="Graph_197004878719224622512" style:height="480px" style:width="640px" style:style="GraphScheme"  view2D="false" usePlotContrast="true">
+          <ChartDataList>
+            <ChartData name="ChartData0" collation="Linguistic" data="GraphData">
+              <Roles>
+                <Role variable="GRP_AGR3_MAX_CMAXA_DUE1" type="Category" sortOrder="Ascending">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="year2" type="Series" sortOrder="Ascending" missingEnabled="true">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="credit_limit_PctSum_014" type="Subgroup" sortOrder="Ascending" missingEnabled="true">
+                </Role>
+                <Role variable="credit_limit_sr_Sum9" type="Response" statistic="Sum">
+                </Role>
+                <Role variable="__FREQ__14" type="Frequency">
+                </Role>
+              </Roles>
+            </ChartData>
+          </ChartDataList>
+          <ChartAreas>
+            <ChartArea>
+              <ChartBorderLine lineVisible="false"/>
+              <Charts>
+                <Bar name="Chart0" chartData="ChartData0" styleBy="Series" barShape="Block">
+                </Bar>
+              </Charts>
+              <Axes>
+                <Axis name="Axis0" role="Category" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis1" role="Response" gridPosition="Back" appendLabelStatistic="true">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis2" role="Series" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+              </Axes>
+            </ChartArea>
+          </ChartAreas>
+          <Legends>
+            <Legend chart="Chart0" isVisible="false">
+            </Legend>
+          </Legends>
+        </Graph>
+      </Body>
+    </Section>
+  </View>
+  <Formats>
+    <Format name="PROCENT">
+      <Type> Picture </Type>
+      <Name-Options max="40" default="19" round="True" />
+      <Mapping>
+        <Range> LOW--0.005 </Range>
+        <Label> &amp;apos;00.000.000.009,99 %&amp;apos; </Label> 
+        <Label-Options  mult="100" prefix="-" />
+      </Mapping>
+      <Mapping>
+        <Range> -0.005&amp;lt;-HIGH </Range>
+        <Label> &amp;apos;00.000.000.009,99 %&amp;apos; </Label> 
+        <Label-Options  mult="100" />
+      </Mapping>
+    </Format>
+  <Format name="LICZBA">
+    <Type> Picture </Type>
+    <Name-Options max="40" default="20" round="True" />
+    <Mapping>
+      <Range> LOW--0.005 </Range>
+      <Label> &amp;apos;0 000 000 000 009,99&amp;apos; </Label> 
+      <Label-Options  mult="100" prefix="-" />
+    </Mapping>
+    <Mapping>
+      <Range> -0.005&amp;lt;-HIGH </Range>
+      <Label> &amp;apos;0 000 000 000 009,99&amp;apos; </Label> 
+      <Label-Options  mult="100" />
+    </Mapping>
+  </Format>
+</Formats>
+</SASReport>
+'
+>
+<PARAM NAME="XMLPARMCOUNT" VALUE="3">
+Sorry, there was a problem with the Graph control or plug-in in your browser.
+The graph "Block chart of GRP_AGR3_MAX_CMAXA_DUE" cannot be displayed.
+</OBJECT> 
+</CENTER>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX6"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Chart - Balance bad rate for default12 by year on state EM</td>
+</tr>
+<tr>
+<td class="c SystemTitle2">Attributes for variable AGR3_MAX_CMAXA_DUE</td>
+</tr>
+<tr>
+<td class="c SystemTitle3">Max calculated on last 3 months on unmissing Maximum Customer due for all product                                                                                                                                                                               </td>
+</tr>
+</table><br>
+<div>
+<CENTER>
+<OBJECT 
+ CLASSID="CLSID:CE9E88DD-FC6F-11d4-87EC-00B0D025628B"
+ CODEBASE="http://www2.sas.com/codebase/graph/v92/sasgraph.exe#version=9,2"
+style=" width: 640px; height: 480px; border-width: 0px;" ALIGN="top" class="Graph">
+<PARAM NAME="ENCODING" VALUE="windows-1250">
+<PARAM NAME="XMLPARM1" VALUE='
+<?xml version="1.0" encoding="windows-1250" ?>
+<SASReport version="1.0" xmlns:style="http://www.sas.com/sasreportmodel/styles">
+  <Data>
+    <IQData type="2DEmbedded" name="GraphData">
+      <EmbeddedData>
+        <Variables>
+          <Variable encoding="Text" name="GRP_AGR3_MAX_CMAXA_DUE1" varName="GRP_AGR3_MAX_CMAXA_DUE" label="GRP" type="Numeric"/>
+          <Variable encoding="Text" name="year2" varName="year" label="year" type="String"/>
+          <Variable SASFormat="LICZBA20.0" encoding="Text" name="bad_Sum4" varName="bad_Sum" label="Balance for Bads" type="Numeric"/>
+          <Variable SASFormat="NLPCT12.2" encoding="Text" name="br_Sum9" varName="br_Sum" label="Balance bad rate default12" type="Numeric"/>
+          <Variable encoding="Text" name="__FREQ__14" varName="__FREQ__" label="Frequency" type="Numeric"/>
+        </Variables>
+        <ValuesList>
+        '
+        >
+        <PARAM NAME="XMLPARM2" VALUE='
+          <V>1</V>
+          <V>1975</V>
+          <V>76776</V>
+          <V>0.3257803350476</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1975</V>
+          <V>176388</V>
+          <V>0.54916685347082</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1975</V>
+          <V>66816</V>
+          <V>0.43179526948429</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1975</V>
+          <V>108528</V>
+          <V>0.27484349358779</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1975</V>
+          <V>186756</V>
+          <V>0.15582790143482</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1976</V>
+          <V>113304</V>
+          <V>0.49857429506811</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1976</V>
+          <V>81840</V>
+          <V>0.36781361233955</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1976</V>
+          <V>55536</V>
+          <V>0.36369351669941</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1976</V>
+          <V>54840</V>
+          <V>0.21537301475093</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1976</V>
+          <V>222000</V>
+          <V>0.15272469104207</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1977</V>
+          <V>105120</V>
+          <V>0.53977447778667</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1977</V>
+          <V>75228</V>
+          <V>0.3550634345265</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1977</V>
+          <V>15600</V>
+          <V>0.19233614440005</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1977</V>
+          <V>77400</V>
+          <V>0.33952729378322</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1977</V>
+          <V>213372</V>
+          <V>0.14117955314182</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1978</V>
+          <V>125892</V>
+          <V>0.58855539971949</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1978</V>
+          <V>52704</V>
+          <V>0.26018957345971</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1978</V>
+          <V>27276</V>
+          <V>0.30720367617245</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1978</V>
+          <V>82560</V>
+          <V>0.30327073966322</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1978</V>
+          <V>90504</V>
+          <V>0.06157840591779</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1979</V>
+          <V>97140</V>
+          <V>0.38095910395783</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1979</V>
+          <V>70032</V>
+          <V>0.38138805384917</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1979</V>
+          <V>33888</V>
+          <V>0.41256391526661</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1979</V>
+          <V>12996</V>
+          <V>0.06821187881841</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1979</V>
+          <V>183072</V>
+          <V>0.11330451702984</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1980</V>
+          <V>59292</V>
+          <V>0.4392</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1980</V>
+          <V>54900</V>
+          <V>0.3784745201853</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1980</V>
+          <V>14736</V>
+          <V>0.17828106852497</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1980</V>
+          <V>10740</V>
+          <V>0.05997453595121</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1980</V>
+          <V>109044</V>
+          <V>0.07167082058238</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1981</V>
+          <V>93504</V>
+          <V>0.52616652035924</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1981</V>
+          <V>58308</V>
+          <V>0.41349672368309</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1981</V>
+          <V>6468</V>
+          <V>0.07025547445255</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1981</V>
+          <V>26652</V>
+          <V>0.16243691947634</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1981</V>
+          <V>171012</V>
+          <V>0.10339698754969</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1982</V>
+          <V>95388</V>
+          <V>0.51267333118348</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1982</V>
+          <V>78252</V>
+          <V>0.382351216652</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1982</V>
+          <V>15036</V>
+          <V>0.17534284914637</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1982</V>
+          <V>8880</V>
+          <V>0.05032301938116</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1982</V>
+          <V>111756</V>
+          <V>0.07171569382411</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1983</V>
+          <V>94200</V>
+          <V>0.57601995890813</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1983</V>
+          <V>46788</V>
+          <V>0.31846769582618</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1983</V>
+          <V>5940</V>
+          <V>0.14954682779456</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1983</V>
+          <V>38904</V>
+          <V>0.25393592856583</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1983</V>
+          <V>202944</V>
+          <V>0.10036378310693</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1984</V>
+          <V>94440</V>
+          <V>0.45334101382488</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1984</V>
+          <V>28272</V>
+          <V>0.18910024881611</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1984</V>
+          <V>18444</V>
+          <V>0.30758455073043</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1984</V>
+          <V>12456</V>
+          <V>0.10612411818832</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1984</V>
+          <V>126960</V>
+          <V>0.07010150804378</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1985</V>
+          <V>110508</V>
+          <V>0.50618369702632</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1985</V>
+          <V>45312</V>
+          <V>0.38867730313947</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1985</V>
+          <V>11028</V>
+          <V>0.21416919133069</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1985</V>
+          <V>19260</V>
+          <V>0.23798932384341</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1985</V>
+          <V>91944</V>
+          <V>0.0506866714297</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1986</V>
+          <V>115176</V>
+          <V>0.6535030979778</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1986</V>
+          <V>43536</V>
+          <V>0.29390797148412</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1986</V>
+          <V>48048</V>
+          <V>0.36707004033736</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1986</V>
+          <V>134028</V>
+          <V>0.07623838745128</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1987</V>
+          <V>135492</V>
+          <V>0.62178534060245</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1987</V>
+          <V>3900</V>
+          <V>0.06086142322097</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1987</V>
+          <V>18780</V>
+          <V>0.1488491535096</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1987</V>
+          <V>127176</V>
+          <V>0.06590263224988</V>
+          <V>1</V>
+        </ValuesList>
+      </EmbeddedData>
+    </IQData>
+  </Data>
+'
+>
+<PARAM NAME="XMLPARM3" VALUE='
+  <style:Scheme name="GraphStyleScheme" version="9.2P">
+    <style:Style name="GraphScheme">
+      <style:Style context="GraphDataStyle1" color="#6F7EB3" altColor="#445694" fillType="Pattern" markerSymbol="circle" lineStyle="Solid"/>
+      <style:Style context="GraphDataStyle2" color="#D05B5B" altColor="#A23A2E" fillType="Pattern" markerSymbol="plus" lineStyle="Dash3"/>
+      <style:Style context="GraphDataStyle3" color="#66A5A0" altColor="#01665E" fillType="Pattern" markerSymbol="X" lineStyle="Dash3Dash1"/>
+      <style:Style context="GraphDataStyle4" color="#A9865B" altColor="#543005" fillType="Pattern" markerSymbol="triangle" lineStyle="Dash4"/>
+      <style:Style context="GraphDataStyle5" color="#B689CD" altColor="#9D3CDB" fillType="Pattern" markerSymbol="square" lineStyle="Dash3Dash1Dash1"/>
+      <style:Style context="GraphDataStyle6" color="#BABC5C" altColor="#7F8E1F" fillType="Pattern" markerSymbol="asterisk" lineStyle="Dash4Dash2"/>
+      <style:Style context="GraphDataStyle7" color="#94BDE1" altColor="#2597FA" fillType="Pattern" markerSymbol="diamond" lineStyle="Dash4Dash1Dash1"/>
+      <style:Style context="GraphDataStyle8" color="#CD7BA1" altColor="#B26084" fillType="Pattern" lineStyle="Dash2Space"/>
+      <style:Style context="GraphDataStyle9" color="#CF974B" altColor="#D17800" fillType="Pattern" lineStyle="Dash3Dot1"/>
+      <style:Style context="GraphDataStyle10" color="#87C873" altColor="#47A82A" fillType="Pattern" lineStyle="Dash3Dot2"/>
+      <style:Style context="GraphDataStyle11" color="#B7AEF1" altColor="#B38EF3" fillType="Pattern" lineStyle="Dash1"/>
+      <style:Style context="GraphDataStyle12" color="#DDD17E" altColor="#F9DA04" fillType="Pattern"/>
+      <style:Style context="TwoColorRamp" fillGradientStartColor="#F3F5FC" fillGradientEndColor="#445694"/>
+      <style:Style context="TwoColorAltRamp" fillGradientStartColor="#FFF1EF" fillGradientEndColor="#A23A23"/>
+      <style:Style context="ThreeColorRamp" fillGradientStartColor="#AFB5A6" fillGradientNeutralColor="#FFFFFF" fillGradientEndColor="#667FA2"/>
+      <style:Style context="ThreeColorAltRamp" fillGradientStartColor="#445694" fillGradientNeutralColor="#EBC79E" fillGradientEndColor="#FF3A2E"/>
+      <style:Style context="BackFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="AxisLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="GridLines" lineColor="#E6E6E6" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="ReferenceLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="Outlines" lineColor="#000000" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="BorderLines" lineColor="#D1D1D1" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="TitleText" textColor="#000000" fontSize="11pt" fontFamily="Arial, Albany AMT" fontWeight="bold" fontStyle="normal"/>
+      <style:Style context="FootnoteText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="italic"/>
+      <style:Style context="LabelText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="ValueText" textColor="#000000" fontSize="9pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="DataText" textColor="#000000" fontSize="7pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="WallFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="FloorFill" fillColor="#DCDAC9" fillType="Pattern"/>
+      <style:Style context="LegendFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="DropShadow" shadowColor="#8F8F8F" xOffset="5%" yOffset="5%"/>
+    </style:Style>
+  </style:Scheme>
+  <View style:scheme="GraphStyleScheme">
+    <Section>
+      <Body>
+        <Graph name="Graph_1970048788674622306" style:height="480px" style:width="640px" style:style="GraphScheme"  view2D="false" usePlotContrast="true">
+          <ChartDataList>
+            <ChartData name="ChartData0" collation="Linguistic" data="GraphData">
+              <Roles>
+                <Role variable="GRP_AGR3_MAX_CMAXA_DUE1" type="Category" sortOrder="Ascending">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="year2" type="Series" sortOrder="Ascending" missingEnabled="true">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="bad_Sum4" type="Subgroup" sortOrder="Ascending" missingEnabled="true">
+                </Role>
+                <Role variable="br_Sum9" type="Response" statistic="Sum">
+                </Role>
+                <Role variable="__FREQ__14" type="Frequency">
+                </Role>
+              </Roles>
+            </ChartData>
+          </ChartDataList>
+          <ChartAreas>
+            <ChartArea>
+              <ChartBorderLine lineVisible="false"/>
+              <Charts>
+                <Bar name="Chart0" chartData="ChartData0" styleBy="Series" barShape="Block">
+                </Bar>
+              </Charts>
+              <Axes>
+                <Axis name="Axis0" role="Category" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis1" role="Response" gridPosition="Back" appendLabelStatistic="true">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis2" role="Series" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+              </Axes>
+            </ChartArea>
+          </ChartAreas>
+          <Legends>
+            <Legend chart="Chart0" isVisible="false">
+            </Legend>
+          </Legends>
+        </Graph>
+      </Body>
+    </Section>
+  </View>
+  <Formats>
+    <Format name="LICZBA">
+      <Type> Picture </Type>
+      <Name-Options max="40" default="20" round="True" />
+      <Mapping>
+        <Range> LOW--0.005 </Range>
+        <Label> &amp;apos;0 000 000 000 009,99&amp;apos; </Label> 
+        <Label-Options  mult="100" prefix="-" />
+      </Mapping>
+      <Mapping>
+        <Range> -0.005&amp;lt;-HIGH </Range>
+        <Label> &amp;apos;0 000 000 000 009,99&amp;apos; </Label> 
+        <Label-Options  mult="100" />
+      </Mapping>
+    </Format>
+  </Formats>
+</SASReport>
+'
+>
+<PARAM NAME="XMLPARMCOUNT" VALUE="3">
+Sorry, there was a problem with the Graph control or plug-in in your browser.
+The graph "Block chart of GRP_AGR3_MAX_CMAXA_DUE" cannot be displayed.
+</OBJECT> 
+</CENTER>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX7"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Chart - Number bad rate for default12 by year on state EM</td>
+</tr>
+<tr>
+<td class="c SystemTitle2">Attributes for variable AGR3_MAX_CMAXA_DUE</td>
+</tr>
+<tr>
+<td class="c SystemTitle3">Max calculated on last 3 months on unmissing Maximum Customer due for all product                                                                                                                                                                               </td>
+</tr>
+</table><br>
+<div>
+<CENTER>
+<OBJECT 
+ CLASSID="CLSID:CE9E88DD-FC6F-11d4-87EC-00B0D025628B"
+ CODEBASE="http://www2.sas.com/codebase/graph/v92/sasgraph.exe#version=9,2"
+style=" width: 640px; height: 480px; border-width: 0px;" ALIGN="top" class="Graph">
+<PARAM NAME="ENCODING" VALUE="windows-1250">
+<PARAM NAME="XMLPARM1" VALUE='
+<?xml version="1.0" encoding="windows-1250" ?>
+<SASReport version="1.0" xmlns:style="http://www.sas.com/sasreportmodel/styles">
+  <Data>
+    <IQData type="2DEmbedded" name="GraphData">
+      <EmbeddedData>
+        <Variables>
+          <Variable encoding="Text" name="GRP_AGR3_MAX_CMAXA_DUE1" varName="GRP_AGR3_MAX_CMAXA_DUE" label="GRP" type="Numeric"/>
+          <Variable encoding="Text" name="year2" varName="year" label="year" type="String"/>
+          <Variable SASFormat="LICZBA20.0" encoding="Text" name="bad_n_Sum4" varName="bad_n_Sum" label="Number of bad accounts" type="Numeric"/>
+          <Variable SASFormat="NLPCT12.2" encoding="Text" name="br_n_Sum9" varName="br_n_Sum" label="Number bad rate default12" type="Numeric"/>
+          <Variable encoding="Text" name="__FREQ__14" varName="__FREQ__" label="Frequency" type="Numeric"/>
+        </Variables>
+        <ValuesList>
+        '
+        >
+        <PARAM NAME="XMLPARM2" VALUE='
+          <V>1</V>
+          <V>1975</V>
+          <V>17</V>
+          <V>0.3090909090909</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1975</V>
+          <V>35</V>
+          <V>0.47945205479452</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1975</V>
+          <V>11</V>
+          <V>0.30555555555555</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1975</V>
+          <V>25</V>
+          <V>0.27472527472527</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1975</V>
+          <V>34</V>
+          <V>0.11971830985915</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1976</V>
+          <V>18</V>
+          <V>0.35294117647058</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1976</V>
+          <V>12</V>
+          <V>0.26666666666666</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1976</V>
+          <V>11</V>
+          <V>0.30555555555555</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1976</V>
+          <V>11</V>
+          <V>0.19298245614035</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1976</V>
+          <V>37</V>
+          <V>0.11349693251533</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1977</V>
+          <V>22</V>
+          <V>0.4074074074074</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1977</V>
+          <V>20</V>
+          <V>0.37735849056603</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1977</V>
+          <V>4</V>
+          <V>0.19047619047619</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1977</V>
+          <V>13</V>
+          <V>0.25</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1977</V>
+          <V>30</V>
+          <V>0.08450704225352</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1978</V>
+          <V>24</V>
+          <V>0.55813953488372</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1978</V>
+          <V>18</V>
+          <V>0.32142857142857</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1978</V>
+          <V>7</V>
+          <V>0.25</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1978</V>
+          <V>13</V>
+          <V>0.23214285714285</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1978</V>
+          <V>21</V>
+          <V>0.0603448275862</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1979</V>
+          <V>21</V>
+          <V>0.38888888888888</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1979</V>
+          <V>18</V>
+          <V>0.42857142857142</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1979</V>
+          <V>6</V>
+          <V>0.27272727272727</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1979</V>
+          <V>3</V>
+          <V>0.06521739130434</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1979</V>
+          <V>27</V>
+          <V>0.07479224376731</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1980</V>
+          <V>13</V>
+          <V>0.40625</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1980</V>
+          <V>13</V>
+          <V>0.35135135135135</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1980</V>
+          <V>4</V>
+          <V>0.17391304347826</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1980</V>
+          <V>4</V>
+          <V>0.1081081081081</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1980</V>
+          <V>23</V>
+          <V>0.06318681318681</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1981</V>
+          <V>25</V>
+          <V>0.54347826086956</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1981</V>
+          <V>14</V>
+          <V>0.35</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1981</V>
+          <V>4</V>
+          <V>0.19047619047619</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1981</V>
+          <V>6</V>
+          <V>0.13333333333333</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1981</V>
+          <V>26</V>
+          <V>0.06718346253229</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1982</V>
+          <V>20</V>
+          <V>0.44444444444444</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1982</V>
+          <V>17</V>
+          <V>0.3953488372093</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1982</V>
+          <V>5</V>
+          <V>0.20833333333333</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1982</V>
+          <V>3</V>
+          <V>0.10714285714285</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1982</V>
+          <V>22</V>
+          <V>0.05804749340369</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1983</V>
+          <V>21</V>
+          <V>0.53846153846153</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1983</V>
+          <V>10</V>
+          <V>0.3125</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1983</V>
+          <V>3</V>
+          <V>0.23076923076923</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1983</V>
+          <V>6</V>
+          <V>0.16666666666666</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1983</V>
+          <V>25</V>
+          <V>0.05827505827505</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1984</V>
+          <V>20</V>
+          <V>0.46511627906976</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1984</V>
+          <V>7</V>
+          <V>0.21212121212121</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1984</V>
+          <V>6</V>
+          <V>0.42857142857142</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1984</V>
+          <V>1</V>
+          <V>0.03703703703703</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1984</V>
+          <V>20</V>
+          <V>0.04975124378109</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1985</V>
+          <V>21</V>
+          <V>0.51219512195121</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1985</V>
+          <V>10</V>
+          <V>0.4</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1985</V>
+          <V>2</V>
+          <V>0.14285714285714</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1985</V>
+          <V>4</V>
+          <V>0.18181818181818</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1985</V>
+          <V>18</V>
+          <V>0.04545454545454</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1986</V>
+          <V>24</V>
+          <V>0.63157894736842</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1986</V>
+          <V>8</V>
+          <V>0.23529411764705</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1986</V>
+          <V>0</V>
+          <V>0</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1986</V>
+          <V>8</V>
+          <V>0.24242424242424</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1986</V>
+          <V>23</V>
+          <V>0.05665024630541</V>
+          <V>1</V>
+          <V>1</V>
+          <V>1987</V>
+          <V>30</V>
+          <V>0.65217391304347</V>
+          <V>1</V>
+          <V>2</V>
+          <V>1987</V>
+          <V>2</V>
+          <V>0.125</V>
+          <V>1</V>
+          <V>3</V>
+          <V>1987</V>
+          <V>0</V>
+          <V>0</V>
+          <V>1</V>
+          <V>4</V>
+          <V>1987</V>
+          <V>4</V>
+          <V>0.15384615384615</V>
+          <V>1</V>
+          <V>5</V>
+          <V>1987</V>
+          <V>21</V>
+          <V>0.04816513761467</V>
+          <V>1</V>
+        </ValuesList>
+      </EmbeddedData>
+    </IQData>
+  </Data>
+'
+>
+<PARAM NAME="XMLPARM3" VALUE='
+  <style:Scheme name="GraphStyleScheme" version="9.2P">
+    <style:Style name="GraphScheme">
+      <style:Style context="GraphDataStyle1" color="#6F7EB3" altColor="#445694" fillType="Pattern" markerSymbol="circle" lineStyle="Solid"/>
+      <style:Style context="GraphDataStyle2" color="#D05B5B" altColor="#A23A2E" fillType="Pattern" markerSymbol="plus" lineStyle="Dash3"/>
+      <style:Style context="GraphDataStyle3" color="#66A5A0" altColor="#01665E" fillType="Pattern" markerSymbol="X" lineStyle="Dash3Dash1"/>
+      <style:Style context="GraphDataStyle4" color="#A9865B" altColor="#543005" fillType="Pattern" markerSymbol="triangle" lineStyle="Dash4"/>
+      <style:Style context="GraphDataStyle5" color="#B689CD" altColor="#9D3CDB" fillType="Pattern" markerSymbol="square" lineStyle="Dash3Dash1Dash1"/>
+      <style:Style context="GraphDataStyle6" color="#BABC5C" altColor="#7F8E1F" fillType="Pattern" markerSymbol="asterisk" lineStyle="Dash4Dash2"/>
+      <style:Style context="GraphDataStyle7" color="#94BDE1" altColor="#2597FA" fillType="Pattern" markerSymbol="diamond" lineStyle="Dash4Dash1Dash1"/>
+      <style:Style context="GraphDataStyle8" color="#CD7BA1" altColor="#B26084" fillType="Pattern" lineStyle="Dash2Space"/>
+      <style:Style context="GraphDataStyle9" color="#CF974B" altColor="#D17800" fillType="Pattern" lineStyle="Dash3Dot1"/>
+      <style:Style context="GraphDataStyle10" color="#87C873" altColor="#47A82A" fillType="Pattern" lineStyle="Dash3Dot2"/>
+      <style:Style context="GraphDataStyle11" color="#B7AEF1" altColor="#B38EF3" fillType="Pattern" lineStyle="Dash1"/>
+      <style:Style context="GraphDataStyle12" color="#DDD17E" altColor="#F9DA04" fillType="Pattern"/>
+      <style:Style context="TwoColorRamp" fillGradientStartColor="#F3F5FC" fillGradientEndColor="#445694"/>
+      <style:Style context="TwoColorAltRamp" fillGradientStartColor="#FFF1EF" fillGradientEndColor="#A23A23"/>
+      <style:Style context="ThreeColorRamp" fillGradientStartColor="#AFB5A6" fillGradientNeutralColor="#FFFFFF" fillGradientEndColor="#667FA2"/>
+      <style:Style context="ThreeColorAltRamp" fillGradientStartColor="#445694" fillGradientNeutralColor="#EBC79E" fillGradientEndColor="#FF3A2E"/>
+      <style:Style context="BackFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="AxisLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="GridLines" lineColor="#E6E6E6" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="ReferenceLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="Outlines" lineColor="#000000" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="BorderLines" lineColor="#D1D1D1" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="TitleText" textColor="#000000" fontSize="11pt" fontFamily="Arial, Albany AMT" fontWeight="bold" fontStyle="normal"/>
+      <style:Style context="FootnoteText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="italic"/>
+      <style:Style context="LabelText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="ValueText" textColor="#000000" fontSize="9pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="DataText" textColor="#000000" fontSize="7pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="WallFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="FloorFill" fillColor="#DCDAC9" fillType="Pattern"/>
+      <style:Style context="LegendFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="DropShadow" shadowColor="#8F8F8F" xOffset="5%" yOffset="5%"/>
+    </style:Style>
+  </style:Scheme>
+  <View style:scheme="GraphStyleScheme">
+    <Section>
+      <Body>
+        <Graph name="Graph_1970048788894622512" style:height="480px" style:width="640px" style:style="GraphScheme"  view2D="false" usePlotContrast="true">
+          <ChartDataList>
+            <ChartData name="ChartData0" collation="Linguistic" data="GraphData">
+              <Roles>
+                <Role variable="GRP_AGR3_MAX_CMAXA_DUE1" type="Category" sortOrder="Ascending">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="year2" type="Series" sortOrder="Ascending" missingEnabled="true">
+                  <Categorization type="Discrete">
+                  </Categorization>
+                </Role>
+                <Role variable="bad_n_Sum4" type="Subgroup" sortOrder="Ascending" missingEnabled="true">
+                </Role>
+                <Role variable="br_n_Sum9" type="Response" statistic="Sum">
+                </Role>
+                <Role variable="__FREQ__14" type="Frequency">
+                </Role>
+              </Roles>
+            </ChartData>
+          </ChartDataList>
+          <ChartAreas>
+            <ChartArea>
+              <ChartBorderLine lineVisible="false"/>
+              <Charts>
+                <Bar name="Chart0" chartData="ChartData0" styleBy="Series" barShape="Block">
+                </Bar>
+              </Charts>
+              <Axes>
+                <Axis name="Axis0" role="Category" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis1" role="Response" gridPosition="Back" appendLabelStatistic="true">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis2" role="Series" minorTickCount="0" gridPosition="Back">
+                  <Grid lineVisible="true"/>
+                  <Line lineVisible="true"/>
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+              </Axes>
+            </ChartArea>
+          </ChartAreas>
+          <Legends>
+            <Legend chart="Chart0" isVisible="false">
+            </Legend>
+          </Legends>
+        </Graph>
+      </Body>
+    </Section>
+  </View>
+  <Formats>
+    <Format name="LICZBA">
+      <Type> Picture </Type>
+      <Name-Options max="40" default="20" round="True" />
+      <Mapping>
+        <Range> LOW--0.005 </Range>
+        <Label> &amp;apos;0 000 000 000 009,99&amp;apos; </Label> 
+        <Label-Options  mult="100" prefix="-" />
+      </Mapping>
+      <Mapping>
+        <Range> -0.005&amp;lt;-HIGH </Range>
+        <Label> &amp;apos;0 000 000 000 009,99&amp;apos; </Label> 
+        <Label-Options  mult="100" />
+      </Mapping>
+    </Format>
+  </Formats>
+</SASReport>
+'
+>
+<PARAM NAME="XMLPARMCOUNT" VALUE="3">
+Sorry, there was a problem with the Graph control or plug-in in your browser.
+The graph "Block chart of GRP_AGR3_MAX_CMAXA_DUE" cannot be displayed.
+</OBJECT> 
+</CENTER>
+</div>
+<br>
+</div>
+</body>
+</html>
