@@ -1,0 +1,215 @@
+1                                       The SAS System          22:23 Thursday, January 2, 2014
+
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+NOTE: Copyright (c) 2002-2008 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.2 (TS2M3 MBCS3055) 
+      Licensed to SZKOLA GLOWNA HANDLOWA, Site 52701551.
+NOTE: This session is executing on the W32_VSPRO  platform.
+
+
+
+NOTE: SAS initialization used:
+      real time           4.10 seconds
+      cpu time            0.81 seconds
+      
+1          /*  (c) Karol Przanowski   */
+2          /*    kprzan@sgh.waw.pl    */
+3          
+4          
+5          
+6          
+7          libname inlib
+7        ! "c:\karol\analiza6_poziom_klienta\project\students\11111\data_st3_low\" compress=yes
+7        ! ;
+NOTE: Libref INLIB was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: c:\karol\analiza6_poziom_klienta\project\students\11111\data_st3_low
+8          libname wyj
+8        ! "c:\karol\analiza6_poziom_klienta\project\students\11111\modelowanie_rj\1_model_ngb\
+8        ! validacja\data\" compress=yes;
+NOTE: Libref WYJ was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: 
+      c:\karol\analiza6_poziom_klienta\project\students\11111\modelowanie_rj\1_model_ngb\valida
+      cja\data
+9          
+10         
+11         %let kat_kodowanie=%sysfunc(pathname(wyj));
+12         
+13         proc sql noprint;
+14         select distinct _variable_,'GRP_'||trim(_variable_)
+15         into :zmienne separated by ' ',
+16         :zmienne_grp separated by ' '
+17         from wyj.Scorecard_scorecard1;
+NOTE: Data file WYJ.SCORECARD_SCORECARD1.DATA is in a format that is native to another host, 
+      or the file encoding does not match the session encoding. Cross Environment Data Access 
+      will be used, which might require additional CPU resources and might reduce performance.
+18         quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.75 seconds
+      cpu time            0.09 seconds
+      
+
+19         %put &zmienne;
+ACT_CINS_N_STATB APP_CHAR_GENDER APP_CHAR_JOB_CODE APP_SPENDINGS
+20         %put &zmienne_grp;
+GRP_ACT_CINS_N_STATB GRP_APP_CHAR_GENDER GRP_APP_CHAR_JOB_CODE GRP_APP_SPENDINGS
+21         
+22         /*proc sql noprint;*/
+23         /*select 'inlib.'||memname into :sets separated by " " */
+24         /*from dictionary.tables where*/
+25         /*libname=upcase("INLIB") and memname like "ABT_%"; */
+26         /*quit; */
+27         %let in_abt=inlib.abt_app;
+28         %let sets=&in_abt;
+29         %put &sets;
+inlib.abt_app
+30         
+31         
+32         %macro dodatkowe_zmienne;
+33         outstanding=app_loan_amount;
+34         credit_limit=app_loan_amount;
+35         if Default3 in (.i,.d) then Default3=0;
+36         if Default6 in (.i,.d) then Default6=0;
+37         if Default9 in (.i,.d) then Default9=0;
+38         if Default12 in (.i,.d) then Default12=0;
+39         
+2                                       The SAS System          22:23 Thursday, January 2, 2014
+
+40         where '197501'<=period<='199812' and product='ins'
+41         and decision='A';
+42         %mend;
+43         
+44         
+45         data wyj.abt;
+46         	set &sets;
+NOTE: Data file INLIB.ABT_APP.DATA is in a format that is native to another host, or the file 
+      encoding does not match the session encoding. Cross Environment Data Access will be 
+      used, which might require additional CPU resources and might reduce performance.
+47         	if _error_ then _error_=0;
+48         	%dodatkowe_zmienne;
+49         	keep &zmienne default: outstanding: credit_limit
+50         	period ;
+51         run;
+
+NOTE: Data file WYJ.ABT.DATA is in a format that is native to another host, or the file 
+      encoding does not match the session encoding. Cross Environment Data Access will be 
+      used, which might require additional CPU resources and might reduce performance.
+NOTE: There were 27513 observations read from the data set INLIB.ABT_APP.
+      WHERE (period>='197501' and period<='199812') and (product='ins') and (decision='A');
+NOTE: The data set WYJ.ABT has 27513 observations and 15 variables.
+NOTE: Compressing data set WYJ.ABT decreased size by 44.06 percent. 
+      Compressed is 245 pages; un-compressed would require 438 pages.
+NOTE: DATA statement used (Total process time):
+      real time           10.15 seconds
+      cpu time            8.83 seconds
+      
+
+52         
+53         
+54         %let zbior=wyj.abt;
+55         %include "&kat_kodowanie.\kod_do_skorowania.sas" / source2;
+NOTE: %INCLUDE (level 1) file 
+      c:\karol\analiza6_poziom_klienta\project\students\11111\modelowanie_rj\1_model_ngb\valida
+      cja\data\kod_do_skorowania.sas is file 
+      c:\karol\analiza6_poziom_klienta\project\students\11111\modelowanie_rj\1_model_ngb\valida
+      cja\data\kod_do_skorowania.sas.
+56        +data &zbior._score;
+57        +set &zbior;
+NOTE: Data file WYJ.ABT.DATA is in a format that is native to another host, or the file 
+      encoding does not match the session encoding. Cross Environment Data Access will be 
+      used, which might require additional CPU resources and might reduce performance.
+58        +SCORECARD_POINTS = 0;
+59        +select;
+60        +when ( not missing(ACT_CINS_N_STATB) and ACT_CINS_N_STATB <= 0 ) do;
+61        +SCORECARD_POINTS=sum(SCORECARD_POINTS,138);
+62        +PSC_ACT_CINS_N_STATB=138;
+63        +end;
+64        +when ( missing(ACT_CINS_N_STATB) ) do;
+65        +SCORECARD_POINTS=sum(SCORECARD_POINTS,102);
+66        +PSC_ACT_CINS_N_STATB=102;
+67        +end;
+68        +when ( 0 < ACT_CINS_N_STATB ) do;
+69        +SCORECARD_POINTS=sum(SCORECARD_POINTS,86);
+70        +PSC_ACT_CINS_N_STATB=86;
+71        +end;
+72        +otherwise do;
+73        +SCORECARD_POINTS=sum(SCORECARD_POINTS,86);
+74        +PSC_ACT_CINS_N_STATB=86;
+75        +end; end;
+76        +select (APP_CHAR_GENDER );
+77        +  when ('Female')   do;
+78        +SCORECARD_POINTS=sum(SCORECARD_POINTS,105);
+79        +PSC_APP_CHAR_GENDER=105;
+80        +end;
+81        +  when ('Male')   do;
+82        +SCORECARD_POINTS=sum(SCORECARD_POINTS,86);
+83        +PSC_APP_CHAR_GENDER=86;
+84        +end;
+85        +otherwise do;
+86        +SCORECARD_POINTS=sum(SCORECARD_POINTS,86);
+87        +PSC_APP_CHAR_GENDER=86;
+88        +end; end;
+89        +select (APP_CHAR_JOB_CODE );
+3                                       The SAS System          22:23 Thursday, January 2, 2014
+
+90        +  when ('Retired')   do;
+91        +SCORECARD_POINTS=sum(SCORECARD_POINTS,103);
+92        +PSC_APP_CHAR_JOB_CODE=103;
+93        +end;
+94        +  when ('Permanent')   do;
+95        +SCORECARD_POINTS=sum(SCORECARD_POINTS,90);
+96        +PSC_APP_CHAR_JOB_CODE=90;
+97        +end;
+98        +  when ('Owner company')   do;
+99        +SCORECARD_POINTS=sum(SCORECARD_POINTS,86);
+100       +PSC_APP_CHAR_JOB_CODE=86;
+101       +end;
+102       +otherwise do;
+103       +SCORECARD_POINTS=sum(SCORECARD_POINTS,86);
+104       +PSC_APP_CHAR_JOB_CODE=86;
+105       +end; end;
+106       +select;
+107       +when ( not missing(APP_SPENDINGS) and APP_SPENDINGS <= 960 ) do;
+108       +SCORECARD_POINTS=sum(SCORECARD_POINTS,94);
+109       +PSC_APP_SPENDINGS=94;
+110       +end;
+111       +when ( 960 < APP_SPENDINGS ) do;
+112       +SCORECARD_POINTS=sum(SCORECARD_POINTS,86);
+113       +PSC_APP_SPENDINGS=86;
+114       +end;
+115       +otherwise do;
+116       +SCORECARD_POINTS=sum(SCORECARD_POINTS,86);
+117       +PSC_APP_SPENDINGS=86;
+118       +end; end;
+119       +run;
+
+NOTE: Data file WYJ.ABT_SCORE.DATA is in a format that is native to another host, or the file 
+      encoding does not match the session encoding. Cross Environment Data Access will be 
+      used, which might require additional CPU resources and might reduce performance.
+NOTE: There were 27513 observations read from the data set WYJ.ABT.
+NOTE: The data set WYJ.ABT_SCORE has 27513 observations and 20 variables.
+NOTE: Compressing data set WYJ.ABT_SCORE decreased size by 42.51 percent. 
+      Compressed is 330 pages; un-compressed would require 574 pages.
+NOTE: DATA statement used (Total process time):
+      real time           1.03 seconds
+      cpu time            1.01 seconds
+      
+
+NOTE: %INCLUDE (level 1) ending.
+120        
+121        proc delete data=wyj.abt;
+122        run;
+
+NOTE: Deleting WYJ.ABT (memtype=DATA).
+NOTE: PROCEDURE DELETE used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           16.86 seconds
+      cpu time            10.82 seconds
+      

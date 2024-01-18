@@ -1,0 +1,274 @@
+1                                       The SAS System         21:27 Saturday, January 25, 2014
+
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+NOTE: Copyright (c) 2002-2008 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.2 (TS2M3 MBCS3055) 
+      Licensed to SZKOLA GLOWNA HANDLOWA, Site 52701551.
+NOTE: This session is executing on the W32_VSPRO  platform.
+
+
+
+NOTE: SAS initialization used:
+      real time           3.32 seconds
+      cpu time            0.84 seconds
+      
+1          /*  (c) Karol Przanowski   */
+2          /*    kprzan@sgh.waw.pl    */
+3          
+4          
+5          
+6          
+7          libname inlib
+7        ! "c:\karol\analiza6_poziom_klienta\project\students\11111\modelowanie_rj\2_analizy\da
+7        ! ta\" compress=yes;
+NOTE: Libref INLIB was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: 
+      c:\karol\analiza6_poziom_klienta\project\students\11111\modelowanie_rj\2_analizy\data
+8          libname wyj
+8        ! "c:\karol\analiza6_poziom_klienta\project\students\11111\modelowanie_rj\5_model_all2
+8        ! \validacja\data\" compress=yes;
+NOTE: Libref WYJ was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: 
+      c:\karol\analiza6_poziom_klienta\project\students\11111\modelowanie_rj\5_model_all2\valid
+      acja\data
+9          
+10         
+11         %let kat_kodowanie=%sysfunc(pathname(wyj));
+12         
+13         proc sql noprint;
+14         select distinct _variable_,'GRP_'||trim(_variable_)
+15         into :zmienne separated by ' ',
+16         :zmienne_grp separated by ' '
+17         from wyj.Scorecard_scorecard1;
+NOTE: Data file WYJ.SCORECARD_SCORECARD1.DATA is in a format that is native to another host, 
+      or the file encoding does not match the session encoding. Cross Environment Data Access 
+      will be used, which might require additional CPU resources and might reduce performance.
+18         quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.62 seconds
+      cpu time            0.07 seconds
+      
+
+19         %put &zmienne;
+ACT_CC ACT_CINS_MIN_SENIORITY ACT_CINS_N_STATC APP_CHAR_JOB_CODE APP_CHAR_MARITAL_STATUS 
+APP_LOAN_AMOUNT APP_NUMBER_OF_CHILDREN
+20         %put &zmienne_grp;
+GRP_ACT_CC GRP_ACT_CINS_MIN_SENIORITY GRP_ACT_CINS_N_STATC GRP_APP_CHAR_JOB_CODE 
+GRP_APP_CHAR_MARITAL_STATUS GRP_APP_LOAN_AMOUNT GRP_APP_NUMBER_OF_CHILDREN
+21         
+22         /*proc sql noprint;*/
+23         /*select 'inlib.'||memname into :sets separated by " " */
+24         /*from dictionary.tables where*/
+25         /*libname=upcase("INLIB") and memname like "ABT_%"; */
+26         /*quit; */
+27         %let in_abt=inlib.abt_score;
+28         %let sets=&in_abt;
+29         %put &sets;
+inlib.abt_score
+30         
+31         
+32         %macro dodatkowe_zmienne;
+33         outstanding=app_loan_amount;
+34         credit_limit=app_loan_amount;
+35         %mend;
+36         
+2                                       The SAS System         21:27 Saturday, January 25, 2014
+
+37         
+38         data wyj.abt;
+39         	set &sets;
+NOTE: Data file INLIB.ABT_SCORE.DATA is in a format that is native to another host, or the 
+      file encoding does not match the session encoding. Cross Environment Data Access will be 
+      used, which might require additional CPU resources and might reduce performance.
+40         	if _error_ then _error_=0;
+41         	%dodatkowe_zmienne;
+42         	keep &zmienne default: outstanding: credit_limit
+43         	period ;
+44         run;
+
+NOTE: There were 4359900 observations read from the data set INLIB.ABT_SCORE.
+NOTE: The data set WYJ.ABT has 4359900 observations and 19 variables.
+NOTE: Compressing data set WYJ.ABT decreased size by 41.11 percent. 
+      Compressed is 50344 pages; un-compressed would require 85489 pages.
+NOTE: DATA statement used (Total process time):
+      real time           7:11.13
+      cpu time            6:02.37
+      
+
+45         
+46         
+47         %let zbior=wyj.abt;
+48         %include "&kat_kodowanie.\kod_do_skorowania.sas" / source2;
+NOTE: %INCLUDE (level 1) file 
+      c:\karol\analiza6_poziom_klienta\project\students\11111\modelowanie_rj\5_model_all2\valid
+      acja\data\kod_do_skorowania.sas is file 
+      c:\karol\analiza6_poziom_klienta\project\students\11111\modelowanie_rj\5_model_all2\valid
+      acja\data\kod_do_skorowania.sas.
+49        +data &zbior._score;
+50        +set &zbior;
+51        +SCORECARD_POINTS = 0;
+52        +select;
+53        +when ( not missing(ACT_CC) and ACT_CC <= 0.25 ) do;
+54        +SCORECARD_POINTS=sum(SCORECARD_POINTS,64);
+55        +PSC_ACT_CC=64;
+56        +end;
+57        +when ( 0.25 < ACT_CC <= 0.85 ) do;
+58        +SCORECARD_POINTS=sum(SCORECARD_POINTS,52);
+59        +PSC_ACT_CC=52;
+60        +end;
+61        +when ( 0.85 < ACT_CC <= 1.00 ) do;
+62        +SCORECARD_POINTS=sum(SCORECARD_POINTS,43);
+63        +PSC_ACT_CC=43;
+64        +end;
+65        +when ( 1.00 < ACT_CC ) do;
+66        +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+67        +PSC_ACT_CC=24;
+68        +end;
+69        +otherwise do;
+70        +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+71        +PSC_ACT_CC=24;
+72        +end; end;
+73        +select;
+74        +when ( 22 < ACT_CINS_MIN_SENIORITY ) do;
+75        +SCORECARD_POINTS=sum(SCORECARD_POINTS,53);
+76        +PSC_ACT_CINS_MIN_SENIORITY=53;
+77        +end;
+78        +when ( missing(ACT_CINS_MIN_SENIORITY) or ACT_CINS_MIN_SENIORITY <= 22 ) do;
+79        +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+80        +PSC_ACT_CINS_MIN_SENIORITY=24;
+81        +end;
+82        +otherwise do;
+83        +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+84        +PSC_ACT_CINS_MIN_SENIORITY=24;
+85        +end; end;
+86        +select;
+87        +when ( 2 < ACT_CINS_N_STATC ) do;
+88        +SCORECARD_POINTS=sum(SCORECARD_POINTS,65);
+89        +PSC_ACT_CINS_N_STATC=65;
+90        +end;
+91        +when ( 0 < ACT_CINS_N_STATC <= 2 ) do;
+92        +SCORECARD_POINTS=sum(SCORECARD_POINTS,56);
+93        +PSC_ACT_CINS_N_STATC=56;
+3                                       The SAS System         21:27 Saturday, January 25, 2014
+
+94        +end;
+95        +when ( missing(ACT_CINS_N_STATC) ) do;
+96        +SCORECARD_POINTS=sum(SCORECARD_POINTS,49);
+97        +PSC_ACT_CINS_N_STATC=49;
+98        +end;
+99        +when ( not missing(ACT_CINS_N_STATC) and ACT_CINS_N_STATC <= 0 ) do;
+100       +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+101       +PSC_ACT_CINS_N_STATC=24;
+102       +end;
+103       +otherwise do;
+104       +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+105       +PSC_ACT_CINS_N_STATC=24;
+106       +end; end;
+107       +select (APP_CHAR_JOB_CODE );
+108       +  when ('Permanent')   do;
+109       +SCORECARD_POINTS=sum(SCORECARD_POINTS,105);
+110       +PSC_APP_CHAR_JOB_CODE=105;
+111       +end;
+112       +  when ('Retired')   do;
+113       +SCORECARD_POINTS=sum(SCORECARD_POINTS,91);
+114       +PSC_APP_CHAR_JOB_CODE=91;
+115       +end;
+116       +  when ('Owner company')   do;
+117       +SCORECARD_POINTS=sum(SCORECARD_POINTS,83);
+118       +PSC_APP_CHAR_JOB_CODE=83;
+119       +end;
+120       +  when ('Contract')   do;
+121       +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+122       +PSC_APP_CHAR_JOB_CODE=24;
+123       +end;
+124       +otherwise do;
+125       +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+126       +PSC_APP_CHAR_JOB_CODE=24;
+127       +end; end;
+128       +select (APP_CHAR_MARITAL_STATUS );
+129       +  when ('Maried','Widowed')   do;
+130       +SCORECARD_POINTS=sum(SCORECARD_POINTS,44);
+131       +PSC_APP_CHAR_MARITAL_STATUS=44;
+132       +end;
+133       +  when ('Singiel','Divorced')   do;
+134       +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+135       +PSC_APP_CHAR_MARITAL_STATUS=24;
+136       +end;
+137       +otherwise do;
+138       +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+139       +PSC_APP_CHAR_MARITAL_STATUS=24;
+140       +end; end;
+141       +select;
+142       +when ( not missing(APP_LOAN_AMOUNT) and APP_LOAN_AMOUNT <= 1968 ) do;
+143       +SCORECARD_POINTS=sum(SCORECARD_POINTS,81);
+144       +PSC_APP_LOAN_AMOUNT=81;
+145       +end;
+146       +when ( 1968 < APP_LOAN_AMOUNT <= 4824 ) do;
+147       +SCORECARD_POINTS=sum(SCORECARD_POINTS,71);
+148       +PSC_APP_LOAN_AMOUNT=71;
+149       +end;
+150       +when ( 4824 < APP_LOAN_AMOUNT <= 8880 ) do;
+151       +SCORECARD_POINTS=sum(SCORECARD_POINTS,57);
+152       +PSC_APP_LOAN_AMOUNT=57;
+153       +end;
+154       +when ( 8880 < APP_LOAN_AMOUNT <= 11376 ) do;
+155       +SCORECARD_POINTS=sum(SCORECARD_POINTS,45);
+156       +PSC_APP_LOAN_AMOUNT=45;
+157       +end;
+158       +when ( 11376 < APP_LOAN_AMOUNT ) do;
+159       +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+160       +PSC_APP_LOAN_AMOUNT=24;
+161       +end;
+162       +otherwise do;
+163       +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+164       +PSC_APP_LOAN_AMOUNT=24;
+165       +end; end;
+166       +select;
+167       +when ( 1 < APP_NUMBER_OF_CHILDREN ) do;
+168       +SCORECARD_POINTS=sum(SCORECARD_POINTS,88);
+4                                       The SAS System         21:27 Saturday, January 25, 2014
+
+169       +PSC_APP_NUMBER_OF_CHILDREN=88;
+170       +end;
+171       +when ( 0 < APP_NUMBER_OF_CHILDREN <= 1 ) do;
+172       +SCORECARD_POINTS=sum(SCORECARD_POINTS,48);
+173       +PSC_APP_NUMBER_OF_CHILDREN=48;
+174       +end;
+175       +when ( not missing(APP_NUMBER_OF_CHILDREN) and APP_NUMBER_OF_CHILDREN <= 0 ) do;
+176       +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+177       +PSC_APP_NUMBER_OF_CHILDREN=24;
+178       +end;
+179       +otherwise do;
+180       +SCORECARD_POINTS=sum(SCORECARD_POINTS,24);
+181       +PSC_APP_NUMBER_OF_CHILDREN=24;
+182       +end; end;
+183       +run;
+
+NOTE: There were 4359900 observations read from the data set WYJ.ABT.
+NOTE: The data set WYJ.ABT_SCORE has 4359900 observations and 27 variables.
+NOTE: Compressing data set WYJ.ABT_SCORE decreased size by 42.60 percent. 
+      Compressed is 46342 pages; un-compressed would require 80740 pages.
+NOTE: DATA statement used (Total process time):
+      real time           46.03 seconds
+      cpu time            45.49 seconds
+      
+
+NOTE: %INCLUDE (level 1) ending.
+184        
+185        proc delete data=wyj.abt;
+186        run;
+
+NOTE: Deleting WYJ.ABT (memtype=DATA).
+NOTE: PROCEDURE DELETE used (Total process time):
+      real time           0.26 seconds
+      cpu time            0.26 seconds
+      
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           8:02.16
+      cpu time            6:49.11
+      
